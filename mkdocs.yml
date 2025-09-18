@@ -10,6 +10,8 @@ repo_name: GitHub
 
 nav:
   - Início: index.md
+  - Tema do Trabalho: tema.md
+  - Repositório: https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II
   - Design Thinking:
       - 5W2H: design-thinking/5w2h.md
       - Brainstorm: design-thinking/Brainstorm.md
@@ -19,7 +21,6 @@ nav:
       - Protótipo Baixa Fidelidade: design-thinking/prototipo_baixa_fidelidade.md
   - Sprint Planning:
       - Sprint Planning: sprint-planning/sprint.md
-  - Repositório: https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II
 
 plugins:
   - search

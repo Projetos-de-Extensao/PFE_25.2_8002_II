@@ -16,6 +16,9 @@ hide:
     Giovanna Perrone, Julia Valente, Maria Eduarda Perpetuo, Matheus Alvarenga, Rafael Thomaz
 </div>
 
+### Tema do Projeto 
+**Tema escolhido:** Programa de Monitoria 
+
 !!! warning "Projeto Front-End"
 
     Disciplina que apresenta os passos para a construção de Projeto Front-End.
