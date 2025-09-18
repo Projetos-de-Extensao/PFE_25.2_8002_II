@@ -1,30 +1,27 @@
 site_name: PFE 25.2 8002 II
 site_url: https://projetos-de-extensao.github.io/PFE_25.2_8002_II/
-theme: Programa de Monitoria
-name: material
+theme:
+  name: material
 nav:
-- Início: index.md
--Design Thinking:
-  -5W2H: "_Design Thinking/5W2H.md"
-  -Brainstorming: "_Design Thinking/Brainstorming.md"
-  -História de Usuário: "_Design Thinking/História de Usuário.md"
-  -Mapas mentais: "_Design Thinking/Mapas mentais.md"
-  Pesquisa de Mercado: "_Design Thinking/Pesquisa de Mercado.md"
-  -Protótipo de Baixa Fidelidade: "_Design Thinking/Protótipo de Baixa Fidelidade.md"
--Sprint Planning:
-  -Sprint Planning: "_Sprint Planning/Sprint Planning.md"
+  - Início: index.md
+  - Design Thinking:
+    - 5W2H: "_Design Thinking/5W2H.md"
+    - Brainstorming: "_Design Thinking/Brainstorming.md"
+    - História de Usuário: "_Design Thinking/História de Usuário.md"
+    - Mapas mentais: "_Design Thinking/Mapas mentais.md"
+    - Pesquisa de Mercado: "_Design Thinking/Pesquisa de Mercado.md"
+    - Protótipo de Baixa Fidelidade: "_Design Thinking/Protótipo de Baixa Fidelidade.md"
+  - Sprint Planning:
+    - Sprint Planning: "_Sprint Planning/Sprint Planning.md"
 plugins:
-- search
-- mkdocs-jupyter
-markdown_extensions:
-- admonition
-- attr_list
-- pymdownx.details
-- pymdownx.superfences
-- pymdownx.emoji:
-  emoji_index: !!python/name:materialx.emoji.twemoji
-  emoji_generator: !!python/name:materialx.emoji.to_svg
+  - search
+  - mkdocs-jupyter
 
-### Grupo
- - :material-github: { .lg .right } __PFE_25.2_8002_II__ - Giovanna Perrone, Julia Valente, Maria Eduarda Perpetuo, Matheus Alvarenga, Rafael Tomaz [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II)
- 
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
