@@ -7,13 +7,13 @@ hide:
 ### Grupos
 
 <div class="grid cards" style="grid-template-columns: repeat(2, 1fr); background: var(--md-default-bg-color);" markdown>
--   :material-github:{ .lg .right } __PFE_25.1_8002_II__
+- :material-github:{ .lg .right } __PFE_25.1_8002_II__
 
     ---
 
     Giovanna Perrone, Julia Valente, Maria Eduarda Perpetuo, Matheus Alvarenga, Rafael Thomaz
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II)
+    [:octicons-arrow-right-24: Repositório] (https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II)
 </div>
 
 !!! warning "Projeto Front-End"
