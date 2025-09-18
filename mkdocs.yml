@@ -11,8 +11,9 @@ nav:
     - Mapas mentais: "_Design Thinking/Mapas mentais.md"
     - Pesquisa de Mercado: "_Design Thinking/Pesquisa de Mercado.md"
     - Protótipo de Baixa Fidelidade: "_Design Thinking/Protótipo de Baixa Fidelidade.md"
-  - Sprint Planning:
+  - Sprint Planning: https://projetos-de-extensao.github.io/PFE_25.2_8002_II
     - Sprint Planning: "_Sprint Planning/Sprint Planning.md"
+  - Repositóio:
 plugins:
   - search
   - mkdocs-jupyter
