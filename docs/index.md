@@ -9,9 +9,9 @@ hide:
 ### Grupos
 
 <div class="grid cards" style="grid-template-columns: repeat(2, 1fr); background: var(--md-default-bg-color);" markdown>
-- [__PFE_25.2_8002_II__](https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II)
+- __PFE_25.2_8002_II__:
 
-    ---
+       ---
 
     Giovanna Perrone, Julia Valente, Maria Eduarda Perpetuo, Matheus Alvarenga, Rafael Thomaz
 </div>

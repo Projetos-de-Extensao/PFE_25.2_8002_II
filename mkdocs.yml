@@ -23,6 +23,7 @@ plugins:
   - search
 
 markdown_extensions:
+  -meta
   - admonition
   - attr_list
   - pymdownx.details
