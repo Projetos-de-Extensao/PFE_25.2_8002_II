@@ -1,28 +1,32 @@
 site_name: PFE 25.2 8002 II
 site_url: https://projetos-de-extensao.github.io/PFE_25.2_8002_II/
+
 theme:
   name: material
+  language: pt-BR
+
 nav:
   - Início: index.md
   - Design Thinking:
-    - 5W2H: "_Design Thinking/5W2H.md"
-    - Brainstorming: "_Design Thinking/Brainstorming.md"
-    - História de Usuário: "_Design Thinking/História de Usuário.md"
-    - Mapas mentais: "_Design Thinking/Mapas mentais.md"
-    - Pesquisa de Mercado: "_Design Thinking/Pesquisa de Mercado.md"
-    - Protótipo de Baixa Fidelidade: "_Design Thinking/Protótipo de Baixa Fidelidade.md"
-  - Sprint Planning: https://projetos-de-extensao.github.io/PFE_25.2_8002_II
-    - Sprint Planning: "_Sprint Planning/Sprint Planning.md"
-  - Repositóio:
+      - 5W2H: design-thinking/5w2h.md
+      - Brainstorm: design-thinking/Brainstorm.md
+      - Histórias de Usuário: design-thinking/historiasdeusuario.md
+      - Mapas Mentais: design-thinking/mapa_mental.md
+      - Pesquisa de Mercado: design-thinking/pesquisa.md
+      - Protótipo Baixa Fidelidade: design-thinking/prototipo_baixa_fidelidade.md
+  - Sprint Planning:
+      - Sprint Planning: sprint-planning/sprint.md
+  - Repositório: https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II
+
 plugins:
   - search
-  - mkdocs-jupyter
-
+  
 markdown_extensions:
   - admonition
   - attr_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
