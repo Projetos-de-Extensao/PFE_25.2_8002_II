@@ -1,6 +1,5 @@
 ---
 hide:
-    - navigation
     - toc
 ---
 [Ir para o repositório](https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II){ .md-button .md-button--primary }
@@ -9,7 +8,8 @@ hide:
 ### Grupos
 
 <div class="grid cards" style="grid-template-columns: repeat(2, 1fr); background: var(--md-default-bg-color);" markdown>
-- __PFE_25.2_8002_II__:
+- [__PFE_25.2_8002_II__](https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II)
+
 
        ---
 
