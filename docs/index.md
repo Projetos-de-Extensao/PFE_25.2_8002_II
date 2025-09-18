@@ -3,6 +3,8 @@ hide:
     - navigation
     - toc
 ---
+[Ir para o repositório](https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II){ .md-button .md-button--primary }
+
 
 ### Grupos
 
@@ -12,8 +14,6 @@ hide:
     ---
 
     Giovanna Perrone, Julia Valente, Maria Eduarda Perpetuo, Matheus Alvarenga, Rafael Thomaz
-
-    [Repositório no GitHub](https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II)
 </div>
 
 !!! warning "Projeto Front-End"
@@ -27,7 +27,7 @@ hide:
     * Visual Studio Code
     * Github
 
-    As APs deverão ser enviadas no Github e publicadas no github pages.
+    As APs deverão ser enviadas no Github e publicadas no Github pages.
 
 
 
