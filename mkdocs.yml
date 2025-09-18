@@ -4,8 +4,10 @@ site_url: https://projetos-de-extensao.github.io/PFE_25.2_8002_II/
 theme:
   name: material
   language: pt-BR
+
 repo_url: https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II
 repo_name: GitHub
+
 nav:
   - Início: index.md
   - Design Thinking:
@@ -23,7 +25,7 @@ plugins:
   - search
 
 markdown_extensions:
-  -meta
+  - meta
   - admonition
   - attr_list
   - pymdownx.details
