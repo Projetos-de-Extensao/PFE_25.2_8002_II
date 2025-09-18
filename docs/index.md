@@ -2,7 +2,6 @@
 hide:
     - navigation
     - toc
-    - template: home.html
 ---
 
 ### Grupos
@@ -21,7 +20,7 @@ hide:
 
     Disciplina que apresenta os passos para a construção de Projeto Front-End.
 
-    **Linguagens**: HTML, CSS e Javascript
+    **Linguagens**: HTML, CSS e JavaScript
 
     **Tecnologias**:
 
