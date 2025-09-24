@@ -13,6 +13,7 @@ nav:
   - Tema do Trabalho: tema.md
   - Repositório: https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II
   - Design Thinking:
+      - Visão Geral: design-thinking/designthinking.md
       - 5W2H: design-thinking/5w2h.md
       - Brainstorm: design-thinking/Brainstorm.md
       - Histórias de Usuário: design-thinking/historiasdeusuario.md
