@@ -10,7 +10,7 @@ repo_name: GitHub
 
 nav:
   - Início: index.md
-  - Tema do Trabalho: tema.md
+  - Tema do Trabalho: tema/index.md
   - Repositório: https://github.com/Projetos-de-Extensao/PFE_25.2_8002_II
   - Design Thinking:
       - Visão Geral: design-thinking/designthinking.md
