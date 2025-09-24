@@ -11,16 +11,16 @@ title: Sprint Planning
 
 * **Presentes na reunião:** 
 
-|Nome|----|
+|Nome Completo | Matrícula|
 |----|----|
-|XXXX Xxxxx Xxxxx|----|
+|Matheus de Andrade Alvarenga| 202501001483|
 |XXXX Xxxxx Xxxxx|----|
 
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
 |---|----|
-| Decidir o nome o projeto.|Todos|
+| Decidir o nome o projeto.| Projeto CASA de Monitoria|
 | Criar o repositório nos padrões (Organizar wiki).| xxxxx|
 | Criar issues no GitHub / ZenHub| xxxx|
 | Estudar e escolher as metodologias.| Todos|
