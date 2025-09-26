@@ -10,7 +10,8 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais sobre o projeto via Google Meet, no dia 25/09/2025, das 19h às 20h30.
+O moderador foi Matheus Alvarenga, que direcionou a equipe com questões pré-elaboradas e registrou as respostas para este documento.
 </p>
  
 ## Brainstorm
@@ -21,109 +22,69 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ### 1. Qual o objetivo principal da aplicação?
  
-<p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
-</p>
+<ul style="text-align: justify;">
+<li> Criar uma plataforma simples e acessível para inscrições na monitoria. </li>
+<li>Reunir em um único lugar os atendimentos, materiais de apoio e informações do</li>
+programa.
+<li>Melhorar a comunicação entre alunos, monitores e professores.</li>
+<li>Facilitar a organização dos horários de atendimento.</li>
+<li>Apoiar também o desenvolvimento pedagógico dos monitores</li>
+</ul>
+
+---
  
-<b>ZZZ</b> - A plataforma deve fornece...
+### 2. Como será o processo para cadastrar um novo aluno interessado na monitoria?
  
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
-</p>
+<ol style="text-align: justify;">
+<li> O aluno deve preencher um formulário de inscrição online.</li>
+<li> O sistema deve enviar uma confirmação por e-mail.</li>
+<li> O cadastro deve ser feito de preferência com o e-mail institucional do IBMEC.</li>
+<li> As informações ficaram registradas em um banco de dados que precisam ser
+aprovadas pelo administrador.</li>
+<li>Depois de aprovado, o aluno terá acesso à agenda de atendimentos.</li>
+</ol>
  
 ---
  
-### 2. Como será o processo para cadastrar um novo clientetorneio?
+### 3. Como será a forma de agendar um atendimento?
  
-<p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
-
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
+<ul style="text-align: justify;">
+<li>O aluno irá escolher um monitor disponível em uma agenda online.</li>
+<li>Deve ser possível cancelar e reagendar a aula.</li>
+<li>O sistema envia um  lembrete automático por e-mail.</li>
+<li>Cada monitor poderá configurar seus horários disponíveis.</li>
+<li>O aluno poderá avaliar o atendimento depois.</li>
+</ul>
  
 ---
  
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+### 4.  Quais informações seriam interessantes para os alunos no site?
+
+<ul style="text-align: justify;">
+<li>Agenda de atendimentos e contatos dos monitores.</li>
+<li>Materiais de apoio por disciplina.</li>
+<li>Regras do programa de monitoria.</li>
+<li>Notícias e comunicados da coordenação.</li>
+<li>Estatísticas de participação nos atendimentos e avaliação de cada monitor.</li>
+</ul>
 
  
 ---
  
-### 4. Outras perguntas pertinentes ao contexto
+### 5. Quais informações seriam interessantes para os monitores no site?
+<ul style="text-align: justify;">
+<li>Relatório de presenças dos alunos.</li>
+<li>Ferramentas  para upload de materiais de apoio.</li>
+<li>Espaço para comunicação direta com os professores.</li>
+<li>Painel de agendamentos confirmados.</li>
+<li>Histórico de avaliações recebidas dos alunos.</li>
+<li>Área para deixar comentários e observações para os alunos, como dicas de estudo, sugestões de materiais extras, Feedbacks sobre atendimentos ou até pequenas tarefas para reforço.</li>
+</ul>
 
-<p align = "justify">
-<b>XXXX</b> - Com a localização...
  
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
- 
----
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
-</p>
- 
-### 6. Quais informações seriam interessante para o cliente?
-<p align = "justify">
-   <b>XXX</b> - Informações...
-   
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
-
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
-</p>
- 
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
  
 ## Conclusão
 <p align = "justify">
-Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
+O brainstorm ajudou a equipe a pensar nos principais objetivos e funcionalidades que o site deve ter. Também serviu para identificar as informações mais importantes tanto para os alunos quanto para os monitores. Entre as ideias levantadas, destaca-se a criação de um espaço onde os monitores possam deixar recados, dicas e avaliações para os alunos, reforçando a interação e o acompanhamento contínuo. Esse levantamento será usado como base para definir os requisitos e dar continuidade ao desenvolvimento do projeto.
 </p>
-## Referências Bibliográficas
- 
-> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
- 
- 
-## Autor(es)
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+
