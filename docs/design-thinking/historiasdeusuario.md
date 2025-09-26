@@ -35,6 +35,28 @@ A criação e o uso de histórias de usuário geralmente seguem esta metodologia
 
 ### História de Usuário
 
-* US001
-* US002
-* US003...
+**CASA:**
+
+Como administrador, quero ter um login de acesso para poder fazer postagens e criar formulários, com acesso separado dos demais.
+Como administrador, quero poder acessar as informações dos alunos candidatos por meio da matrícula.
+Como administrador, quero poder postar novas oportunidades de monitorias.
+Como administrador, quero ter acesso à disponibilidade de salas.
+Como administrador, quero poder postar os dias, horários e as salas de cada uma das monitorias.
+Como administrador, quero receber os pedidos de criação de monitoria dos professores.
+
+**Professores:**
+
+Como professor, quero ter um login para ter acesso a lista de candidatos e fazer postagens no espaço para professores.
+Como professor, quero poder requisitar monitorias para o CASA.
+Como professor, quero poder acessar as informações dos alunos candidatos.
+Como professor, quero postar como será o processo seletivo.
+Como professor, quero notificar o(s) selecionado(s) para a monitoria.
+
+**Alunos:**
+
+Como aluno, quero ter um login por meio da matrícula onde posso acessar as postagens do site e me identificar facilmente nos formulários.
+Como aluno, quero poder receber avisos das vagas para monitor e me candidatar
+Como aluno, quero saber que dia será e em qual lugar será a monitoria.
+Como aluno, quero saber se fui selecionado para a monitoria ou não.
+Como aluno, quero ver o calendário das monitorias para poder ir sem ser como monitor.
+
