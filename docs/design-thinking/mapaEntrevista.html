@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Entrevista (Hist&#xf3;ria do usu&#xe1;rio)","children":[{"content":"<strong>Administrador(CASA)</strong>","children":[{"content":"Login de acesso para poder fazer postagens e criar formul&#xe1;rios, com acesso separado dos demais.","children":[],"payload":{"tag":"h3","lines":"14,15"}},{"content":"Acessar as informa&#xe7;&#xf5;es dos alunos candidatos por meio da matr&#xed;cula.","children":[],"payload":{"tag":"h3","lines":"15,16"}},{"content":"Postar novas oportunidades de monitorias.","children":[],"payload":{"tag":"h3","lines":"16,17"}},{"content":"Acesso &#xe0; disponibilidade de salas.","children":[],"payload":{"tag":"h3","lines":"17,18"}},{"content":"Postar os dias, hor&#xe1;rios e as salas de cada uma das monitorias.","children":[],"payload":{"tag":"h3","lines":"18,19"}},{"content":"Receber os pedidos de cria&#xe7;&#xe3;o de monitoria dos professores.","children":[],"payload":{"tag":"h3","lines":"19,20"}}],"payload":{"tag":"h2","lines":"13,14"}},{"content":"<strong>Professores</strong>","children":[{"content":"Login para ter acesso a lista de candidatos e fazer postagens no espa&#xe7;o para professores.","children":[],"payload":{"tag":"h3","lines":"24,25"}},{"content":"Requisitar monitorias para o CASA.","children":[],"payload":{"tag":"h3","lines":"25,26"}},{"content":"Acessar as informa&#xe7;&#xf5;es dos alunos candidatos.","children":[],"payload":{"tag":"h3","lines":"26,27"}},{"content":"Postar como ser&#xe1; o processo seletivo.","children":[],"payload":{"tag":"h3","lines":"27,28"}},{"content":"Notificar o(s) selecionado(s) para a monitoria.","children":[],"payload":{"tag":"h3","lines":"28,29"}}],"payload":{"tag":"h2","lines":"23,24"}},{"content":"<strong>Alunos</strong>","children":[{"content":"Login por meio da matr&#xed;cula onde pode acessar as postagens do site e me identificar facilmente nos formul&#xe1;rios.","children":[],"payload":{"tag":"h3","lines":"33,34"}},{"content":"Receber avisos das vagas para monitor e me candidatar.","children":[],"payload":{"tag":"h3","lines":"34,35"}},{"content":"Saber qual dia ser&#xe1; e em qual lugar ser&#xe1; a monitoria.","children":[],"payload":{"tag":"h3","lines":"35,36"}},{"content":"Saber se foi selecionado para a monitoria ou n&#xe3;o.","children":[],"payload":{"tag":"h3","lines":"36,37"}},{"content":"Ter acesso ao calend&#xe1;rio das monitorias para poder ir sem ser como monitor.","children":[],"payload":{"tag":"h3","lines":"37,38"}}],"payload":{"tag":"h2","lines":"32,33"}}],"payload":{"tag":"h1","lines":"11,12"}},{"colorFreezeLevel":2,"maxWidth":500,"initialExpandLevel":3,"spacingVertical":10,"spacingHorizontal":150,"zoom":true})</script>
+</body>
+</html>
