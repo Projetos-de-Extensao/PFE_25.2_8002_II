@@ -11,68 +11,79 @@ A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvime
 ## Metodologia
 
 <p align = "justify">
-Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta Figma foi selecionada para produzir o protótipo de alta fidelidade com auxílio do Material Design Color Tool.
+Para iniciarmos o protótipo, utilisamos o PlantUml para gerar imagens de referência para entendermos as funcionalidades de cada página que deverá ser desenvolvida com base nas Histórias de Usuário, atendendo as necessidades dos mesmos.
 </p>
 
 ## Protótipo de baixa fidelidade
 
 ### Versão 1.0
 
-### Tela Login
+### Tela Inicial
 
-Prototipo 1
-![Alt text](https://example.com/image.jpg "Image Title")
+Aqui o usuário pode selecionar seu modo.
+
+<img src="imginicio.png" alt="Inicial">
 
 ### Tela Cadastro 1
 
-[![Prototipo 2]
+Nesta tela, o usuário faz seu cadastro. Ela é comum a todos.
 
-### Tela Cadastro 2
-
-[![Prototipo 3]
+<img src="imglogin.png" alt="Login">
 
 ### Tela Esqueceu Senha
 
-[![Prototipo 4]
+Em casos de esquecimento de senha, o usuário será transferido para essa tela.
 
-### Tela do Feed
+<img src="imgesqueci.png" alt="Esqueci minha senha">
 
-[![Prototipo 5]
+### Tela Feed
 
-### Tela Feed com configurações
+Essa é a tela central do aplicativo, onde as funcionalidades estarão disponíveis para o usuário. As telas de feed irão ser diferenciadas para cada tipo de usuário.
 
-[![Prototipo 6]
+Administrador:
 
-### Tela Perfil
+<img src="imgadm.png" alt="Feed para administrador">
 
-[![Prototipo 7]
+Professor:
 
-### Tela Cadastrar torneio 1
+<img src="imgprofessor.png" alt="Feed para professor">
 
-[![Prototipo 8]
-### Tela Cadastrar torneio 2
+Aluno:
 
-[![Prototipo 9]
+<img src="imgalunos.png" alt="Feed para alunos">
 
-### Tela Cadastrar torneio 3
+### Tela Configurações
 
-[![Prototipo 10]
+Ao acessar as opções de configurações, essas serão as funcionalidades.
 
-### Tela Cadastrar torneio 4
+<img src="imgconfiguracoes.png" alt="Configurações">
 
-[![Prototipo 11]
+### Tela Detalhes 
 
-### Tela com meus torneios
+Na tela de detalhes o usuário poderá saber mais sobre a monitoria.
 
-[![Prototipo 12]
+Informação geral:
 
-### Tela de inscrição em torneio
+<img src="imgdetalhes.png" alt="Detalhes gerais">
 
-[![Prototipo 13]
+Administrador:
 
-<p align = "justify">
-Na primeira versão do protótipo utilizamos a ferramenta <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Material Design Color Tool</a>  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
-</p>
+<img src="imgdetadm.png" alt="Detalhes para administrador">
+
+Aluno:
+
+<img src="imgdetaluno.png" alt="Detalhes para alunos">
+
+Professor:
+
+<img src="imgdetprofs.png" alt="Detalhes para professores">
+
+### Tela Inscrição de nova monitoria
+
+Para que uma nova monitoria seja inscrita, o professor acessará esta tela.
+
+<img src="imgnovamonitoria.png" alt="Nova monitoria">
+
 
 ### Versão 2.0
 
