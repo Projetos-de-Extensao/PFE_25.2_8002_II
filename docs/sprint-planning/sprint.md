@@ -14,7 +14,9 @@ title: Sprint Planning
 |Nome Completo | Matrícula|
 |----|----|
 |Matheus de Andrade Alvarenga| 202501001483|
-|XXXX Xxxxx Xxxxx|----|
+|Rafael Tomaz da Silva Ribeiro| 202503545189|
+|Maria Eduarda Perpetuo Lopes dos Santos| 202501001262|
+|Giovanna Gomes Perrone| 202504193111|
 
 ### Lista de Tarefas da Interação
 
@@ -22,14 +24,14 @@ title: Sprint Planning
 |---|----|
 | Decidir o nome o projeto.| Projeto CASA de Monitoria|
 | Criar o repositório nos padrões (Organizar wiki).| xxxxx|
-| Criar issues no GitHub / ZenHub| xxxx|
+| Criar issues no GitHub / ZenHub| Rafael Tomaz e Matheus Alvarenga|
 | Estudar e escolher as metodologias.| Todos|
 | [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+| Elaborar [5w2H](https://github.com/xxx/xxx.md) |Matheus Alvarenga|
+| [Mapas Mentais](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo|
 | [Brainstorming](https://github.com/XXXx) |Todos|
-|[Entrevistas](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-|[Prototipação.](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+|[Entrevistas](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo e Giovanna Perrone|
+|[Prototipação.](https://github.com/xxx/xxx.md) |Giovanna Perrone|
 
 ### Sprint Retrospective/Review Meeting
 
