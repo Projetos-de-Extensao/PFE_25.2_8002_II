@@ -46,7 +46,7 @@ Administrador:
 
 Professor:
 
-![Feed para professor](imgprofessor.png)
+![Feed para professor](Professor.png)
 
 Aluno:
 
