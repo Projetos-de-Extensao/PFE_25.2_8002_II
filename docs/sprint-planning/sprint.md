@@ -17,6 +17,7 @@ title: Sprint Planning
 |Rafael Tomaz da Silva Ribeiro| 202503545189|
 |Maria Eduarda Perpetuo Lopes dos Santos| 202501001262|
 |Giovanna Gomes Perrone| 202504193111|
+|Julia Valente D’Alessandro| 202501000673|
 
 ### Lista de Tarefas da Interação
 
@@ -37,8 +38,7 @@ title: Sprint Planning
 
 #### Dúvidas da Interação
 
-- 1
-- 2
+- Como priorizar as funcionalidades levantadas no brainstorm.
 
 #### Riscos Encontrados
 
@@ -46,16 +46,14 @@ title: Sprint Planning
 
 #### Pontos Positivos
 
-- 1
-- 2
+- Equipe motivada, dedicada e com boa comunicação.
+- Ideias levantadas no brainstorm trouxeram soluções criativas para funcionalidades futuras e informações importantes.
 
 ![pontos positivos](../assets/Sprints/S1-positivos.png)
 
 #### Pontos Negativos
 
-- 1
-- 2
-- 3
+- Como a equipe ainda está em processo de adaptação ao fluxo de trabalho e às ferramentas, a velocidade de desenvolvimento foi menor, mas tende a melhorar nas próximas sprints.
 
 ![pontos negativos](../assets/Sprints/S1-negativos.png)
 
