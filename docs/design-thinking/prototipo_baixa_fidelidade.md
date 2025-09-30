@@ -22,19 +22,19 @@ Para iniciarmos o protótipo, utilisamos o PlantUml para gerar imagens de refer�
 
 Aqui o usuário pode selecionar seu modo.
 
-<img src="imginicio.png" alt="Inicial">
+![Inicial](imginicio.png)
 
 ### Tela Cadastro 1
 
 Nesta tela, o usuário faz seu cadastro. Ela é comum a todos.
 
-<img src="imglogin.png" alt="Login">
+![Login](imglogin.png)
 
 ### Tela Esqueceu Senha
 
 Em casos de esquecimento de senha, o usuário será transferido para essa tela.
 
-<img src="imgesqueci.png" alt="Esqueci minha senha">
+![Esqueci minha senha](imgesqueci.png)
 
 ### Tela Feed
 
@@ -42,21 +42,21 @@ Essa é a tela central do aplicativo, onde as funcionalidades estarão disponív
 
 Administrador:
 
-<img src="imgadm.png" alt="Feed para administrador">
+![Feed para administrador](imgadm.png)
 
 Professor:
 
-<img src="imgprofessor.png" alt="Feed para professor">
+![Feed para professor](Professor.png)
 
 Aluno:
 
-<img src="imgalunos.png" alt="Feed para alunos">
+![Feed para alunos](imgalunos.png)
 
 ### Tela Configurações
 
 Ao acessar as opções de configurações, essas serão as funcionalidades.
 
-<img src="imgconfiguracoes.png" alt="Configurações">
+![Configurações](imgconfiguracoes.png)
 
 ### Tela Detalhes 
 
@@ -64,97 +64,42 @@ Na tela de detalhes o usuário poderá saber mais sobre a monitoria.
 
 Informação geral:
 
-<img src="imgdetalhes.png" alt="Detalhes gerais">
+![Detalhes gerais](imgdetalhes.png)
 
 Administrador:
 
-<img src="imgdetadm.png" alt="Detalhes para administrador">
+![Detalhes para administrador](imgdetadm.png)
 
 Aluno:
 
-<img src="imgdetaluno.png" alt="Detalhes para alunos">
+![Detalhes para alunos](imgdetaluno.png)
 
 Professor:
 
-<img src="imgdetprofs.png" alt="Detalhes para professores">
+![Detalhes para professores](imgdetprofs.png)
 
 ### Tela Inscrição de nova monitoria
 
 Para que uma nova monitoria seja inscrita, o professor acessará esta tela.
 
-<img src="imgnovamonitoria.png" alt="Nova monitoria">
+![Nova monitoria](imgnovamonitoria.png)
 
 
 ### Versão 2.0
 
-### Tela Login
-
-[![Prototipo 1]
-
-### Tela Cadastro
-
-[![Prototipo 2]
-
-### Tela Esqueceu Senha
-
-[![Prototipo 3]
-
-### Tela Perfil
-
-[![Prototipo 4]
-
-### Tela do Feed
-
-[![Prototipo 5]
-
-### Tela Cadastrar em um torneio
-
-[![Prototipo 6]
-### Tela Cadastrar torneio
-
-[![Prototipo 7]
-
-### Tela Cadastrar torneio 2
-
-[![Prototipo 8]
-
-### Tela dos meus torneios
-
-[![Prototipo 9]
-
-### Tela das chaves do torneio
-
-[![Prototipo 10]
-
-### Tela das estatíscicas
-
-[![Prototipo 11]
-
-### Tela de adicionar resultado das partidas
-
-[![Prototipo 12]
-
-link para o `<a href="https://www.figma.com/file/karoCnQtvMXWHEwdMuhQs0/Prototipo?node-id=0%3A1">`Protótipo `</a>`
+Em breve!
 
 ## Conclusão
 
 <p align = "justify">
-A partir da elaboração do protótipo foi possível ter uma noção inicial da interface do usuário, definindo fluxo, paleta de cores, botões, app bars e diversas outras funcionalidades
+A partir da elaboração do protótipo foi possível ter uma noção inicial da interface do usuário, definindo fluxo, botões e outras funcionalidades básicas.
 </p>
 
-## Referências
-
-> Material Design Color Tool. Disponível em:  https://material.io/resources/color/#!/?view.left=0&view.right=0
-
-> PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. EUA: Project Management Institute, 2013.
-
-> Ferramenta Figma. Disponível em https://www.figma.com
 
 ## Autor(es)
 
-| Data     | Versão | Descrição                            | Autor(es)                                                                            |
-| -------- | ------- | -------------------------------------- | ------------------------------------------------------------------------------------ |
-| 07/09/20 | 1.0     | Criação do documento                 | Lucas Alexandre e Matheus Estanislau                                                 |
-| 07/09/20 | 1.1     | Adicionado as imagens do protótipo    | Lucas Alexandre e Matheus Estanislau                                                 |
-| 07/09/20 | 1.2     | Adicionado conclusão e referências   | Lucas Alexandre e Matheus Estanislau                                                 |
-| 26/10/20 | 2.0     | Adicionada a versão 2.0 do protótipo | João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan |
+| Data     | Versão | Descrição                                  | Autor(es)                                                                            |
+| -------- | ------- | --------------------------------------    | ------------------------------------------------------------------------------------ |
+| 25/09/25 | 1.0     | Criação do documento                      | Giovanna Perrone                                                                     |
+| 25/09/25 | 1.1     | Adicionado as imagens do protótipo        | Giovanna Perrone                                                                     |
+| 29/09/25 | 1.2     | Adicionado conclusão e ajustando imagens  | Giovanna Perrone                                                                     |
