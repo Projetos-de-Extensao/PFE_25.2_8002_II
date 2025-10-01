@@ -19,6 +19,14 @@ title: Sprint Planning
 |Giovanna Gomes Perrone| 202504193111|
 |Julia Valente D’Alessandro| 202501000673|
 
+## Objetivo da Sprint
+
+- Definir a identidade inical do Projeto.
+- Selecionar metodologias adaquedas para o desenvolvimento.
+- Produzir documentos de apio para guiar o time.
+- Aplicar técnicas de Design Thiking para levantar ideias e estrutura soluções.
+- Criar prototipação de Baixa fidelidade para validar a proposta inical do sistema.
+
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
@@ -34,32 +42,17 @@ title: Sprint Planning
 |[Entrevistas](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo e Giovanna Perrone|
 |[Prototipação.](https://github.com/xxx/xxx.md) |Giovanna Perrone|
 
-### Sprint Retrospective/Review Meeting
+### Criterios de Qualidade
 
-#### Dúvidas da Interação
+Um item só é considerado "Pronto" quando:
+- Está documentado e acessível.
+- Está claro e completo o suficiente para orientar as próximas etapas do projeto.
+- Revisado pela equipe. 
 
-- Como priorizar as funcionalidades levantadas no brainstorm.
+### Sprint Review
 
-#### Riscos Encontrados
+-
 
-- Nenhum: Plano de gerenciamento de riscos não implementado.
-
-#### Pontos Positivos
-
-- Equipe motivada, dedicada e com boa comunicação.
-- Ideias levantadas no brainstorm trouxeram soluções criativas para funcionalidades futuras e informações importantes.
-
-
-#### Pontos Negativos
-
-- Como a equipe ainda está em processo de adaptação ao fluxo de trabalho e às ferramentas, a velocidade de desenvolvimento foi menor, mas tende a melhorar nas próximas sprints.
-
-
-#### O que podemos melhorar?
-
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: [](https://timebox.cedrotech.com/)
 
 #### Ferramentas utilizadas
 
@@ -67,260 +60,140 @@ title: Sprint Planning
 
 # Sprint II 
 
-> 29/02/25 à 10/10/2025
+> 29/02/25 à 13/10/2025
 
-## Planejamento de Interação
+## Objetivo da Sprint
 
-* **Presentes na reunião:** 
+XXXX XXXX XXXX
 
-|Nome|----|
-|----|----|
-|XXXX Xxxxx Xxxxx|----|
-|XXXX Xxxxx Xxxxx|----|
+### Itens escolhidos do backlog
+-
+-
+
 
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
 |---|----|
-| Decidir o nome o projeto.|Todos|
-| Criar o repositório nos padrões (Organizar wiki).| xxxxx|
-| Criar issues no GitHub / ZenHub| xxxx|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Brainstorming](https://github.com/XXXx) |Todos|
-|[Entrevistas](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-|[Prototipação.](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
 
-### Sprint Retrospective/Review Meeting
+### Critério de Qualidade
 
-#### Dúvidas da Interação
+Um item só é considerado "Pronto" quando:
+- 
+- 
 
-- 1
-- 2
+### Sprint Review
+- 
+- 
 
-#### Riscos Encontrados
+### Ferramentas Utilizadas
 
-- Nenhum: Plano de gerenciamento de riscos não implementado.
-
-#### Pontos Positivos
-
-- 1
-- 2
-
-![pontos positivos](../assets/Sprints/S1-positivos.png)
-
-#### Pontos Negativos
-
-- 1
-- 2
-- 3
-
-![pontos negativos](../assets/Sprints/S1-negativos.png)
-
-#### O que podemos melhorar?
-
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: [](https://timebox.cedrotech.com/)
-
-#### Ferramentas utilizadas
-
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: [Google Meet](https://meet.google.com/)
 
 # Sprint III 
 
-> 10/02/25 à 07/04/2025
+> 29/02/25 à 13/10/2025
 
-## Planejamento de Interação
+## Objetivo da Sprint
 
-* **Presentes na reunião:** 
+XXXX XXXX XXXX
 
-|Nome|----|
-|----|----|
-|XXXX Xxxxx Xxxxx|----|
-|XXXX Xxxxx Xxxxx|----|
+### Itens escolhidos do backlog
+- 
+- 
+
 
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
 |---|----|
-| Decidir o nome o projeto.|Todos|
-| Criar o repositório nos padrões (Organizar wiki).| xxxxx|
-| Criar issues no GitHub / ZenHub| xxxx|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Brainstorming](https://github.com/XXXx) |Todos|
-|[Entrevistas](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-|[Prototipação.](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
 
-### Sprint Retrospective/Review Meeting
+### Critério de Qualidade
 
-#### Dúvidas da Interação
+Um item só é considerado "Pronto" quando:
+- 
+- 
 
-- 1
-- 2
+### Sprint Review
+- 
+- 
 
-#### Riscos Encontrados
+### Ferramentas Utilizadas
 
-- Nenhum: Plano de gerenciamento de riscos não implementado.
-
-#### Pontos Positivos
-
-- 1
-- 2
-
-![pontos positivos](../assets/Sprints/S1-positivos.png)
-
-#### Pontos Negativos
-
-- 1
-- 2
-- 3
-
-![pontos negativos](../assets/Sprints/S1-negativos.png)
-
-#### O que podemos melhorar?
-
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: [](https://timebox.cedrotech.com/)
-
-#### Ferramentas utilizadas
-
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: [Google Meet](https://meet.google.com/)
 
 # Sprint IV 
 
-> 10/02/25 à 07/04/2025
+> 29/02/25 à 13/10/2025
 
-## Planejamento de Interação
+## Objetivo da Sprint
 
-* **Presentes na reunião:** 
+XXXX XXXX XXXX
 
-|Nome|----|
-|----|----|
-|XXXX Xxxxx Xxxxx|----|
-|XXXX Xxxxx Xxxxx|----|
+### Itens escolhidos do backlog
+- 
+- 
+
 
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
 |---|----|
-| Decidir o nome o projeto.|Todos|
-| Criar o repositório nos padrões (Organizar wiki).| xxxxx|
-| Criar issues no GitHub / ZenHub| xxxx|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Brainstorming](https://github.com/XXXx) |Todos|
-|[Entrevistas](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-|[Prototipação.](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
 
-### Sprint Retrospective/Review Meeting
+### Critério de Qualidade
 
-#### Dúvidas da Interação
+Um item só é considerado "Pronto" quando:
+- 
+- 
 
-- 1
-- 2
+### Sprint Review
+- 
+- 
 
-#### Riscos Encontrados
+### Ferramentas Utilizadas
 
-- Nenhum: Plano de gerenciamento de riscos não implementado.
-
-#### Pontos Positivos
-
-- 1
-- 2
-
-![pontos positivos](../assets/Sprints/S1-positivos.png)
-
-#### Pontos Negativos
-
-- 1
-- 2
-- 3
-
-![pontos negativos](../assets/Sprints/S1-negativos.png)
-
-#### O que podemos melhorar?
-
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: [](https://timebox.cedrotech.com/)
-
-#### Ferramentas utilizadas
-
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: [Google Meet](https://meet.google.com/)
 
 # Sprint V 
 
-> 10/02/25 à 07/04/2025
+> 29/02/25 à 13/10/2025
 
-## Planejamento de Interação
+## Objetivo da Sprint
 
-* **Presentes na reunião:** 
+XXXX XXXX XXXX
 
-|Nome|----|
-|----|----|
-|XXXX Xxxxx Xxxxx|----|
-|XXXX Xxxxx Xxxxx|----|
+### Itens escolhidos do backlog
+- 
+- 
+
 
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
 |---|----|
-| Decidir o nome o projeto.|Todos|
-| Criar o repositório nos padrões (Organizar wiki).| xxxxx|
-| Criar issues no GitHub / ZenHub| xxxx|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| [Brainstorming](https://github.com/XXXx) |Todos|
-|[Entrevistas](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-|[Prototipação.](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
+| XXXX XXXX XXXX| XXXX|
 
-### Sprint Retrospective/Review Meeting
+### Critério de Qualidade
 
-#### Dúvidas da Interação
+Um item só é considerado "Pronto" quando:
+-
+-
 
-- 1
-- 2
+### Sprint Review
+-
+-
 
-#### Riscos Encontrados
+### Ferramentas Utilizadas
 
-- Nenhum: Plano de gerenciamento de riscos não implementado.
-
-#### Pontos Positivos
-
-- 1
-- 2
-
-![pontos positivos](../assets/Sprints/S1-positivos.png)
-
-#### Pontos Negativos
-
-- 1
-- 2
-- 3
-
-![pontos negativos](../assets/Sprints/S1-negativos.png)
-
-#### O que podemos melhorar?
-
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: [](https://timebox.cedrotech.com/)
-
-#### Ferramentas utilizadas
-
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: [Google Meet](https://meet.google.com/)
