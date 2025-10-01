@@ -12,7 +12,7 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 ## Metodologia
  
 <p align = "justify">
-Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta Markmap e o aplicativo VS code, Além do brainstorm e entrevista realizada pela equipe.
+Foi levantado um ponto importante sobre o aplicativo e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta Markmap e o aplicativo VS code, Além do brainstorm e entrevista realizada pela equipe.
 </p>
  
 ## Mapa mental - Geral.
