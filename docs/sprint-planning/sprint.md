@@ -5,7 +5,7 @@ title: Sprint Planning
 
 # Sprint I 
 
-> 10/02/25 à 07/04/2025
+> 22/09/25 à 26/09/2025
 
 ## Planejamento de Interação
 
@@ -24,10 +24,10 @@ title: Sprint Planning
 |Tarefa|Responsabilidade|
 |---|----|
 | Decidir o nome o projeto.| Projeto CASA de Monitoria|
-| Criar o repositório nos padrões (Organizar wiki).| xxxxx|
+| Criar o repositório nos padrões (Organizar wiki).| Rafael Tomaz|
 | Criar issues no GitHub / ZenHub| Rafael Tomaz e Matheus Alvarenga|
 | Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
+| [Documento de visão](https://github.com/xxx/xxx.md) |Rafael Tomaz|
 | Elaborar [5w2H](https://github.com/xxx/xxx.md) |Matheus Alvarenga|
 | [Mapas Mentais](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo|
 | [Brainstorming](https://github.com/XXXx) |Todos|
@@ -49,13 +49,11 @@ title: Sprint Planning
 - Equipe motivada, dedicada e com boa comunicação.
 - Ideias levantadas no brainstorm trouxeram soluções criativas para funcionalidades futuras e informações importantes.
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
 
 #### Pontos Negativos
 
 - Como a equipe ainda está em processo de adaptação ao fluxo de trabalho e às ferramentas, a velocidade de desenvolvimento foi menor, mas tende a melhorar nas próximas sprints.
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
 
 #### O que podemos melhorar?
 
@@ -65,12 +63,11 @@ title: Sprint Planning
 
 #### Ferramentas utilizadas
 
-- Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: [Google Meet](https://meet.google.com/)
 
 # Sprint II 
 
-> 10/02/25 à 07/04/2025
+> 29/02/25 à 10/10/2025
 
 ## Planejamento de Interação
 
