@@ -33,11 +33,11 @@ Foi levantado um ponto importante sobre o aplicativo e, assim, foi produzido o m
 <p align = "justify">
 O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, e ajuda a fixar os pontos mais importantes sobre o app. Além de auxiliar na organização e divisões de tarefas entre a equipe responsavél.
 </p>
- 
+
 ## Referências
 > <a href="http://127.0.0.1:5500/docs/design-thinking/mapabrainstorm.html" target="_blank">Mapa do Brainstorm</a>
 
-> <a href="mapaEntrevista.md" target="_blank">Mapa da Entrevista</a>
+> <a href="http://127.0.0.1:5500/docs/design-thinking/mapaEntrevista.html" target="_blank">Mapa da Entrevista</a>
  
 > <a href="https://markmap.js.org" target="_blank">Markmap</a>
 
