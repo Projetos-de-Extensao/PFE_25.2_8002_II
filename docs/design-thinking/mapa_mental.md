@@ -35,9 +35,9 @@ O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, 
 </p>
  
 ## Referências
-> <a href="mapabrainstorm.html" target="_blank">Mapa do Brainstorm</a>
+> <a href="http://127.0.0.1:5500/docs/design-thinking/mapabrainstorm.html" target="_blank">Mapa do Brainstorm</a>
 
-> <a href="mapaEntrevista.html" target="_blank">Mapa da Entrevista</a>
+> <a href="mapaEntrevista.md" target="_blank">Mapa da Entrevista</a>
  
 > <a href="https://markmap.js.org" target="_blank">Markmap</a>
 
