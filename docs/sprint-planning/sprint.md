@@ -45,6 +45,7 @@ title: Sprint Planning
 ### Criterios de Qualidade
 
 Um item só é considerado "Pronto" quando:
+
 - Está documentado e acessível.
 - Está claro e completo o suficiente para orientar as próximas etapas do projeto.
 - Revisado pela equipe. 
@@ -67,7 +68,7 @@ Um item só é considerado "Pronto" quando:
 XXXX XXXX XXXX
 
 ### Itens escolhidos do backlog
--
+
 -
 
 
@@ -82,10 +83,12 @@ XXXX XXXX XXXX
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
+
 - 
 - 
 
 ### Sprint Review
+
 - 
 - 
 
@@ -102,6 +105,7 @@ Um item só é considerado "Pronto" quando:
 XXXX XXXX XXXX
 
 ### Itens escolhidos do backlog
+
 - 
 - 
 
@@ -117,10 +121,12 @@ XXXX XXXX XXXX
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
+
 - 
 - 
 
 ### Sprint Review
+
 - 
 - 
 
@@ -137,6 +143,7 @@ Um item só é considerado "Pronto" quando:
 XXXX XXXX XXXX
 
 ### Itens escolhidos do backlog
+
 - 
 - 
 
@@ -152,10 +159,12 @@ XXXX XXXX XXXX
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
+
 - 
 - 
 
 ### Sprint Review
+
 - 
 - 
 
@@ -172,6 +181,7 @@ Um item só é considerado "Pronto" quando:
 XXXX XXXX XXXX
 
 ### Itens escolhidos do backlog
+
 - 
 - 
 
@@ -187,10 +197,12 @@ XXXX XXXX XXXX
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
+
 -
 -
 
 ### Sprint Review
+
 -
 -
 
