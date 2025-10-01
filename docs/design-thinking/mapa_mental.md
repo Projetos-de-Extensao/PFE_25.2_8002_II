@@ -21,12 +21,12 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
 ### Mapa mental da Entrevista:
  
-![Entrevista](mapaentrevista.jpeg)
+![Entrevista](mapaEntrevista.png)
  
  
 ### Mapa mental do Brainstorm:
  
-![Brainstorm](mapabrainstorm.jpeg)
+![Brainstorm](mapaBrainstorm.png)
  
 ## Conclusão
  
