@@ -12,37 +12,33 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 ## Metodologia
  
 <p align = "justify">
-Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta...
+Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta Markmap e o aplicativo VS code, Além do brainstorm e entrevista realizada pela equipe.
 </p>
  
 ## Mapa mental - Geral.
  
 ## Versão 1.0
  
-### Mapa mental 1
+### Mapa mental da Entrevista:
  
-[![Mapa mental Entrevista]
+![Entrevista](mapaentrevista.jpeg)
  
  
-### Mapa mental 2
+### Mapa mental do Brainstorm:
  
-[![Mapa mental Brainstorm]
+![Brainstorm](mapabrainstorm.jpeg)
  
 ## Conclusão
  
 <p align = "justify">
-O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, e ajuda a fixar os pontos mais importantes sobre o app.
+O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, e ajuda a fixar os pontos mais importantes sobre o app. Além de auxiliar na organização e divisões de tarefas entre a equipe responsavél.
 </p>
  
 ## Referências
-> Mapa MentalXXX,  Disponível em: https://www.....
+> <a href="mapabrainstorm.html" target="_blank">Mapa do Brainstorm</a>
+
+> <a href="mapaEntrevista.html" target="_blank">Mapa da Entrevista</a>
  
-> Ferramentas para Mapas Mentais. Disponível em: https://www....
- 
-> Plataforma para usuários colaborar no desenho... Disponível em: https://...
- 
-## Versionamento
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| dd/mm/yy | 1.0 | Criação do documento | xxx xxxx |
-| dd/mm/yy | 2.0 | Adicionado Mapa mental 2 | xxxx xxxx |
+> <a href="https://markmap.js.org" target="_blank">Markmap</a>
+
+
