@@ -5,11 +5,7 @@ title: Sprint Planning
 
 # Sprint I 
 
-<<<<<<< HEAD
 > 24/09/25 à 01/10/2025
-=======
-> 22/09/25 à 26/09/2025
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ## Planejamento de Interação
 
@@ -36,11 +32,7 @@ title: Sprint Planning
 |Tarefa|Responsabilidade|
 |---|----|
 | Decidir o nome o projeto.| Projeto CASA de Monitoria|
-<<<<<<< HEAD
 | Criar o repositório nos padrões (Organizar wiki).| Matheus Alvarenga|
-=======
-| Criar o repositório nos padrões (Organizar wiki).| Rafael Tomaz|
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 | Criar issues no GitHub / ZenHub| Rafael Tomaz e Matheus Alvarenga|
 | Estudar e escolher as metodologias.| Todos|
 | [Documento de visão](https://github.com/xxx/xxx.md) |Rafael Tomaz|
@@ -54,22 +46,15 @@ title: Sprint Planning
 
 Um item só é considerado "Pronto" quando:
 
-<<<<<<< HEAD
 - Como organizar a equipe de forma que todos podem dispor do seu máximo potencial.
 - Abstrair e focar apenas nas partes importantes do projeto no momento.
 - Alterar os documentos do trabalho sem que interfira na parte que é responsabilidade de outros membros do grupo.
 - Aprender como funciona as ferramentas de atualização do site e dominá-las.
-=======
-- Está documentado e acessível.
-- Está claro e completo o suficiente para orientar as próximas etapas do projeto.
-- Revisado pela equipe. 
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ### Sprint Review
 
 -
 
-<<<<<<< HEAD
 #### Pontos Positivos
 
 - Equipe motivada, dedicada e com boa comunicação.
@@ -109,16 +94,6 @@ Um item só é considerado "Pronto" quando:
 > 01/10/25 à 15/10/2025
 
  Em breve!
-=======
-
-#### Ferramentas utilizadas
-
-- Reunião: [Google Meet](https://meet.google.com/)
-
-# Sprint II 
-
-> 29/02/25 à 13/10/2025
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ## Objetivo da Sprint
 
@@ -128,7 +103,6 @@ XXXX XXXX XXXX
 
 -
 
-<<<<<<< HEAD
 |Nome Completo | Matrícula|
 |----|----|
 |Matheus de Andrade Alvarenga| 202501001483|
@@ -136,8 +110,6 @@ XXXX XXXX XXXX
 |Maria Eduarda Perpetuo Lopes dos Santos| 202501001262|
 |Giovanna Gomes Perrone| 202504193111|
 |Julia Valente D’Alessandro| 202501000673|
-=======
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ### Lista de Tarefas da Interação
 
@@ -145,7 +117,6 @@ Alteraçôes no quadro em breve!
 
 |Tarefa|Responsabilidade|
 |---|----|
-<<<<<<< HEAD
 | Decidir o nome o projeto.| Projeto CASA de Monitoria|
 | Criar o repositório nos padrões (Organizar wiki).| Matheus Alvarenga|
 | Criar issues no GitHub / ZenHub| Rafael Tomaz e Matheus Alvarenga|
@@ -156,22 +127,12 @@ Alteraçôes no quadro em breve!
 | [Brainstorming](https://github.com/XXXx) |Julia Valente D'Alessandro|
 |[Entrevistas](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo e Giovanna Perrone|
 |[Prototipação.](https://github.com/xxx/xxx.md) |Giovanna Perrone|
-=======
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
 
-<<<<<<< HEAD
 - Em breve!
-=======
-- 
-- 
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ### Sprint Review
 
@@ -180,7 +141,6 @@ Um item só é considerado "Pronto" quando:
 
 ### Ferramentas Utilizadas
 
-<<<<<<< HEAD
 - Equipe motivada, dedicada e com boa comunicação.
 - Boa organização de funções e constantes feedbacks.
 
@@ -206,13 +166,6 @@ Um item só é considerado "Pronto" quando:
 > 15/10/25 à 22/10/2025
 
 Em breve!
-=======
-- Reunião: [Google Meet](https://meet.google.com/)
-
-# Sprint III 
-
-> 29/02/25 à 13/10/2025
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ## Objetivo da Sprint
 
@@ -223,7 +176,6 @@ XXXX XXXX XXXX
 - 
 - 
 
-<<<<<<< HEAD
 |Nome Completo | Matrícula|
 |----|----|
 |Matheus de Andrade Alvarenga| 202501001483|
@@ -231,15 +183,12 @@ XXXX XXXX XXXX
 |Maria Eduarda Perpetuo Lopes dos Santos| 202501001262|
 |Giovanna Gomes Perrone| 202504193111|
 |Julia Valente D’Alessandro| 202501000673|
-=======
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ### Lista de Tarefas da Interação
 Alteraçôes no quadro em breve!
 
 |Tarefa|Responsabilidade|
 |---|----|
-<<<<<<< HEAD
 | Decidir o nome o projeto.| Projeto CASA de Monitoria|
 | Criar o repositório nos padrões (Organizar wiki).| Matheus Alvarenga|
 | Criar issues no GitHub / ZenHub| Rafael Tomaz e Matheus Alvarenga|
@@ -250,22 +199,12 @@ Alteraçôes no quadro em breve!
 | [Brainstorming](https://github.com/XXXx) |Julia Valente D'Alessandro|
 |[Entrevistas](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo e Giovanna Perrone|
 |[Prototipação.](https://github.com/xxx/xxx.md) |Giovanna Perrone|
-=======
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
 
-<<<<<<< HEAD
 - Em breve.
-=======
-- 
-- 
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 ### Sprint Review
 
@@ -274,7 +213,6 @@ Um item só é considerado "Pronto" quando:
 
 ### Ferramentas Utilizadas
 
-<<<<<<< HEAD
 - Em breve.
 
 ![pontos positivos](../assets/Sprints/S1-positivos.png)
@@ -293,9 +231,6 @@ Um item só é considerado "Pronto" quando:
 
 - Reunião: [Hangouts](https://hangouts.google.com/)
 - Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
-=======
-- Reunião: [Google Meet](https://meet.google.com/)
->>>>>>> ae9adfc390131abfd61e631c962978008d93d1c3
 
 # Sprint IV 
 
