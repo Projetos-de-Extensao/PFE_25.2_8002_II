@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './RecuperacaoSenha.css';
+import './Esquecisenha.css';
 
-const RecuperacaoSenha = () => {
+const Esquecisenha = () => {
   return (
     <div className="recuperacao-senha-page">
       <div className="recuperacao-senha-box">
@@ -42,4 +42,4 @@ const RecuperacaoSenha = () => {
   );
 };
 
-export default RecuperacaoSenha;
+export default Esquecisenha;
