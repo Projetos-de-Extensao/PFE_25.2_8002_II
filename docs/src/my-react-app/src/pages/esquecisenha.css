@@ -1,112 +1,133 @@
-/* Container principal para centralizar o box */
-.recuperacao-senha-page {
+/* ------------------------------------------- */
+/* 1. Layout e Estrutura Geral (Ajustado)      */
+/* Garante que o Header e Footer ocupem 100% da largura. */
+/* ------------------------------------------- */
+
+.recuperacao-page-wrapper {
   display: flex;
+  flex-direction: column; /* Coloca Header, Main e Footer em coluna */
+  min-height: 100vh;
+  width: 100%; /* GARANTE A LARGURA TOTAL */
+  background-color: #f0f2f5; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* O corpo principal da página (Main) */
+.recuperacao-senha-page { 
+  flex-grow: 1; 
+  display: flex;
+  /* Centralização Total do Card (Vertical e Horizontal) */
   justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Ocupa a altura total da viewport */
-  background-color: #f4f4f4; /* Cor de fundo suave, se necessário */
+  align-items: center; 
+  padding: 50px 20px; 
 }
 
-/* O Box/Card principal seguindo a estrutura do protótipo */
-.recuperacao-senha-box {
-  width: 350px;
-  padding: 20px;
-  border: 1px solid #000;
-  background-color: #fff;
-  font-family: Arial, sans-serif;
+/* ------------------------------------------- */
+/* 2. O Card (Container Principal)             */
+/* ------------------------------------------- */
+
+.recuperacao-senha-card {
+  width: 100%;
+  max-width: 400px; /* Impede que o card fique muito largo no desktop */
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  text-align: center;
 }
 
-/* Estilização do cabeçalho */
-.header-box {
-  border: none;
-  border-bottom: 1px solid #000; /* Linha divisória no cabeçalho */
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+/* ------------------------------------------- */
+/* 3. Media Query para CELULAR (Responsividade)  */
+/* ------------------------------------------- */
+
+@media (max-width: 600px) {
+  
+  /* Seção Principal: Em mobile, remove padding lateral extra */
+  .recuperacao-senha-page {
+    padding: 0; 
+    align-items: flex-start; /* Alinha o conteúdo ao topo em mobile */
+  }
+
+  /* Card: Ocupa toda a largura do mobile, sem bordas flutuantes */
+  .recuperacao-senha-card {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 25px 20px; 
+    /* Garante que o card ocupe 100% da largura visível */
+    max-width: none; 
+  }
 }
 
-.header-box legend {
-  font-size: 0.8em;
-  font-weight: bold;
-  padding: 0 5px;
-  /* Posicionamento do fieldset legend */
-}
+/* ------------------------------------------- */
+/* 4. Formulário e Elementos                   */
+/* ------------------------------------------- */
 
-.header-box h2 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 0;
-  padding-bottom: 2px;
-  border-bottom: 1px solid #000; /* Linha debaixo do título */
-  display: inline-block; /* Ajusta a largura da linha ao texto */
-}
-
-/* Instruções */
-.instrucao {
-  font-size: 0.9em;
-  border-bottom: 1px solid #000; /* Linha debaixo da instrução */
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-
-/* Estilização do formulário */
 .recuperacao-form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Espaçamento entre os elementos do formulário */
+  gap: 15px;
 }
 
 .recuperacao-form label {
   font-size: 0.9em;
-  border-bottom: 1px solid #000; /* Linha debaixo do label */
-  display: inline-block;
-  align-self: flex-start; /* Alinha o sublinhado com o início do texto */
-  padding-bottom: 2px;
+  color: #333;
+  text-align: left;
+  font-weight: 500;
 }
 
-/* Input (caixa de texto) */
 .input-field {
-  padding: 8px 10px;
-  border: 2px solid #000;
-  background-color: #f0f0f0; /* Cor de fundo cinza claro */
-  border-radius: 4px; /* Cantos arredondados sutis */
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   font-size: 1em;
-  outline: none; /* Remove o outline padrão ao focar */
+  transition: border-color 0.3s;
 }
 
-/* Botão de Envio */
+.input-field:focus {
+  border-color: #3498db; 
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); 
+}
+
 .btn-enviar {
-  padding: 10px 15px;
-  border: 2px solid #000;
-  background-color: #e0e0e0; /* Fundo cinza suave */
-  color: #000;
-  font-weight: bold;
+  padding: 12px;
+  background-color: #3498db; 
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  border-radius: 4px;
-  text-align: center;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil, se quiser dar um efeito 3D */
-  transition: background-color 0.2s;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.1s;
 }
 
 .btn-enviar:hover {
-  background-color: #d0d0d0;
+  background-color: #2980b9; 
 }
 
-/* Link Voltar para o Login */
+.btn-enviar:active {
+  transform: translateY(1px);
+}
+
+/* ------------------------------------------- */
+/* 5. Link Voltar                              */
+/* ------------------------------------------- */
+
 .voltar-login {
-  margin-top: 20px;
-  border-top: 1px solid #000;
-  padding-top: 15px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee; /* Linha divisória sutil */
 }
 
 .voltar-login a {
-  font-size: 0.9em;
-  color: #000;
-  text-decoration: none; /* Remove sublinhado padrão */
-  border-bottom: 1px solid #000; /* Linha debaixo do texto do link */
-  display: inline-block;
-  padding-bottom: 2px;
+  font-size: 0.95em;
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .voltar-login a:hover {
-  color: #555;
+  text-decoration: underline;
+  color: #2980b9;
 }

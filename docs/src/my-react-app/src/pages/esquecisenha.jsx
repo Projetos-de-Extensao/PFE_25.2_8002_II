@@ -2,42 +2,57 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Esquecisenha.css';
 
+// Importa os componentes Header e Footer da pasta 'components'
+import Header from '../components/Header.jsx'; 
+import Footer from '../components/Footer.jsx'; 
+
 const Esquecisenha = () => {
   return (
-    <div className="recuperacao-senha-page">
-      <div className="recuperacao-senha-box">
-        {/* Título e Cabeçalho */}
-        <fieldset className="header-box">
-          <legend>Sistema de Monitorias</legend>
-          <h2>Recuperação de Senha</h2>
-        </fieldset>
+    <div className="recuperacao-page-wrapper">
+      
+      {/* 1. HEADER */}
+      <Header /> 
 
-        <p className="instrucao">
-          Digite seu email ou matrícula para receber o link de recuperação.
-        </p>
+      {/* 2. CONTEÚDO PRINCIPAL (Centralizado) */}
+      <main className="recuperacao-senha-page"> 
+        <div className="recuperacao-senha-card">
+          
+          <header className="card-header">
+            <h1>Sistema de Monitorias</h1>
+            <h2>Recuperação de Senha</h2>
+          </header>
 
-        {/* Formulário */}
-        <form className="recuperacao-form">
-          <label htmlFor="input-recuperacao">Email / Matrícula</label>
-          <input
-            type="text"
-            id="input-recuperacao"
-            className="input-field"
-            placeholder="" // O protótipo tem um sublinhado, mas em HTML/CSS o placeholder vazio ou a ausência dele é mais comum.
-          />
+          <p className="instrucao">
+            Digite seu email ou matrícula para receber o link de recuperação.
+          </p>
 
-          <button type="submit" className="btn-enviar">
-            Enviar Link de Recuperação
-          </button>
-        </form>
+          {/* Formulário */}
+          <form className="recuperacao-form">
+            <label htmlFor="input-recuperacao">Email / Matrícula</label>
+            <input
+              type="email"
+              id="input-recuperacao"
+              className="input-field"
+              placeholder="Digite seu email ou matrícula"
+              required
+            />
 
-        {/* Link para voltar ao Login */}
-        <div className="voltar-login">
-          {/* Assumindo que a rota para o Login é '/' ou '/login' */}
-          <Link to="/login">Voltar para o Login</Link>
+            <button type="submit" className="btn-enviar">
+              Enviar Link de Recuperação
+            </button>
+          </form>
+
+          {/* Link para voltar ao Login */}
+          <div className="voltar-login">
+            {/* O "to" deve ser ajustado para a rota real de login */}
+            <Link to="/">Voltar para o Login</Link> 
+          </div>
         </div>
+      </main>
 
-      </div>
+      {/* 3. FOOTER */}
+      <Footer /> 
+
     </div>
   );
 };
