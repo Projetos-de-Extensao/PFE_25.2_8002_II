@@ -1,0 +1,12 @@
+.main-footer {
+  background-color: #f7f7f7; /* Fundo cinza claro, limpo */
+  border-top: 1px solid #e7e7e7; /* Linha sutil de separação */
+  text-align: center; /* Centraliza o texto */
+  padding: 2rem;
+  color: #666; /* Cor da letra cinza escura */
+  font-size: 0.9rem;
+}
+
+.main-footer p {
+  margin: 0; /* Remove a margem padrão do parágrafo */
+}

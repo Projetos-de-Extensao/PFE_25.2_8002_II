@@ -1,9 +1,13 @@
+import React from 'react';
+import './Footer.css'; // <-- 1. IMPORTAMOS O CSS
+
 function Footer() {
-    return (
-        <footer>
-            <p>2025 My React App</p>
-        </footer>
-    );
+  return (
+    // 2. Adicionamos a className principal
+    <footer className="main-footer">
+      <p>&copy; 2025 - Sistema de Monitorias - Projeto Front-End</p>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

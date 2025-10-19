@@ -1,27 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css'; // Vamos usar este arquivo para o estilo
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+    // Usamos uma div principal para centralizar todo o conteúdo
+    <div className="container">
+      <div className="login-box">
+        <h1>Sistema de Monitorias</h1>
+        <h2>Bem-vindo!</h2>
+        <p>Selecione seu perfil para continuar:</p>
+
+        {/* Uma div para agrupar os botões */}
+        <div className="button-group">
+          <button>Administrador</button>
+          <button>Professor</button>
+          <button>Aluno</button>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

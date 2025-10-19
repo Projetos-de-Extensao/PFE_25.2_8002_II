@@ -1,0 +1,84 @@
+/* O container principal da página */
+.home-container {
+  /* preenchimento interno (2rem em cima/baixo, 4rem nos lados) */
+  padding: 2rem 4rem; 
+  max-width: 1200px;  /* Limita a largura em telas grandes */
+  margin: 0 auto;     /* Centraliza o container */
+  /* Define uma altura mínima para preencher a tela (descontando header/footer) */
+  min-height: calc(100vh - 150px); 
+}
+
+/* O cabeçalho de boas-vindas */
+.home-header {
+  margin-bottom: 2.5rem;
+}
+
+.home-header h1 {
+  font-size: 2.5rem; /* Título grande */
+  margin-bottom: 0.5rem;
+  color: #222; /* Cor escura, não preto puro */
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #666; /* Cinza para o subtítulo */
+}
+
+/* A grade que segura os cards */
+.card-grid {
+  display: flex;       /* Usa flexbox para alinhar os cards */
+  flex-wrap: wrap;     /* Permite que os cards quebrem a linha em telas pequenas */
+  gap: 1.5rem;         /* Espaço de 1.5rem entre cada card */
+}
+
+/* O estilo de cada card */
+.card {
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 8px;      /* Bordas arredondadas */
+  /* Sombra suave para dar profundidade */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  border: 1px solid #eee;  /* Borda sutil */
+  padding: 1.5rem;         /* Espaçamento interno */
+  
+  /* Faz os cards crescerem e ocuparem o espaço */
+  flex-basis: 300px; /* Cada card começa com 300px */
+  flex-grow: 1;      /* Permite que o card estique */
+
+  /* Efeito de transição suave */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px); /* Levanta o card levemente */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 0;
+}
+
+.card p {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* O botão/link dentro do card */
+.card-button {
+  display: inline-block; /* Para o padding funcionar corretamente */
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #ffffff;         /* Texto branco */
+  background-color: #0d6efd; /* Azul "Bootstrap" (cor primária comum) */
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 1rem; /* Distância do texto acima */
+  transition: background-color 0.2s;
+}
+
+.card-button:hover {
+  background-color: #0b5ed7; /* Azul um pouco mais escuro */
+}

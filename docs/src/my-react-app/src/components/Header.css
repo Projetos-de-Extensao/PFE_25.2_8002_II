@@ -1,0 +1,45 @@
+/* O <header> em si */
+.main-header {
+  background-color: #282c34; /* Um fundo escuro, profissional */
+  padding: 0 2rem; /* Espaçamento interno */
+  color: white; /* Cor do texto padrão */
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+/* O container que vai centralizar o conteúdo */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Logo na esquerda, links na direita */
+  align-items: center;
+  
+  max-width: 1200px; /* Mesma largura máxima da HomePage */
+  margin: 0 auto;    /* Centraliza esse container */
+  height: 70px;      /* Uma altura fixa para o menu */
+}
+
+/* O "Logo" ou título do site */
+.header-logo a {
+  color: #61dafb; /* Um azul "React" para destacar */
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* A navegação (links) */
+.main-nav {
+  display: flex;
+  gap: 1.5rem; /* Espaço entre os links */
+}
+
+.main-nav a {
+  color: white; /* Cor da letra branca */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #61dafb; /* Cor ao passar o mouse */
+}
