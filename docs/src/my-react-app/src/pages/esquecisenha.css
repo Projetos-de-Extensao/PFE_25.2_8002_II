@@ -1,0 +1,112 @@
+/* Container principal para centralizar o box */
+.recuperacao-senha-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa a altura total da viewport */
+  background-color: #f4f4f4; /* Cor de fundo suave, se necessário */
+}
+
+/* O Box/Card principal seguindo a estrutura do protótipo */
+.recuperacao-senha-box {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilização do cabeçalho */
+.header-box {
+  border: none;
+  border-bottom: 1px solid #000; /* Linha divisória no cabeçalho */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.header-box legend {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0 5px;
+  /* Posicionamento do fieldset legend */
+}
+
+.header-box h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #000; /* Linha debaixo do título */
+  display: inline-block; /* Ajusta a largura da linha ao texto */
+}
+
+/* Instruções */
+.instrucao {
+  font-size: 0.9em;
+  border-bottom: 1px solid #000; /* Linha debaixo da instrução */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Estilização do formulário */
+.recuperacao-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os elementos do formulário */
+}
+
+.recuperacao-form label {
+  font-size: 0.9em;
+  border-bottom: 1px solid #000; /* Linha debaixo do label */
+  display: inline-block;
+  align-self: flex-start; /* Alinha o sublinhado com o início do texto */
+  padding-bottom: 2px;
+}
+
+/* Input (caixa de texto) */
+.input-field {
+  padding: 8px 10px;
+  border: 2px solid #000;
+  background-color: #f0f0f0; /* Cor de fundo cinza claro */
+  border-radius: 4px; /* Cantos arredondados sutis */
+  font-size: 1em;
+  outline: none; /* Remove o outline padrão ao focar */
+}
+
+/* Botão de Envio */
+.btn-enviar {
+  padding: 10px 15px;
+  border: 2px solid #000;
+  background-color: #e0e0e0; /* Fundo cinza suave */
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil, se quiser dar um efeito 3D */
+  transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: #d0d0d0;
+}
+
+/* Link Voltar para o Login */
+.voltar-login {
+  margin-top: 20px;
+  border-top: 1px solid #000;
+  padding-top: 15px;
+}
+
+.voltar-login a {
+  font-size: 0.9em;
+  color: #000;
+  text-decoration: none; /* Remove sublinhado padrão */
+  border-bottom: 1px solid #000; /* Linha debaixo do texto do link */
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.voltar-login a:hover {
+  color: #555;
+}
