@@ -7,6 +7,7 @@ import App from './App.jsx'; // Sua tela de LOGIN
 import MainLayout from './components/MainLayout.jsx'; // Seu "molde"
 import HomePage from './pages/HomePage.jsx'; // A PÁGINA QUE VOCÊ CRIOU (Exemplo)
 import Esquecisenha from './pages/Esquecisenha.jsx'; // <-- NOVO IMPORTE
+import Login from './pages/Login.jsx'; // <-- NOVO IMPORTE
 import './index.css';
 
 // 2. CONFIGURE O MAPA (Atualização: Adicionando a rota de Recuperação de Senha)
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
     // ROTA 2: RECUPERAÇÃO DE SENHA (Geralmente, telas de login/recuperação NÃO usam MainLayout)
     path: "/esquecisenha", // <-- NOVO PATH
     element: <Esquecisenha />, // <-- NOVO ELEMENTO
+  },
+  {
+    // ROTA 2: RECUPERAÇÃO DE SENHA (Geralmente, telas de login/recuperação NÃO usam MainLayout)
+    path: "/login", // <-- NOVO PATH
+    element: <Login />, // <-- NOVO ELEMENTO
   },
   {
     // ROTA 3: O "MOLDE" PARA TODAS AS OUTRAS PÁGINAS (PÁGINAS AUTENTICADAS/INTERNAS)

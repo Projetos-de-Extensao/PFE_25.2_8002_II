@@ -1,0 +1,142 @@
+/* ------------------------------------------- */
+/* 1. Layout e Estrutura Geral (Responsivo)    */
+/* ------------------------------------------- */
+
+.login-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; 
+  background-color: #f0f2f5; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* O corpo principal da página (Main) - Centraliza o Card */
+.login-senha-page { 
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 50px 20px; 
+}
+
+/* ------------------------------------------- */
+/* 2. O Card (Container Principal)             */
+/* ------------------------------------------- */
+
+.login-senha-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+/* ------------------------------------------- */
+/* 3. Media Query para CELULAR (Responsividade)*/
+/* ------------------------------------------- */
+
+@media (max-width: 600px) {
+  
+  /* Seção Principal: Em mobile, remove padding lateral extra */
+  .login-senha-page {
+    padding: 0; 
+    align-items: flex-start; /* Alinha o conteúdo ao topo em mobile */
+  }
+
+  /* Card: Ocupa toda a largura do mobile, sem bordas flutuantes */
+  .login-senha-card {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 25px 20px; 
+    max-width: none; 
+  }
+}
+
+/* ------------------------------------------- */
+/* 4. Estilos de Elementos (Visual Consistente)*/
+/* ------------------------------------------- */
+
+.card-header h1 {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 400; 
+}
+
+.card-header h2 {
+  font-size: 1.8em;
+  color: #3498db; 
+  margin-bottom: 30px; /* Mais espaço para separar do formulário */
+  font-weight: 600;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px; /* Espaço antes do link de recuperação */
+}
+
+.login-form label {
+  font-size: 0.9em;
+  color: #333;
+  text-align: left;
+  font-weight: 500;
+}
+
+.input-field {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #3498db; 
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); 
+}
+
+.btn-entrar {
+  padding: 12px;
+  background-color: #3498db; 
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-entrar:hover {
+  background-color: #2980b9; 
+}
+
+.btn-entrar:active {
+  transform: translateY(1px);
+}
+
+/* Link Esqueceu sua senha? (Estilo consistente com o link Voltar) */
+.esqueceu-senha {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee; /* Linha divisória sutil */
+}
+
+.esqueceu-senha a {
+  font-size: 0.95em;
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.esqueceu-senha a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
