@@ -1,53 +1,84 @@
 import React from 'react';
-// 1. Importe o Link para que os cards sejam clicáveis
 import { Link } from 'react-router-dom';
-// 2. Importe o arquivo CSS que vamos criar no próximo passo
-import './HomePage.css';
+import './HomePage.css'; // Vamos usar o mesmo arquivo, mas com código novo
 
 function HomePage() {
   return (
-    // <main> é o container principal da nossa página
-    <main className="home-container">
+    <div className="admin-homepage">
       
-      {/* Um cabeçalho de boas-vindas */}
-      <header className="home-header">
-        <h1>Painel Principal</h1>
-        <p>Bem-vindo(a) de volta! Selecione uma opção para começar.</p>
-      </header>
+      {/* Título da Página (como no protótipo) */}
+      <h1 className="admin-title">Administrador:</h1>
 
-      {/* A grade com os cards */}
-      <section className="card-grid">
+      {/* O Painel Principal */}
+      <div className="admin-panel">
 
-        {/* Card 1: Minhas Monitorias */}
-        <div className="card">
-          <h3>Minhas Monitorias</h3>
-          <p>Ver seus horários, agendamentos e alunos.</p>
-          {/* Este Link leva para uma rota que você pode criar depois */}
-          <Link to="/minhas-monitorias" className="card-button">
-            Acessar
-          </Link>
-        </div>
+        {/* Cabeçalho do Painel (com os links de navegação) */}
+        <header className="panel-header">
+          <h2>Painel do Administrador (CASA)</h2>
+          <nav className="panel-nav">
+            <Link to="/admin/postagens">"Postagens"</Link>
+            <Link to="/admin/oportunidades">"Oportunidades"</Link>
+            <Link to="/admin/alunos">"Alunos"</Link>
+            <Link to="/admin/salas">"Salas"</Link>
+            <Link to="/admin/agenda">"Agenda"</Link>
+            <Link to="/admin/pedidos">"Pedidos"</Link>
+          </nav>
+        </header>
 
-        {/* Card 2: Buscar Monitores */}
-        <div className="card">
-          <h3>Buscar Monitores</h3>
-          <p>Encontrar um monitor por matéria ou horário.</p>
-          <Link to="/buscar" className="card-button">
-            Buscar
-          </Link>
-        </div>
+        {/* Seção: Pedidos de Monitoria */}
+        <section className="panel-section">
+          <h3>Pedidos de Monitoria de Professores</h3>
+          
+          {/* Tabela de Pedidos */}
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Professor</th>
+                  <th>Disciplina</th>
+                  <th>Status</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* Linha 1 (Pendente) */}
+                <tr>
+                  <td>João Silva</td>
+                  <td>Cálculo I</td>
+                  <td><span className="status-badge status-pendente">Pendente</span></td>
+                  <td className="action-links">
+                    <button className="action-button-link">Aprovar</button> | 
+                    <button className="action-button-link">Rejeitar</button>
+                  </td>
+                </tr>
+                {/* Linha 2 (Aprovado) */}
+                <tr>
+                  <td>Maria Souza</td>
+                  <td>Física II</td>
+                  <td><span className="status-badge status-aprovado">Aprovado</span></td>
+                  <td className="action-links">
+                    <button className="action-button-link">Ver</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-        {/* Card 3: Meu Perfil */}
-        <div className="card">
-          <h3>Meu Perfil</h3>
-          <p>Editar suas informações, foto e matérias.</p>
-          <Link to="/perfil" className="card-button">
-            Editar Perfil
-          </Link>
-        </div>
+        {/* Seção: Ações Rápidas */}
+        <section className="panel-section quick-actions">
+          <h3>Ações Rápidas</h3>
+          <div className="button-group">
+            <button className="button-primary">+ Nova Postagem</button>
+            <div className="right-buttons">
+              <button className="button-secondary">+ Nova Oportunidade</button>
+              <button className="button-secondary">Verificar Salas</button>
+            </div>
+          </div>
+        </section>
 
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }
 

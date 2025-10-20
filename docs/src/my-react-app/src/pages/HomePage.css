@@ -1,84 +1,151 @@
-/* O container principal da página */
-.home-container {
-  /* preenchimento interno (2rem em cima/baixo, 4rem nos lados) */
-  padding: 2rem 4rem; 
-  max-width: 1200px;  /* Limita a largura em telas grandes */
-  margin: 0 auto;     /* Centraliza o container */
-  /* Define uma altura mínima para preencher a tela (descontando header/footer) */
-  min-height: calc(100vh - 150px); 
-}
-
-/* O cabeçalho de boas-vindas */
-.home-header {
-  margin-bottom: 2.5rem;
-}
-
-.home-header h1 {
-  font-size: 2.5rem; /* Título grande */
-  margin-bottom: 0.5rem;
-  color: #222; /* Cor escura, não preto puro */
-}
-
-.home-header p {
-  font-size: 1.2rem;
-  color: #666; /* Cinza para o subtítulo */
-}
-
-/* A grade que segura os cards */
-.card-grid {
-  display: flex;       /* Usa flexbox para alinhar os cards */
-  flex-wrap: wrap;     /* Permite que os cards quebrem a linha em telas pequenas */
-  gap: 1.5rem;         /* Espaço de 1.5rem entre cada card */
-}
-
-/* O estilo de cada card */
-.card {
-  background-color: #ffffff; /* Fundo branco */
-  border-radius: 8px;      /* Bordas arredondadas */
-  /* Sombra suave para dar profundidade */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
-  border: 1px solid #eee;  /* Borda sutil */
-  padding: 1.5rem;         /* Espaçamento interno */
-  
-  /* Faz os cards crescerem e ocuparem o espaço */
-  flex-basis: 300px; /* Cada card começa com 300px */
-  flex-grow: 1;      /* Permite que o card estique */
-
-  /* Efeito de transição suave */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Efeito ao passar o mouse */
-.card:hover {
-  transform: translateY(-5px); /* Levanta o card levemente */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  color: #333;
-  margin-top: 0;
-}
-
-.card p {
-  color: #777;
-  font-size: 1rem;
-  line-height: 1.5; /* Espaçamento entre linhas */
-}
-
-/* O botão/link dentro do card */
-.card-button {
-  display: inline-block; /* Para o padding funcionar corretamente */
-  text-decoration: none; /* Remove o sublinhado do link */
-  color: #ffffff;         /* Texto branco */
-  background-color: #0d6efd; /* Azul "Bootstrap" (cor primária comum) */
-  padding: 0.6rem 1rem;
-  border-radius: 5px;
+/* Título "Administrador:" */
+.admin-title {
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-top: 1rem; /* Distância do texto acima */
-  transition: background-color 0.2s;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-.card-button:hover {
-  background-color: #0b5ed7; /* Azul um pouco mais escuro */
+/* O "card" branco principal */
+.admin-panel {
+  background-color: #ffffff;
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Garante que o conteúdo respeite os cantos */
+}
+
+/* Cabeçalho do painel */
+.panel-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.panel-header h2 {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+}
+
+/* Navegação por "abas" */
+.panel-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.panel-nav a {
+  text-decoration: none;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+.panel-nav a:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
+
+/* Seções (Pedidos, Ações Rápidas) */
+.panel-section {
+  padding: 1.5rem 2rem;
+}
+.panel-section h3 {
+  font-size: 1.2rem;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+/* Tabela */
+.table-wrapper {
+  overflow-x: auto; /* Permite rolagem horizontal no celular */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Força a rolagem em telas pequenas */
+}
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+th {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+td {
+  font-size: 0.9rem;
+  color: #212529;
+}
+
+/* Badges de Status */
+.status-badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.status-pendente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.status-aprovado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Links de Ação da Tabela (estilizados como botões de texto) */
+.action-links .action-button-link {
+  background: none;
+  border: none;
+  color: #0d6efd; /* Azul */
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.action-links .action-button-link:hover {
+  text-decoration: underline;
+}
+
+/* Seção de Ações Rápidas */
+.quick-actions .button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Para celular */
+  gap: 1rem;
+}
+.right-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botões genéricos */
+.button-primary, .button-secondary {
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button-primary {
+  background-color: #0d6efd;
+  color: white;
+}
+.button-primary:hover {
+  background-color: #0b5ed7;
+}
+.button-secondary {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #e9ecef;
+}
+.button-secondary:hover {
+  background-color: #e9ecef;
 }
