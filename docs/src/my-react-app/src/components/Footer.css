@@ -1,12 +1,98 @@
+/* === ESTILO PADRÃO (DESKTOP E TABLET) === */
+
 .main-footer {
-  background-color: #f7f7f7; /* Fundo cinza claro, limpo */
-  border-top: 1px solid #e7e7e7; /* Linha sutil de separação */
-  text-align: center; /* Centraliza o texto */
-  padding: 2rem;
-  color: #666; /* Cor da letra cinza escura */
+  /* Fundo escuro, combinando com o header antigo (boa harmonia) */
+  background-color: #282c34; 
+  color: #adb5bd; /* Cor de texto cinza claro */
+  width: 100%;
+  box-sizing: border-box; 
+  padding: 3rem 1rem 0; /* Mais padding em cima, 0 embaixo */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* O container que segura as colunas */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar a linha se não couber */
+  justify-content: space-between;
+  gap: 2rem; /* Espaço entre as colunas */
+  padding-bottom: 2rem;
+}
+
+/* Estilo de cada coluna */
+.footer-column {
+  /* Cada coluna tenta ter 300px, mas pode crescer/encolher */
+  flex: 1 1 300px; 
+}
+
+.footer-column h3, .footer-column h4 {
+  color: #ffffff; /* Títulos das colunas em branco */
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  color: #61dafb !important; /* Logo com cor de destaque */
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-about p {
+  line-height: 1.6;
   font-size: 0.9rem;
 }
 
-.main-footer p {
-  margin: 0; /* Remove a margem padrão do parágrafo */
+/* Lista de links */
+.footer-links ul, .footer-contact ul {
+  list-style-type: none; /* Remove as "bolinhas" */
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-links li, .footer-contact li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a, .footer-contact a {
+  color: #adb5bd; /* Mesma cor do texto */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+  color: #ffffff; /* Destaque no hover */
+  padding-left: 5px; /* Efeito sutil de "empurrar" */
+}
+
+/* A barra de copyright no final */
+.footer-bottom-bar {
+  border-top: 1px solid #444; /* Linha de separação */
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ========================================= */
+/* === A MEDIA QUERY (CELULAR) ===           */
+/* ========================================= */
+
+@media (max-width: 480px) {
+  
+  /* No celular, as colunas ficam centralizadas */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-links ul, .footer-contact ul {
+    /* Centraliza os links */
+    display: inline-block;
+    text-align: left;
+  }
 }
