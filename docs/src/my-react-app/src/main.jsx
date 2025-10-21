@@ -10,7 +10,10 @@ import Esquecisenha from './pages/Esquecisenha.jsx';
 import Login from './pages/Login.jsx';
 import Configuracoes from './pages/Configuracoes.jsx';
 import ProfessorPage from './pages/ProfessorPage.jsx';
+import Detalhes from './pages/Detalhes.jsx';
 import AlunoPage from './pages/AlunoPage.jsx';
+import DetalhesVaga from './pages/DetalhesVaga.jsx';
+import DetalhesProfessor from './pages/DetalhesProfessor.jsx';
 import './index.css';
 
 
@@ -52,6 +55,18 @@ const router = createBrowserRouter([
       {
       path: "/aluno", // <-- ADICIONE ESTA ROTA
       element: <AlunoPage />,
+      },
+      {
+      path: "/detalhes", // <-- ADICIONE ESTA ROTA
+      element: <Detalhes />,
+      },
+      {
+      path: "/detalhesvaga",
+      element: <DetalhesVaga />,
+      },
+      {
+      path: "/detalhesprofessor",
+      element: <DetalhesProfessor />,
       }
     ]
   },
