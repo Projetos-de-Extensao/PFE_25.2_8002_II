@@ -2,18 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 
-// Importa os componentes Header e Footer (Assumindo "../components/")
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
+// REMOVI os imports do Header e do Footer daqui
 
 const Login = () => {
   return (
     <div className="login-page-wrapper">
       
-      {/* 1. HEADER */}
-      <Header /> 
+      {/* O Header foi REMOVIDO */}
 
-      {/* 2. CONTEÚDO PRINCIPAL (Centralizado) */}
+      {/* O conteúdo principal continua o mesmo */}
       <main className="login-senha-page"> 
         <div className="login-senha-card">
           
@@ -38,7 +35,7 @@ const Login = () => {
             {/* Campo Senha */}
             <label htmlFor="input-senha">Senha</label>
             <input
-              type="password" // Tipo 'password' para ocultar a senha
+              type="password"
               id="input-senha"
               className="input-field"
               placeholder="Digite sua senha"
@@ -52,14 +49,12 @@ const Login = () => {
 
           {/* Link Esqueceu sua senha? */}
           <div className="esqueceu-senha">
-            {/* O "to" deve apontar para a rota que configuramos no main.jsx */}
-            <Link to="/recuperacao-senha">Esqueceu sua senha?</Link> 
+            <Link to="/esquecisenha">Esqueceu sua senha?</Link> 
           </div>
         </div>
       </main>
 
-      {/* 3. FOOTER */}
-      <Footer /> 
+      {/* O Footer foi REMOVIDO */}
 
     </div>
   );
