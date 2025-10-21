@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './HomePage.css'; // Vamos usar o mesmo arquivo, mas com código novo
+import './Admfeed.css'; // Vamos usar o mesmo arquivo, mas com código novo
 
-function HomePage() {
+function Admfeed() {
   return (
     <div className="admin-homepage">
       
@@ -82,4 +82,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Admfeed;

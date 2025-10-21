@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // 1. Imports (Estão corretos)
 import App from './App.jsx';
 import MainLayout from './components/mainlayout.jsx';
-import HomePage from './pages/HomePage.jsx';
+import Admfeed from './pages/Admfeed.jsx';
 import Esquecisenha from './pages/Esquecisenha.jsx';
 import Login from './pages/Login.jsx';
 import Configuracoes from './pages/Configuracoes.jsx';
@@ -36,8 +36,8 @@ const router = createBrowserRouter([
     element: <MainLayout />, // <-- O "MOLDE"
     children: [
       {
-        path: "/home",
-        element: <HomePage />,
+        path: "/administrador",
+        element: <Admfeed />,
       },
       {
         // <-- E ADICIONADA AQUI DENTRO
