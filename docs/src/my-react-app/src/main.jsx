@@ -4,11 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // 1. Imports (Estão corretos)
 import App from './App.jsx';
-import MainLayout from './components/MainLayout.jsx';
+import MainLayout from './components/mainlayout.jsx';
 import HomePage from './pages/HomePage.jsx';
 import Esquecisenha from './pages/Esquecisenha.jsx';
 import Login from './pages/Login.jsx';
 import Configuracoes from './pages/Configuracoes.jsx';
+import ProfessorPage from './pages/ProfessorPage.jsx';
 import './index.css';
 
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         // <-- E ADICIONADA AQUI DENTRO
         path: "/configuracoes", 
         element: <Configuracoes />,
+      },
+      {
+      path: "/professor", // <-- ADICIONE ESTA ROTA
+      element: <ProfessorPage />,
       }
     ]
   },

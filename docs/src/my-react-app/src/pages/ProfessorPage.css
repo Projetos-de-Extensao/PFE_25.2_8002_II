@@ -1,0 +1,35 @@
+/* Importa TODOS os estilos do painel do admin (tabelas, botões, etc) */
+@import url('./HomePage.css');
+
+/* Título "Painel do Professor" */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Novo container para o botão "Requisitar" */
+.nova-requisicao-link {
+  display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+  margin-top: 1.5rem; /* Espaço acima do botão */
+}
+
+/* Adicionando o estilo para o status "Rejeitado" (que não tinha no Admin) */
+.status-badge.status-rejeitado {
+  background-color: #f8d7da; /* Fundo vermelho claro */
+  color: #721c24; /* Cor vermelha escura */
+}
+
+/* Adicionando o estilo para o status "Pendente" (que não tinha no Admin) */
+.status-badge.status-pendente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Adicionando o estilo para o status "Aprovado" (que não tinha no Admin) */
+.status-badge.status-aprovado {
+  background-color: #d4edda;
+  color: #155724;
+}
