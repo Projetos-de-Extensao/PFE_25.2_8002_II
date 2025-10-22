@@ -91,13 +91,12 @@ Um item só é considerado "Pronto" quando:
 
 # Sprint II 
 
-> 01/10/25 à 15/10/2025
+> 01/10/25 à 22/10/2025
 
- Em breve!
 
 ## Objetivo da Sprint
 
-XXXX XXXX XXXX
+Iniciar a criação do site de monitorias.
 
 ### Itens escolhidos do backlog
 
@@ -118,48 +117,49 @@ Alteraçôes no quadro em breve!
 |Tarefa|Responsabilidade|
 |---|----|
 | Decidir o nome o projeto.| Projeto CASA de Monitoria|
-| Criar o repositório nos padrões (Organizar wiki).| Matheus Alvarenga|
-| Criar issues no GitHub / ZenHub| Rafael Tomaz e Matheus Alvarenga|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |Matheus Alvarenga|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo|
-| [Brainstorming](https://github.com/XXXx) |Julia Valente D'Alessandro|
-|[Entrevistas](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo e Giovanna Perrone|
-|[Prototipação.](https://github.com/xxx/xxx.md) |Giovanna Perrone|
+| Preparação do ambiente do repositório| Giovanna Perrone e Julia Valente|
+| Designe do Site| Giovanna Perrone e Julia Valente|
+| Criação das páginas baseadas na prototipação|Todos|
+| Sprint 2 |Maria Eduarda Perpetuo|
+
 
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
 
-- Em breve!
+- Todas as páginas do prototipo estiverem prontas
 
 ### Sprint Review
 
 - 
 - 
 
-### Ferramentas Utilizadas
+### Pontos Positivos
 
-- Equipe motivada, dedicada e com boa comunicação.
-- Boa organização de funções e constantes feedbacks.
+- Equipe motivada e disposta a aprender.
+- Equipe com experiência neste tipo de tarefa.
+- Familiaridade com algumas das ferramentas utilizadas.
+- Comunicação constante entre membros da equipe.
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+![pontos positivos](positivos2.png))
 
 #### Pontos Negativos
 
-- Em breve!
+- Falta de domínio de algumas das ferramentas propostas.
+- Erros de organização das tarefas.
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+![pontos negativos](negativos.2.png)
 
 #### O que podemos melhorar?
 
-- Em breve!
+- Dividir mais claramente a função de cada um.
+- Estudar mais as ferramentas que são utilizadas.
+- Criar um sistema de feedback entre os membros da equipe.
 
 #### Ferramentas utilizadas
 
 - Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Site: React, Java SCript, Css e node
 
 # Sprint III 
 
