@@ -1,0 +1,46 @@
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.page-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.detail-container {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+.detail-text {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #333;
+  font-weight: bold;
+}
+
+.detail-info {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #333;
+}
+/* Novo container para o botão "Voltar" */
+.botao-link {
+  display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+  margin-top: 1.5rem; /* Espaço acima do botão */
+  margin-right: 3rem; /* Espaço à direita do botão */
+}

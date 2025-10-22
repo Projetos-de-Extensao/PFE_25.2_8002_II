@@ -1,0 +1,133 @@
+/* ------------------------------------------- */
+/* 1. Layout e Estrutura Geral (Ajustado)      */
+/* Garante que o Header e Footer ocupem 100% da largura. */
+/* ------------------------------------------- */
+
+.recuperacao-page-wrapper {
+  display: flex;
+  flex-direction: column; /* Coloca Header, Main e Footer em coluna */
+  min-height: 100vh;
+  width: 100%; /* GARANTE A LARGURA TOTAL */
+  background-color: #f0f2f5; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* O corpo principal da página (Main) */
+.recuperacao-senha-page { 
+  flex-grow: 1; 
+  display: flex;
+  /* Centralização Total do Card (Vertical e Horizontal) */
+  justify-content: center;
+  align-items: center; 
+  padding: 50px 20px; 
+}
+
+/* ------------------------------------------- */
+/* 2. O Card (Container Principal)             */
+/* ------------------------------------------- */
+
+.recuperacao-senha-card {
+  width: 100%;
+  max-width: 400px; /* Impede que o card fique muito largo no desktop */
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+/* ------------------------------------------- */
+/* 3. Media Query para CELULAR (Responsividade)  */
+/* ------------------------------------------- */
+
+@media (max-width: 600px) {
+  
+  /* Seção Principal: Em mobile, remove padding lateral extra */
+  .recuperacao-senha-page {
+    padding: 0; 
+    align-items: flex-start; /* Alinha o conteúdo ao topo em mobile */
+  }
+
+  /* Card: Ocupa toda a largura do mobile, sem bordas flutuantes */
+  .recuperacao-senha-card {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 25px 20px; 
+    /* Garante que o card ocupe 100% da largura visível */
+    max-width: none; 
+  }
+}
+
+/* ------------------------------------------- */
+/* 4. Formulário e Elementos                   */
+/* ------------------------------------------- */
+
+.recuperacao-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recuperacao-form label {
+  font-size: 0.9em;
+  color: #333;
+  text-align: left;
+  font-weight: 500;
+}
+
+.input-field {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #3498db; 
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); 
+}
+
+.btn-enviar {
+  padding: 12px;
+  background-color: #3498db; 
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-enviar:hover {
+  background-color: #2980b9; 
+}
+
+.btn-enviar:active {
+  transform: translateY(1px);
+}
+
+/* ------------------------------------------- */
+/* 5. Link Voltar                              */
+/* ------------------------------------------- */
+
+.voltar-login {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee; /* Linha divisória sutil */
+}
+
+.voltar-login a {
+  font-size: 0.95em;
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.voltar-login a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}

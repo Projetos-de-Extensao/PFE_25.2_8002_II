@@ -1,0 +1,151 @@
+/* Título "Administrador:" */
+.admin-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* O "card" branco principal */
+.admin-panel {
+  background-color: #ffffff;
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Garante que o conteúdo respeite os cantos */
+}
+
+/* Cabeçalho do painel */
+.panel-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.panel-header h2 {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+}
+
+/* Navegação por "abas" */
+.panel-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.panel-nav a {
+  text-decoration: none;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+.panel-nav a:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
+
+/* Seções (Pedidos, Ações Rápidas) */
+.panel-section {
+  padding: 1.5rem 2rem;
+}
+.panel-section h3 {
+  font-size: 1.2rem;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+/* Tabela */
+.table-wrapper {
+  overflow-x: auto; /* Permite rolagem horizontal no celular */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Força a rolagem em telas pequenas */
+}
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+th {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+td {
+  font-size: 0.9rem;
+  color: #212529;
+}
+
+/* Badges de Status */
+.status-badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.status-pendente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.status-aprovado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Links de Ação da Tabela (estilizados como botões de texto) */
+.action-links .action-button-link {
+  background: none;
+  border: none;
+  color: #0d6efd; /* Azul */
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.action-links .action-button-link:hover {
+  text-decoration: underline;
+}
+
+/* Seção de Ações Rápidas */
+.quick-actions .button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Para celular */
+  gap: 1rem;
+}
+.right-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botões genéricos */
+.button-primary, .button-secondary {
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button-primary {
+  background-color: #0d6efd;
+  color: white;
+}
+.button-primary:hover {
+  background-color: #0b5ed7;
+}
+.button-secondary {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #e9ecef;
+}
+.button-secondary:hover {
+  background-color: #e9ecef;
+}

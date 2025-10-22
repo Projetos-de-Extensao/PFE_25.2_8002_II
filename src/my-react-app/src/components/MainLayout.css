@@ -1,0 +1,135 @@
+/* O container principal que alinha Sidebar e Conteúdo */
+.dashboard-layout {
+  display: flex;
+}
+
+/* === 1. SIDEBAR (Menu da Esquerda) === */
+.sidebar {
+  width: 80px; /* Largura do menu de ícones */
+  background-color: #ffffff; /* Fundo branco */
+  border-right: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  position: fixed; /* Fixo na lateral */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.sidebar-logo {
+  width: 40px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0d6efd;
+}
+.sidebar-logo h3 {
+  margin: 0;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.sidebar-nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #6c757d;
+  transition: color 0.2s;
+}
+.sidebar-nav a:hover {
+  color: #0d6efd; /* Azul Ibmec */
+}
+
+.sidebar-footer {
+  margin-top: auto; /* Empurra para o final */
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+/* === 2. CONTEÚDO PRINCIPAL (Direita) === */
+.main-content-wrapper {
+  flex-grow: 1; /* Ocupa todo o resto da tela */
+  /* IMPORTANTE: Adiciona um "espaço" à esquerda para compensar o sidebar fixo */
+  margin-left: 80px; 
+}
+
+/* 2a. TOP-BAR (Header) */
+.top-bar {
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: sticky; /* Gruda no topo do "conteúdo" */
+  top: 0;
+  z-index: 5;
+}
+
+.course-info span {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.course-info strong {
+  font-size: 1.1rem;
+  color: #212529;
+  margin-left: 0.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* 2b. O "MIOLO" (Onde entra a HomePage) */
+.page-content {
+  /* Este é o container onde suas páginas serão renderizadas */
+  padding: 2rem;
+}
+
+/* Estilo para a nova imagem do logo */
+.sidebar-logo img {
+  width: 100%; /* Faz a imagem ter a largura do container (40px) */
+  height: auto;
+  object-fit: contain; /* Garante que a imagem caiba sem distorcer */
+}
+
+/* === RESPONSIVIDADE (Celular) === */
+@media (max-width: 480px) {
+  /* Em telas pequenas, o sidebar some */
+  .sidebar {
+    display: none;
+  }
+  .main-content-wrapper {
+    margin-left: 0; /* Remove o espaço do sidebar */
+  }
+  .top-bar {
+    padding: 0 1rem;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .page-content {
+    padding: 1rem;
+  }
+}

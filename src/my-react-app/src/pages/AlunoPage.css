@@ -1,0 +1,40 @@
+/* 1. Importa TODOS os estilos do painel do admin (tabelas, botões, etc) */
+/* (Lembre-se que você renomeou 'HomePage.css' para 'Admfeed.css') */
+@import url('./Admfeed.css');
+
+
+/* 2. Estilo do Título (igual ao da página do Professor) */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* 3. Estilo para o novo botão da tabela (como no protótipo) */
+.button-table-action {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #e9ecef;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.button-table-action:hover {
+  background-color: #e9ecef;
+}
+
+/* 4. Estilos para os novos status de candidatura */
+.status-badge.status-analise {
+  background-color: #fff3cd; /* Amarelo (Pendente) */
+  color: #856404;
+}
+.status-badge.status-rejeitado {
+  background-color: #f8d7da; /* Vermelho (Rejeitado) */
+  color: #721c24;
+}

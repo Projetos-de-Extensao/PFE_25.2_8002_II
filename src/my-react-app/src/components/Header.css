@@ -1,0 +1,95 @@
+/* === ESTILO PADRÃO (DESKTOP E TABLET) === */
+.main-header {
+  background-color: #ffffff; /* Fundo BRANCO para um look mais "clean" */
+  color: #333; /* Texto escuro */
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea; /* Linha sutil de separação */
+  /* Sombra sutil para "elevar" o header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  /* Deixa o header "grudado" no topo da tela */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+  padding: 0 1rem; /* Adiciona padding para o conteúdo não colar nas bordas */
+  box-sizing: border-box;
+}
+
+.header-logo a {
+  color: #0d6efd; /* Azul primário */
+  text-decoration: none;
+  font-size: 1.3rem; /* Um pouco menor, mais elegante */
+  font-weight: 700; /* Mais forte */
+}
+
+.main-nav {
+  display: flex;
+  align-items: center; /* Alinha os links e o botão verticalmente */
+  gap: 1.5rem; 
+}
+
+.main-nav a {
+  color: #555; /* Cor de link mais suave */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #0d6efd; /* Destaque no hover */
+}
+
+/* O "Botão" de Call to Action (CTA) */
+.nav-cta-button {
+  background-color: #0d6efd;
+  color: #ffffff !important; /* Texto branco (importante para sobrepor a regra anterior) */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-cta-button:hover {
+  background-color: #0b5ed7;
+  color: #ffffff !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================= */
+/* === A MEDIA QUERY (CELULAR) ===           */
+/* ========================================= */
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .header-logo {
+    margin-bottom: 1rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Faz o botão CTA ocupar a largura toda no mobile */
+  .nav-cta-button {
+    text-align: center;
+    width: 200px; /* Uma largura fixa para o botão */
+  }
+}
