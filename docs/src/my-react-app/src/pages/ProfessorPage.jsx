@@ -3,24 +3,32 @@ import { Link } from 'react-router-dom';
 import './ProfessorPage.css';
 
 // --- SIMULAÇÃO DE DADOS (Candidatos) ---
-const mockCandidatos = [
+const [vagas, setVagas] = useState ([
   { id: 1, nome: "Ana B.", matricula: "202301", email: "ana.b@aluno.br" },
   { id: 2, nome: "Carlos D.", matricula: "202305", email: "carlos.d@aluno.br" },
   { id: 3, nome: "Beatriz M.", matricula: "202245", email: "beatriz.m@aluno.br" }
-];
+]);
 
 // --- SIMULAÇÃO DE DADOS (Novas Requisições) ---
-const mockRequisicoes = [
+const [candidaturas, setCandidaturas] = useState ([
   { id: 1, disciplina: "Cálculo I", status: "Aprovado" },
   { id: 2, disciplina: "Física II", status: "Pendente" },
   { id: 3, disciplina: "Álgebra Linear", status: "Rejeitado" }
-];
+]);
 
 function ProfessorPage() {
   
-  const [candidatos, setCandidatos] = useState(mockCandidatos);
-  // Guardamos as requisições no estado
-  const [requisicoes, setRequisicoes] = useState(mockRequisicoes);
+    const [candidatos, setCandidatos] = useState([
+    { id: 1, nome: "Ana B.",     matricula: "202301", email: "ana.b@aluno.br" },
+    { id: 2, nome: "Carlos D.",  matricula: "202305", email: "carlos.d@aluno.br" },
+    { id: 3, nome: "Beatriz M.", matricula: "202245", email: "beatriz.m@aluno.br" }
+  ]);
+
+  const [requisicoes, setRequisicoes] = useState([
+    { id: 1, disciplina: "Cálculo I",       status: "Aprovado" },
+    { id: 2, disciplina: "Física II",       status: "Pendente" },
+    { id: 3, disciplina: "Álgebra Linear",  status: "Rejeitado" }
+  ]);
 
   return (
     <div className="professor-page">
