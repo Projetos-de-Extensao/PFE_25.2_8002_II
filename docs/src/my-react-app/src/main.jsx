@@ -14,6 +14,7 @@ import Detalhes from './pages/Detalhes.jsx';
 import AlunoPage from './pages/AlunoPage.jsx';
 import DetalhesVaga from './pages/DetalhesVaga.jsx';
 import DetalhesProfessor from './pages/DetalhesProfessor.jsx';
+import InscricaoNovaMonitoria from './pages/InscricaoNovaMonitoria.jsx';
 import './index.css';
 
 
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
       path: "/detalhesprofessor",
       element: <DetalhesProfessor />,
+      },
+      {
+      path: "/novamonitoria",
+      element: <InscricaoNovaMonitoria />,
       }
     ]
   },
