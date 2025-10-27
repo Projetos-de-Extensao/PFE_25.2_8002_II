@@ -15,6 +15,10 @@ import AlunoPage from './pages/AlunoPage.jsx';
 import DetalhesVaga from './pages/DetalhesVaga.jsx';
 import DetalhesProfessor from './pages/DetalhesProfessor.jsx';
 import InscricaoNovaMonitoria from './pages/InscricaoNovaMonitoria.jsx';
+import OportunidadesAdm from './pages/OportunidadesAdm.jsx';
+import GerenciarSalas from './pages/GerenciasSalas.jsx';
+import GerenciarPedidos from './pages/GerenciarPedidos.jsx';
+import Postagens from './pages/Postagens.jsx';
 import './index.css';
 
 
@@ -72,7 +76,24 @@ const router = createBrowserRouter([
       {
       path: "/novamonitoria",
       element: <InscricaoNovaMonitoria />,
+      },
+      {
+        path: "/administrador/oportunidades",
+        element: <OportunidadesAdm />,
+      },
+      {
+        path: "/administrador/gerenciarsalas",
+        element: <GerenciarSalas />,
+      },
+      {
+        path: "//administrador/gerenciarpedidos",
+        element: <GerenciarPedidos />,
+      },
+      {
+        path: "administrador/postagens",
+        element: <Postagens />,
       }
+    
     ]
   },
 ]);

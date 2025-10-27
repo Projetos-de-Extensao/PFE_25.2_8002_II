@@ -16,12 +16,10 @@ function Admfeed() {
         <header className="panel-header">
           <h2>Painel do Administrador (CASA)</h2>
           <nav className="panel-nav">
-            <Link to="/admin/postagens">"Postagens"</Link>
-            <Link to="/admin/oportunidades">"Oportunidades"</Link>
-            <Link to="/admin/alunos">"Alunos"</Link>
-            <Link to="/admin/salas">"Salas"</Link>
-            <Link to="/admin/agenda">"Agenda"</Link>
-            <Link to="/admin/pedidos">"Pedidos"</Link>
+            <Link to="/administrador/postagens">"Postagens"</Link>
+            <Link to="/administrador/oportunidades">"Oportunidades"</Link>
+            <Link to="/administrador/gerenciarsalas">"Salas"</Link>
+            <Link to="/administrador/gerenciarpedidos">"Pedidos"</Link>
           </nav>
         </header>
 
