@@ -26,6 +26,7 @@ import ProcessoSeletivo from './pages/ProcessoSeletivo.jsx';
 import ProfessorPostagens from './pages/ProfessorPostagens.jsx';  
 import CalendarioPage from './pages/CalendarioPage.jsx';
 import MensagensPage from './pages/MensagensPage.jsx';
+import MinhasMonitoriasPage from './pages/MinhasMonitoriasPage.jsx';
 import './index.css';
 
 
@@ -65,6 +66,7 @@ const router = createBrowserRouter([
       { path: "/novamonitoria", element: <InscricaoNovaMonitoria /> },
       { path: "/calendario", element: <CalendarioPage /> },
       { path: "/mensagens", element: <MensagensPage /> },
+      { path: "/minhas-monitorias", element: <MinhasMonitoriasPage /> },
       
       // ROTA DUPLICADA REMOVIDA DE CIMA
     ]

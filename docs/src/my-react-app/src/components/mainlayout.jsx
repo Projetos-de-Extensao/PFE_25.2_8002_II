@@ -39,7 +39,7 @@ function MainLayout() {
         <nav className="sidebar-nav">
           {/* ÍCONES LUCIDE NO LUGAR DOS ANTERIORES */}
           <Link to="/home" title="Início"><Home size={24} /></Link>
-          <Link to="/disciplinas" title="Disciplinas"><BookOpen size={24} /></Link>
+          <Link to="/minhas-monitorias" title="Monitorias"><BookOpen size={24} /></Link>
           <Link to="/calendario" title="Calendário"><Calendar size={24} /></Link>
           <Link to="/tarefas" title="Tarefas"><CheckSquare size={24} /></Link>
           <Link to="/mensagens" title="Mensagens"><Send size={24} /></Link>
