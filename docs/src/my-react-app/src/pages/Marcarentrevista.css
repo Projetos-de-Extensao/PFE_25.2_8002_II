@@ -1,0 +1,152 @@
+
+.entrevista-card {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+
+.entrevista-header {
+  text-align: left;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.entrevista-header h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.entrevista-header h2 {
+  color: #3498db;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.aluno-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item strong {
+  color: #2c3e50;
+}
+
+.entrevista-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.form-input {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.botoes-acao {
+  margin-top: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: grid;
+  gap: 10px; /* Espaço entre os botões */
+  align-items: center
+}
+
+
+.btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-solicitar {
+  background: blue;
+  color: white;
+}
+
+.btn-solicitar:hover {
+  background: lightblue;
+  transform: translateY(-2px);
+}
+
+.btn-solicitar:active {
+  transform: translateY(0);
+}
+
+.btn-recusar {
+  background: blue;
+  color: white;
+}
+
+.btn-recusar:hover {
+  background: lightblue;
+  transform: translateY(-2px);
+}
+
+.btn-recusar:active {
+  transform: translateY(0);
+}
+
+.btn-voltar {
+  background: blue;
+  color: white;
+}
+
+.btn-voltar:hover {
+  background: lightblue;
+  transform: translateY(-2px);
+}
+
+.btn-voltar:active {
+  transform: translateY(0);
+}
+
+/* Efeitos de foco para acessibilidade */
+.btn:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+

@@ -27,6 +27,8 @@ import ProfessorPostagens from './pages/ProfessorPostagens.jsx';
 import CalendarioPage from './pages/CalendarioPage.jsx';
 import MensagensPage from './pages/MensagensPage.jsx';
 import MinhasMonitoriasPage from './pages/MinhasMonitoriasPage.jsx';
+import Candidatura from './pages/candidatura.jsx';
+import MarcarEntrevista from './pages/Marcarentrevista.jsx';
 import './index.css';
 
 
@@ -53,9 +55,11 @@ const router = createBrowserRouter([
       { path: "/professor", element: <ProfessorPage /> },
       { path: "/professor/processo-seletivo", element: <ProcessoSeletivo /> }, // Rota correta
       { path: "/professor/postagens", element: <ProfessorPostagens /> },
+      { path: "/professor/marcar-entrevista", element: <MarcarEntrevista /> },
 
       // Rotas do Aluno
       { path: "/aluno", element: <AlunoPage /> },
+      { path: "/aluno/candidaturas", element: <Candidatura /> },
       // ... (provavelmente /aluno/candidaturas, /aluno/calendario ?)
 
       // Rotas Gerais dentro do Layout
