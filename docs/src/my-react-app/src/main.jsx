@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// 1. Imports (Estão corretos)
+// 1. Imports 
 import App from './App.jsx';
 import MainLayout from './components/mainlayout.jsx';
 import Admfeed from './pages/Admfeed.jsx';
@@ -16,9 +16,16 @@ import DetalhesVaga from './pages/DetalhesVaga.jsx';
 import DetalhesProfessor from './pages/DetalhesProfessor.jsx';
 import InscricaoNovaMonitoria from './pages/InscricaoNovaMonitoria.jsx';
 import OportunidadesAdm from './pages/OportunidadesAdm.jsx';
-import GerenciarSalas from './pages/GerenciasSalas.jsx';
+// Verifique: O nome do arquivo é GerenciarSalas.jsx ou GerenciasSalas.jsx?
+import GerenciarSalas from './pages/GerenciasSalas.jsx'; 
 import GerenciarPedidos from './pages/GerenciarPedidos.jsx';
-import Postagens from './pages/Postagens.jsx';
+// Verifique: O nome do componente exportado é Postagens ou PostagensPage?
+import Postagens from './pages/Postagens.jsx'; 
+import ProcessoSeletivo from './pages/ProcessoSeletivo.jsx';
+// Verifique: O nome do componente exportado é ProfessorPostagens ou ProfessorPostagensPage?
+import ProfessorPostagens from './pages/ProfessorPostagens.jsx';  
+import CalendarioPage from './pages/CalendarioPage.jsx';
+import MensagensPage from './pages/MensagensPage.jsx';
 import './index.css';
 
 
@@ -26,86 +33,40 @@ import './index.css';
 const router = createBrowserRouter([
   
   // --- MUNDO 1: PÁGINAS "SOLTAS" (SEM LAYOUT) ---
-  {
-    path: "/",
-    element: <App />, // Login
-  },
-  {
-    path: "/esquecisenha",
-    element: <Esquecisenha />, // Recuperação de Senha
-  },
-  {
-    path: "/login",
-    element: <Login />, // Outra página de Login?
-  },
-  // A ROTA DE CONFIGURAÇÕES FOI REMOVIDA DAQUI
+  { path: "/", element: <App /> },
+  { path: "/esquecisenha", element: <Esquecisenha /> },
+  { path: "/login", element: <Login /> },
 
   // --- MUNDO 2: PÁGINAS "DENTRO" DO LAYOUT ---
   {
     element: <MainLayout />, // <-- O "MOLDE"
     children: [
-      {
-        path: "/administrador",
-        element: <Admfeed />,
-      },
-      {
-        // <-- E ADICIONADA AQUI DENTRO
-        path: "/configuracoes", 
-        element: <Configuracoes />,
-      },
-      {
-      path: "/professor", // <-- ADICIONE ESTA ROTA
-      element: <ProfessorPage />,
-      },
-      {
-      path: "/aluno", // <-- ADICIONE ESTA ROTA
-      element: <AlunoPage />,
-      },
-      {
-      path: "/detalhes", // <-- ADICIONE ESTA ROTA
-      element: <Detalhes />,
-      },
-      {
-      path: "/detalhesvaga",
-      element: <DetalhesVaga />,
-      },
-      {
-      path: "/detalhesprofessor",
-      element: <DetalhesProfessor />,
-      },
-      {
-      path: "/novamonitoria",
-      element: <InscricaoNovaMonitoria />,
-      },
-      {
-        path: "/administrador/oportunidades",
-        element: <OportunidadesAdm />,
-      },
-      {
-        path: "/administrador/gerenciarsalas",
-        element: <GerenciarSalas />,
-      },
-      {
-        path: "/administrador/gerenciarpedidos",
-        element: <GerenciarPedidos />,
-      },
-      {
-        path: "/ProcessoSeletivo",
-        element: <ProcessoSeletivo />,
-      },
-      {
-        path: "/administrador/postagens",
-        element: <Postagens />,
-      },
-      {
-        path: "/professor/processo-seletivo",
-        element: <ProcessoSeletivo />,  
-      },
-      {
-        path: "/professor/postagens",
-        element: <ProfessorPostagens />,
-      }
-    
+      // Rotas do Admin
+      { path: "/administrador", element: <Admfeed /> },
+      { path: "/administrador/oportunidades", element: <OportunidadesAdm /> },
+      { path: "/administrador/gerenciarsalas", element: <GerenciarSalas /> },
+      { path: "/administrador/gerenciarpedidos", element: <GerenciarPedidos /> },
+      { path: "/administrador/postagens", element: <Postagens /> },
+      
+      // Rotas do Professor
+      { path: "/professor", element: <ProfessorPage /> },
+      { path: "/professor/processo-seletivo", element: <ProcessoSeletivo /> }, // Rota correta
+      { path: "/professor/postagens", element: <ProfessorPostagens /> },
+
+      // Rotas do Aluno
+      { path: "/aluno", element: <AlunoPage /> },
+      // ... (provavelmente /aluno/candidaturas, /aluno/calendario ?)
+
+      // Rotas Gerais dentro do Layout
+      { path: "/configuracoes", element: <Configuracoes /> },
+      { path: "/detalhes", element: <Detalhes /> }, 
+      { path: "/detalhesvaga", element: <DetalhesVaga /> },
+      { path: "/detalhesprofessor", element: <DetalhesProfessor /> },
+      { path: "/novamonitoria", element: <InscricaoNovaMonitoria /> },
+      { path: "/calendario", element: <CalendarioPage /> },
+      { path: "/mensagens", element: <MensagensPage /> },
+      
+      // ROTA DUPLICADA REMOVIDA DE CIMA
     ]
   },
 ]);
@@ -116,3 +77,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 );
+
