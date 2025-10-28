@@ -2,9 +2,11 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './MainLayout.css'; 
 
+// --- NOVO: IMPORTAÇÃO DOS ÍCONES LUCIDE REACT ---
+import { Home, BookOpen, Calendar, CheckSquare, Send, Settings } from 'lucide-react';
+// -----------------------------
+
 // --- SIMULAÇÃO DE DADOS ---
-// No futuro, essa informação virá de um login, mas por agora,
-// você pode trocar 'aluno' para 'professor' ou 'admin' para ver a mudança.
 const user = {
   name: "João Silva",
   type: "Administrador" // Mude para "professor" ou "admin"
@@ -13,13 +15,13 @@ const user = {
 
 // Função para decidir o que escrever na barra superior
 const getHeaderText = (userType) => {
-  switch (userType) {
+  switch (userType.toLowerCase()) {
     case 'administrador':
       return "Painel do Administrador";
     case 'professor':
       return "Monitorias";
     case 'aluno':
-      return "Monitorias"; // O que estava no seu print
+      return "Monitorias"; 
     default:
       return "Portal";
   }
@@ -32,19 +34,18 @@ function MainLayout() {
       {/* 1. SIDEBAR (Menu da Esquerda) */}
       <aside className="sidebar">
         <div className="sidebar-logo">
-          {/* MUDANÇA: Usando <img> para o logo */}
-          {/* Coloque seu logo em 'my-react-app/public/logo-ibmec.png' */}
           <img src="/ibmec.png" alt="Ibmec" />
         </div>
         <nav className="sidebar-nav">
-          <Link to="/home" title="Início">🏠</Link>
-          <Link to="/disciplinas" title="Disciplinas">📚</Link>
-          <Link to="/calendario" title="Calendário">📅</Link>
-          <Link to="/tarefas" title="Tarefas">✅</Link>
-          <Link to="/mensagens" title="Mensagens">✉️</Link>
+          {/* ÍCONES LUCIDE NO LUGAR DOS ANTERIORES */}
+          <Link to="/home" title="Início"><Home size={24} /></Link>
+          <Link to="/disciplinas" title="Disciplinas"><BookOpen size={24} /></Link>
+          <Link to="/calendario" title="Calendário"><Calendar size={24} /></Link>
+          <Link to="/tarefas" title="Tarefas"><CheckSquare size={24} /></Link>
+          <Link to="/mensagens" title="Mensagens"><Send size={24} /></Link>
         </nav>
         <div className="sidebar-footer">
-          <Link to="/config" title="Configurações">⚙️</Link>
+          <Link to="/config" title="Configurações"><Settings size={24} /></Link>
         </div>
       </aside>
 
@@ -53,11 +54,13 @@ function MainLayout() {
         
         {/* 2a. TOP-BAR (Header) */}
         <header className="top-bar">
+          <div className="header-title">
+            <h1>{getHeaderText(user.type)}</h1>
+          </div>
+          
           <div className="user-info">
-            {/* MUDANÇA: Nome dinâmico */}
             <span>Olá, {user.name}</span>
             <div className="profile-icon">
-              {/* Pega a primeira letra do nome */}
               {user.name.charAt(0)}
             </div>
           </div>
