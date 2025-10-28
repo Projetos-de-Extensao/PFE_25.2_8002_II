@@ -35,10 +35,9 @@ function ProfessorPage() {
         {/* --- Cabeçalho (sem mudanças) --- */}
         <header className="panel-header">
           <nav className="panel-nav">
-            <Link to="/professor/requisicoes">"Requisições"</Link>
-            <Link to="/professor/candidatos">"Candidatos"</Link>
-            <Link to="/professor/processo-seletivo">"Processo Seletivo"</Link>
-            <Link to="/professor/postagens">"Postagens"</Link>
+            <Link to="/professor">Home</Link>
+            <Link to="/professor/processo-seletivo">Processo Seletivo</Link>
+            <Link to="/professor/postagens">Postagens</Link> {/* Link Ativo */}
           </nav>
         </header>
 
@@ -72,7 +71,7 @@ function ProfessorPage() {
             </table>
           </div>
           <div className="nova-requisicao-link">
-            <Link to="/professor/nova-requisicao" className="button-primary">
+            <Link to="/novamonitoria" className="button-primary">
               + Requisitar monitoria para o CASA
             </Link>
           </div>

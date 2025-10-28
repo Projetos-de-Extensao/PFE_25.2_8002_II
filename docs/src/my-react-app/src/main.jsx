@@ -19,6 +19,8 @@ import OportunidadesAdm from './pages/OportunidadesAdm.jsx';
 import GerenciarSalas from './pages/GerenciasSalas.jsx';
 import GerenciarPedidos from './pages/GerenciarPedidos.jsx';
 import Postagens from './pages/Postagens.jsx';
+import ProcessoSeletivo from './pages/ProcessoSeletivo.jsx';
+import ProfessorPostagens from './pages/ProfessorPostagens.jsx';
 import './index.css';
 
 
@@ -86,12 +88,20 @@ const router = createBrowserRouter([
         element: <GerenciarSalas />,
       },
       {
-        path: "//administrador/gerenciarpedidos",
+        path: "/administrador/gerenciarpedidos",
         element: <GerenciarPedidos />,
       },
       {
-        path: "administrador/postagens",
+        path: "/administrador/postagens",
         element: <Postagens />,
+      },
+      {
+        path: "/professor/processo-seletivo",
+        element: <ProcessoSeletivo />,  
+      },
+      {
+        path: "/professor/postagens",
+        element: <ProfessorPostagens />,
       }
     
     ]
