@@ -43,6 +43,7 @@
   justify-content: flex-end; /* Alinha o botão à direita */
   margin-top: 1.5rem; /* Espaço acima do botão */
   margin-right: 3rem; /* Espaço à direita do botão */
+  transform: translateY(-2px);
 }
 
 .entrevista-link {
@@ -50,6 +51,7 @@
   justify-content: flex-end; /* Alinha o botão à direita */
   margin-top: 1.5rem; /* Espaço acima do botão */
   margin-right: 3rem; /* Espaço à direita do botão */
+  transform: translateY(-2px);
 }
 
 .rejeitar-link {
@@ -57,4 +59,5 @@
   justify-content: flex-end; /* Alinha o botão à direita */
   margin-top: 1.5rem; /* Espaço acima do botão */
   margin-right: 3rem; /* Espaço à direita do botão */
+  transform: translateY(-2px);
 }

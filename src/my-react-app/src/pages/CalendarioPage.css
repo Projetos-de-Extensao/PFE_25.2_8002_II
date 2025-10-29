@@ -1,0 +1,167 @@
+/* 1. Importa os estilos base do painel (Admfeed/HomePage) */
+@import url('./Admfeed.css'); /* Ou o nome correto do seu CSS base */
+
+/* 2. Estilo do Título (padrão) */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* 3. Ajustes no painel principal para o calendário */
+.calendario-panel {
+  display: flex; /* Coloca o calendário e os eventos lado a lado */
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Container do Calendário */
+.calendario-container {
+  flex-basis: 60%; /* O calendário ocupa mais espaço */
+}
+
+/* 4. Sobrescrevendo o Estilo Padrão do react-calendar */
+
+/* Fundo e borda principal */
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #e9ecef; /* Borda padrão do painel */
+  border-radius: 8px; /* Cantos arredondados */
+  font-family: inherit; /* Usa a fonte do site */
+  line-height: 1.125em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* Navegação (Mês/Ano) */
+.react-calendar__navigation button {
+  color: #0d6efd; /* Azul Ibmec */
+  min-width: 44px;
+  background: none;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+.react-calendar__navigation button:hover,
+.react-calendar__navigation button:focus {
+  background-color: #f8f9fa; /* Fundo cinza claro no hover */
+}
+.react-calendar__navigation button[disabled] {
+  background-color: #f8f9fa;
+  color: #adb5bd;
+}
+
+/* Botão do mês atual */
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+  font-weight: bold;
+  text-decoration: none; /* Remove sublinhado */
+  color: #495057; /* Cinza escuro */
+}
+
+/* Botões dos dias */
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 4px; /* Cantos arredondados nos dias */
+}
+.react-calendar__tile:disabled {
+  background-color: #f8f9fa;
+  color: #adb5bd;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e9ecef; /* Cinza mais escuro no hover */
+}
+/* Dia atual */
+.react-calendar__tile--now {
+  background: #e6f7ff; /* Azul bem claro */
+  color: #0d6efd;
+  font-weight: bold;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #cceeff;
+}
+/* Dia selecionado */
+.react-calendar__tile--active {
+  background: #0d6efd !important; /* Azul Ibmec */
+  color: white !important;
+  font-weight: bold;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #0b5ed7 !important; /* Azul mais escuro */
+}
+/* Outro mês */
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #adb5bd; /* Cinza claro para dias de outro mês */
+}
+
+/* 5. Classe para marcar dias com eventos */
+.dia-com-evento {
+  position: relative;
+}
+/* Adiciona uma bolinha azul embaixo do número */
+.dia-com-evento::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #0d6efd; 
+}
+/* Garante que a bolinha apareça no dia selecionado também */
+.react-calendar__tile--active .dia-com-evento::after {
+   background-color: white; 
+}
+
+
+/* 6. Container dos eventos do dia (lado direito) */
+.eventos-do-dia {
+  flex-basis: 40%;
+  border-left: 1px solid #e9ecef;
+  padding-left: 2rem;
+}
+.eventos-do-dia h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #212529;
+}
+.eventos-do-dia ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.eventos-do-dia li {
+  background-color: #e9ecef;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.eventos-do-dia p {
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* 7. Responsividade */
+@media (max-width: 768px) { /* Em telas menores, ficam um sobre o outro */
+  .calendario-panel {
+    flex-direction: column;
+  }
+  .eventos-do-dia {
+    border-left: none;
+    border-top: 1px solid #e9ecef;
+    padding-left: 0;
+    padding-top: 2rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,90 @@
+/* 1. Importa TODOS os estilos do painel do admin */
+@import url('./Admfeed.css'); 
+/* (Se você mudou o nome de Admfeed.css, atualize aqui) */
+
+/* 2. Estilo do Título (padrão) */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* 3. Estilos específicos para a Barra de Filtro desta página */
+.pedidos-filter {
+  justify-content: flex-start; /* Alinha filtros à esquerda */
+  gap: 1.5rem; /* Mais espaço entre os grupos de filtro */
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Aumenta um pouco o espaço interno */
+}
+/* Usando label em vez de span */
+.filter-group label { 
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+.filter-button {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0d6efd;
+  cursor: pointer;
+}
+.filter-button.filter-active {
+  color: #212529;
+  font-weight: 700;
+}
+/* O botão "Filtrar" reutiliza a classe .button-secondary */
+
+
+/* === NOVO ESTILO PARA O SELECT === */
+.filter-select {
+  padding: 0.5rem 0.8rem; /* Espaçamento interno */
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #495057;
+  min-width: 150px; /* Largura mínima */
+  cursor: pointer;
+}
+.filter-select:focus {
+  border-color: #0d6efd; 
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2); 
+}
+/* ================================ */
+
+
+/* 4. Estilos para os Botões de Ação da Tabela (Aprovar/Rejeitar) */
+/* Reutiliza .action-links e .action-button-link de Admfeed.css */
+
+.action-button-link.button-success {
+  color: #198754; /* Verde */
+}
+.action-button-link.button-danger-text { /* Usei '-text' para diferenciar do botão vermelho */
+  color: #dc3545; /* Vermelho */
+}
+
+/* 5. Novos status (já adicionados nos CSS anteriores, mas garantindo) */
+.status-badge.status-pendente {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+.status-badge.status-aprovado {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+.status-badge.status-rejeitado {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+/* O botão 'Ver' reutiliza a classe .button-table-action */
+

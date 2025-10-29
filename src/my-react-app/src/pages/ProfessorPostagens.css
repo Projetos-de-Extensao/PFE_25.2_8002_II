@@ -1,0 +1,102 @@
+/* 1. Importa os estilos BASE do painel do PROFESSOR */
+/* Isso garante consistência de tabelas, botões, painel, etc. */
+@import url('./ProfessorPage.css');
+
+
+/* 2. Estilos específicos para a Seção de Cabeçalho da Página */
+.header-section {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.header-section h2 {
+  font-size: 1.5rem; /* Título da seção */
+  margin: 0 0 1.5rem 0;
+}
+
+/* Barra de Ação (Busca + Botão Nova) */
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Grupo de Busca */
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1; /* Permite que a busca ocupe mais espaço */
+}
+.search-group span {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.search-input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  flex-grow: 1; /* Input cresce para ocupar espaço */
+  min-width: 200px;
+}
+.search-input:focus {
+  border-color: #0d6efd; 
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2); 
+}
+.search-button {
+  /* Reutiliza .button-secondary */
+  padding: 0.6rem 1rem; 
+}
+
+
+/* 3. Estilos para a Barra de Filtro Simples */
+.filter-bar-simple {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1.5rem; /* Espaço acima */
+  /* padding-bottom: 1.5rem; (Removido para ficar junto da tabela) */
+  /* border-bottom: 1px solid #e9ecef; (Removido) */
+}
+.filter-bar-simple span {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+/* Reutiliza .filter-button e .filter-active do CSS importado */
+
+
+/* 4. Estilos para os Botões de Ação da Tabela (Editar/Excluir) */
+/* Reutiliza .action-buttons-cell e .button-table-action do CSS importado */
+/* Reutiliza .button-danger do CSS importado */
+
+
+/* 5. Novo status "Rascunho" */
+.status-badge.status-rascunho {
+  background-color: #e9ecef; /* Cinza */
+  color: #495057;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 600px) { /* Um breakpoint um pouco maior para a busca */
+  .action-bar {
+    flex-direction: column;
+    align-items: stretch; /* Faz os itens ocuparem a largura */
+  }
+  .search-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-button {
+     margin-top: 0.5rem; /* Espaço no mobile */
+  }
+  .action-bar .button-primary {
+    width: 100%; /* Botão ocupa largura total */
+    text-align: center;
+  }
+}

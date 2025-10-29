@@ -1,0 +1,43 @@
+/* 1. Importa TODOS os estilos do painel do admin */
+@import url('./Admfeed.css'); 
+/* (Se você mudou o nome de Admfeed.css, atualize aqui) */
+
+
+/* 2. Estilo do Título (igual ao da página do Professor) */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* 3. Estilos para a nova Barra de Botão "Adicionar" */
+.add-button-bar {
+  display: flex; /* Para alinhar o botão */
+  justify-content: flex-start; /* Alinha à esquerda */
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* 4. Estilos para os Botões de Ação da Tabela específicos */
+
+/* 5. Novos status de sala */
+.status-badge.status-livre {
+  background-color: #d1e7dd; /* Verde claro */
+  color: #0f5132;
+}
+.status-badge.status-ocupada {
+  background-color: #fff3cd; /* Amarelo */
+  color: #664d03;
+}
+.status-badge.status-manutenção { /* Corrigido para corresponder ao mock */
+  background-color: #cfe2ff; /* Azul claro */
+  color: #084298;
+}
+
+/* Garante que os botões na tabela fiquem alinhados */
+.action-buttons-cell {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap; /* Para caber em telas menores */
+}

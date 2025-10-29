@@ -1,0 +1,95 @@
+/* 1. Importa os estilos base do painel (Admfeed/HomePage) */
+@import url('./Admfeed.css'); /* Ou o nome correto do seu CSS base */
+
+/* 2. Estilo do Título (padrão) */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* 3. Ajustes na Grade de Cards */
+.monitorias-grid {
+  /* Usando a classe card-grid já existente */
+  /* Ajusta para garantir que os cards tenham espaço */
+  display: grid; /* Mudar para grid para mais controle */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Colunas responsivas */
+  gap: 1.5rem; /* Espaço entre cards */
+}
+
+/* 4. Ajustes nos Cards de Monitoria (reutiliza .card-disciplina) */
+/* Vamos sobrescrever e adicionar estilos para o .monitoria-card */
+.monitoria-card {
+  /* Herdando estilos base de .card-disciplina (background, shadow, etc.) */
+  /* Mas garantindo que ele se comporte como um bloco flex column */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e9ecef; /* Borda mais definida */
+  padding: 1.5rem; /* Aumenta o padding interno */
+  border-radius: 12px; /* Mantém os cantos arredondados */
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.monitoria-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.monitoria-card header {
+   margin-bottom: 1rem; /* Espaço após o header do card */
+   padding-bottom: 1rem; /* Adiciona espaço abaixo do título */
+   border-bottom: 1px solid #f1f1f1; /* Linha sutil abaixo do título */
+   display: flex; /* Garante alinhamento se houver ícone */
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.monitoria-card header h3 {
+  font-size: 1.3rem;
+  margin: 0; /* Remove margem padrão do h3 */
+}
+
+.monitoria-card .disciplina-info {
+  margin-bottom: 1.5rem; /* Espaço antes das ações */
+  /* Estilos herdados de Admfeed.css devem funcionar bem aqui */
+}
+
+/* 5. Estilo para o rodapé do card (ações) */
+.monitoria-actions {
+  margin-top: auto; /* Empurra os botões para baixo */
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap; /* Para botões quebrarem a linha se necessário */
+  align-items: center; /* Alinha os botões verticalmente */
+}
+
+/* Reutiliza o estilo de botão da página de Aluno */
+.monitoria-actions .button-table-action {
+  /* Estilos já definidos (importado via Admfeed.css) */
+}
+/* Estilo específico para o botão Gerenciar */
+.monitoria-actions .button-primary {
+   margin-left: auto; /* Empurra o botão Gerenciar para a direita */
+}
+
+
+/* 6. Estilo para quando não há monitorias */
+.empty-state {
+  grid-column: 1 / -1; /* Ocupa a linha inteira */
+  text-align: center;
+  padding: 3rem;
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra consistente */
+}
+.empty-state p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
