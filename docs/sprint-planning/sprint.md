@@ -196,7 +196,7 @@ Alteraçôes no quadro em breve!
 
 Um item só é considerado "Pronto" quando:
 
-- Quando os novos prototipos e novas páginas estiverem prontas.
+- Quando os novos prototipos e novas páginas estiverem prontas (Marcar entrevista, se candidatar, gerenciar salas, gerenciar pedidos, gerenciar pedidos, gerenciar postagens, processo seletivo para visualização do professor e gerenciar postagens do professor)
 
 ### Sprint Review
 

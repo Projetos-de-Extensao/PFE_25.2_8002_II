@@ -85,9 +85,47 @@ Para que uma nova monitoria seja inscrita, o professor acessará esta tela.
 ![Nova monitoria](imgnovamonitoria.png)
 
 
-### Versão 2.0
+## Versão 2.0
 
-Em breve!
+Novas telas adicionadas
+
+### Tela de marcar entrevista 
+
+![Marcar Entrevista](MarcarEntrevista.png)
+
+### Tela da candidatura
+
+![Candidatura](CandidaturaBaixaFidelidade.png)
+
+### Tela gerenciar oportunidades
+Administrador pode editar ou excluir suas postagens que contem oportunidades de monitoria.
+
+![Gerenciar postagens](gerenciaroportunidades.png)
+
+### Tela gerenciar pedidos
+Administrador pode ver quais são os pedidos de criação de monitoria enviados
+
+![Gerenciar Pedidos](gerenciarpedidos.png)
+
+### Tela gerenciar postagens
+Administrador pode gerenciar suas postagens
+
+![Gerenciar postagens](gerenciarpostagens.png)
+
+### Tela gerenciar salas.
+Administrador pode gerenciar as salas em uso.
+
+![Gerenciar salas](gerenciarsalas.png)
+
+### Tela gerenciar postagens (professor)
+Professor pode gerenciar suas postagens
+
+![Gerenciar postagens do professor](profgerencairpostagens.jpeg)
+
+### Tela processo seletivo
+Professor tem acesso ao processo seletivo da sua monitoria
+
+![Processo seletivo do professor](profprocessoseletivo.jpeg)
 
 ## Conclusão
 
@@ -96,10 +134,13 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
 </p>
 
 
+
 ## Autor(es)
 
 | Data     | Versão | Descrição                                  | Autor(es)                                                                            |
 | -------- | ------- | --------------------------------------    | ------------------------------------------------------------------------------------ |
 | 25/09/25 | 1.0     | Criação do documento                      | Giovanna Perrone                                                                     |
 | 25/09/25 | 1.1     | Adicionado as imagens do protótipo        | Giovanna Perrone                                                                     |
-| 29/09/25 | 1.2     | Adicionado conclusão e ajustando imagens  | Giovanna Perrone                                                                     |
+| 29/09/25 | 1.2     | Adicionado conclusão e ajustando imagens  | Giovanna Perrone    
+
+                                                                 |
