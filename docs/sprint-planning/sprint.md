@@ -163,18 +163,16 @@ Um item só é considerado "Pronto" quando:
 
 # Sprint III 
 
-> 15/10/25 à 22/10/2025
+> 22/10/25 à 29/10/2025
 
-Em breve!
 
 ## Objetivo da Sprint
 
-XXXX XXXX XXXX
+Continuar o desenvolvimento do site.
 
 ### Itens escolhidos do backlog
 
-- 
-- 
+- Hitória do ALuno, do professor e do administrador
 
 |Nome Completo | Matrícula|
 |----|----|
@@ -190,48 +188,43 @@ Alteraçôes no quadro em breve!
 |Tarefa|Responsabilidade|
 |---|----|
 | Decidir o nome o projeto.| Projeto CASA de Monitoria|
-| Criar o repositório nos padrões (Organizar wiki).| Matheus Alvarenga|
-| Criar issues no GitHub / ZenHub| Rafael Tomaz e Matheus Alvarenga|
-| Estudar e escolher as metodologias.| Todos|
-| [Documento de visão](https://github.com/xxx/xxx.md) |XXX e XXXXX|
-| Elaborar [5w2H](https://github.com/xxx/xxx.md) |Matheus Alvarenga|
-| [Mapas Mentais](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo|
-| [Brainstorming](https://github.com/XXXx) |Julia Valente D'Alessandro|
-|[Entrevistas](https://github.com/xxx/xxx.md) |Maria Eduarda Perpetuo e Giovanna Perrone|
-|[Prototipação.](https://github.com/xxx/xxx.md) |Giovanna Perrone|
+| Atualização para UseState das páginas que faltaram| Matheus Alvarenga|
+| Criar prototipos de baixa fidelidade| Giovanna Perrone e Maria Eduarda Perpetuo|
+| Criar novas páginas do site| Giovanna Perrone, Julia Valente e Maria Eduarda Perpetuo|
 
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
 
-- Em breve.
+- Quando os novos prototipos e novas páginas estiverem prontas.
 
 ### Sprint Review
 
-- 
-- 
+- Em relação ao apresentado semana passada, precisamos criar os prototipos das páginas que faltam e atualizar quatro páginas para o UseState.
 
-### Ferramentas Utilizadas
+### Pontos Positivos
 
-- Em breve.
-
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+- A equipe já tem uma maior habilidade com as ferramentas propostas.
+- A equipe já tem experiência com as tarefas a ser feitas.
+- Equipe motivada e disposta a aprender.
+![pontos positivos](positivos3.png)
 
 #### Pontos Negativos
 
-- Em breve!
+- Pouca comunicação entre os membros da equipe em geral.
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+![pontos negativos](negativos3.png)
 
 #### O que podemos melhorar?
 
-- Em breve.
+- Melhorar comunicação entre os membros da equipe em geral.
 
 #### Ferramentas utilizadas
 
 - Reunião: [Hangouts](https://hangouts.google.com/)
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
-
+- React
+- Java Script
+- HTML
 # Sprint IV 
 
 > 29/02/25 à 13/10/2025
