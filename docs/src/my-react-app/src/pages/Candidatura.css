@@ -1,0 +1,67 @@
+/* Estrutura geral */
+.container-candidatura {
+     margin-top: 1.5rem;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+
+h1 {
+    font-size: 1.2rem;
+  line-height: 1;
+  color: #333;
+  font-weight: bold;
+}
+
+
+/* Grupos de campos */
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo dos inputs e textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding não estoure a largura */
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 100px;
+}
+
+/* Botão de envio */
+.botao-enviar {
+   display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+  margin-top: 1.5rem; /* Espaço acima do botão */
+  margin-right: 3rem; /* Espaço à direita do botão */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.botao-enviar:hover {
+    background-color: #0056b3;
+}

@@ -3,33 +3,28 @@ import { Link } from 'react-router-dom';
 import './ProfessorPage.css';
 
 // --- SIMULAÇÃO DE DADOS (Candidatos) ---
-const [vagas, setVagas] = useState ([
+// (Não há problema em deixar os mocks aqui fora)
+const mockCandidatos = [
   { id: 1, nome: "Ana B.", matricula: "202301", email: "ana.b@aluno.br" },
   { id: 2, nome: "Carlos D.", matricula: "202305", email: "carlos.d@aluno.br" },
   { id: 3, nome: "Beatriz M.", matricula: "202245", email: "beatriz.m@aluno.br" }
-]);
+];
 
 // --- SIMULAÇÃO DE DADOS (Novas Requisições) ---
-const [candidaturas, setCandidaturas] = useState ([
+const mockRequisicoes = [
   { id: 1, disciplina: "Cálculo I", status: "Aprovado" },
   { id: 2, disciplina: "Física II", status: "Pendente" },
   { id: 3, disciplina: "Álgebra Linear", status: "Rejeitado" }
-]);
+];
 
+// A FUNÇÃO DO COMPONENTE COMEÇA AQUI
 function ProfessorPage() {
   
-    const [candidatos, setCandidatos] = useState([
-    { id: 1, nome: "Ana B.",     matricula: "202301", email: "ana.b@aluno.br" },
-    { id: 2, nome: "Carlos D.",  matricula: "202305", email: "carlos.d@aluno.br" },
-    { id: 3, nome: "Beatriz M.", matricula: "202245", email: "beatriz.m@aluno.br" }
-  ]);
+  // OS HOOKS (useState) SÃO CHAMADOS AQUI DENTRO
+  const [candidatos, setCandidatos] = useState(mockCandidatos);
+  const [requisicoes, setRequisicoes] = useState(mockRequisicoes);
 
-  const [requisicoes, setRequisicoes] = useState([
-    { id: 1, disciplina: "Cálculo I",       status: "Aprovado" },
-    { id: 2, disciplina: "Física II",       status: "Pendente" },
-    { id: 3, disciplina: "Álgebra Linear",  status: "Rejeitado" }
-  ]);
-
+  // O HTML (JSX) COMEÇA AQUI
   return (
     <div className="professor-page">
       
@@ -40,19 +35,15 @@ function ProfessorPage() {
         {/* --- Cabeçalho (sem mudanças) --- */}
         <header className="panel-header">
           <nav className="panel-nav">
-            <Link to="/professor/requisicoes">"Requisições"</Link>
-            <Link to="/professor/candidatos">"Candidatos"</Link>
-            <Link to="/professor/processo-seletivo">"Processo Seletivo"</Link>
-            <Link to="/professor/postagens">"Postagens"</Link>
+            <Link to="/professor">Home</Link>
+            <Link to="/professor/processo-seletivo">Processo Seletivo</Link>
+            <Link to="/professor/postagens">Postagens</Link> {/* Link Ativo */}
           </nav>
         </header>
 
-        {/* === SEÇÃO MODIFICADA === */}
+        {/* === SEÇÃO REQUISIÇÕES === */}
         <section className="panel-section">
-          {/* 1. Título mudou */}
           <h3>Requisições</h3>
-          
-          {/* 2. O <form> foi substituído por esta <table> */}
           <div className="table-wrapper">
             <table>
               <thead>
@@ -67,7 +58,6 @@ function ProfessorPage() {
                   <tr key={req.id}>
                     <td>{req.disciplina}</td>
                     <td>
-                      {/* Usando as classes de status do CSS do Admin */}
                       <span className={`status-badge status-${req.status.toLowerCase()}`}>
                         {req.status}
                       </span>
@@ -80,26 +70,27 @@ function ProfessorPage() {
               </tbody>
             </table>
           </div>
-
-          {/* 3. O botão/link foi movido para o final da seção */}
           <div className="nova-requisicao-link">
-            <Link to="/professor/nova-requisicao" className="button-primary">
+            <Link to="/novamonitoria" className="button-primary">
               + Requisitar monitoria para o CASA
             </Link>
           </div>
         </section>
 
-        {/* --- Seção de Candidatos (sem mudanças) --- */}
+        {/* === SEÇÃO CANDIDATOS === */}
         <section className="panel-section">
           <h3>Candidatos para Cálculo I</h3>
-          
           <div className="table-wrapper">
             <table>
               <thead>
-                {/* ... (cabeçalho da tabela de candidatos) ... */}
+                <tr>
+                  <th>Nome</th>
+                  <th>Matrícula</th>
+                  <th>Email</th>
+                  <th>Ações</th>
+                </tr>
               </thead>
               <tbody>
-                {/* O .map() dos candidatos continua aqui, funcionando */}
                 {candidatos.map((candidato) => (
                   <tr key={candidato.id}>
                     <td>{candidato.nome}</td>
@@ -121,4 +112,6 @@ function ProfessorPage() {
   );
 }
 
+// ADICIONEI ESTA LINHA QUE FALTAVA:
 export default ProfessorPage;
+
