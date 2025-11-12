@@ -37,11 +37,10 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
-  - exclude-docs:
+  # CORRETO: Use apenas 'exclude'
+  - exclude:
       glob: 
-        # Exclui todos os arquivos e diretórios dentro de qualquer pasta 'node_modules'
+        # Excluir a documentação de pacotes de terceiros (node_modules)
         - 'node_modules/**'
         - 'src/my-react-app/node_modules/**'
-        # Você também pode querer excluir o diretório 'src' de nível superior se ele contiver apenas código-fonte
-        # - 'src/**'
 
