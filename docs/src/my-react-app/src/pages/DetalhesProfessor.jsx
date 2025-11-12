@@ -17,7 +17,7 @@ const DetalhesProfessor = () => {
         </div>
         {/* 3. O botão/link foi movido para o final da seção */}
         <div className="entrevista-link">
-          <Link to="/Marcarentrevista" className="button-primary">
+          <Link to="/professor/marcar-entrevista" className="button-primary">
             Marcar Entrevista
           </Link>
         </div>

@@ -18,7 +18,7 @@ const Detalhes = () => {
         </div>
         {/* 3. O botão/link foi movido para o final da seção */}
           <div className="voltar-link">
-            <Link to="/AlunoPage" className="button-primary">
+            <Link to="/Aluno" className="button-primary">
               Voltar
             </Link>
           </div>
