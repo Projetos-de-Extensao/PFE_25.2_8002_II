@@ -87,7 +87,7 @@ function AlunoPage() {
                     <td>{vaga.vagas}</td>
                     <td>
                       {/* Botão de ação (como no protótipo) */}
-                      <Link to={`/vaga/${vaga.id}`} className="button-table-action">
+                      <Link to={'/detalhesvaga'} className="button-table-action">
                         Ver Detalhes e Candidatar
                       </Link>
 

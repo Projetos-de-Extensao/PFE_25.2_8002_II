@@ -227,41 +227,47 @@ Um item só é considerado "Pronto" quando:
 - HTML
 # Sprint IV 
 
-> 29/02/25 à 13/10/2025
+> 28/10/25 à 12/11/2025
 
 ## Objetivo da Sprint
 
-XXXX XXXX XXXX
+Organizar a documentação e finalizar todas as funcionalidades do site.
 
 ### Itens escolhidos do backlog
 
-- 
-- 
+- História do aluno.
 
 
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
 |---|----|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
+| Adicionar função favoritar monitória| Matheus Alvarenga|
+| Receber notificação da monitória favoritada| Matheus Alvarenga|
+| Conectar as páginas| Giovanna Perrone, Julia Valente e Maria Eduarda Perpetuo|
+| Conectar a nova API| Giovanna Perrone e Julia Valente|
+| Adicionar Issues| Maria Eduarda Perpetuo|
+| Sprint| Maria Eduarda Perpetuo
 
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
 
-- 
-- 
+- Quando todas as páginas estiverem conectadas.
+- Quando todas as funcionalidades estiverem disponíveis.
+- Quando toda a documentação estiver correta.
 
 ### Sprint Review
 
-- 
-- 
+- Em relação á ultima sprint, precisamos conectar todas as páginas e fazer a função favoritar, além de organizar melhor o tempo da equipe.
 
 ### Ferramentas Utilizadas
 
 - Reunião: [Google Meet](https://meet.google.com/)
+- HTML
+- CSS
+- JavaScript
+- mkDocs
 
 # Sprint V 
 
