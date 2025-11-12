@@ -16,12 +16,12 @@ const DetalhesVaga = () => {
         </div>
         {/* 3. O botão/link foi movido para o final da seção */}
           <div className="botao-link">
-            <Link to="/AlunoPage" className="button-primary">
+            <Link to="/Aluno" className="button-primary">
               Voltar
             </Link>
         </div>
           <div className="botao-link">
-            <Link to="" className="button-primary">
+            <Link to="/aluno/candidaturas" className="button-primary">
               Candidatar-se á vaga
             </Link>
           </div>

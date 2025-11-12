@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './MarcarEntrevista.css';
+import { useNavigate } from 'react-router-dom';
 
 const MarcarEntrevista = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     data: '',
     horario: '',
@@ -46,6 +49,7 @@ const MarcarEntrevista = () => {
 
   const handleVoltar = () => {
     console.log('Voltando...');
+    navigate('/DetalhesProfessor');
     // Navegação para voltar seria implementada aqui
     // Exemplo: navigate(-1) se estiver usando React Router
   };
@@ -129,6 +133,7 @@ const MarcarEntrevista = () => {
               type="button" 
               onClick={handleVoltar}
               className="btn btn-voltar"
+              Link to ='/DetalhesProfessor'
             >
               Voltar
             </button>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './AlunoPage.css'; // Vamos criar este CSS
 
@@ -7,10 +7,12 @@ const mockVagas = [
   { id: 1, disciplina: "Cálculo I", professor: "João Silva", vagas: 2 },
   { id: 2, disciplina: "Física II", professor: "Maria Souza", vagas: 1 }
 ];
+
 const mockCandidaturas = [
   { id: 1, disciplina: "Cálculo I", status: "Em análise" },
   { id: 2, disciplina: "Algoritmos", status: "Não selecionado" }
 ];
+
 const mockCalendario = [
   { id: 1, dia: "Segunda", horario: "14:00-16:00", disciplina: "Cálculo I", sala: "B201" },
   { id: 2, dia: "Quarta", horario: "10:00-12:00", disciplina: "Física II", sala: "C105" }
@@ -21,9 +23,34 @@ function AlunoPage() {
   const [candidaturas, setCandidaturas] = useState(mockCandidaturas);
   const [calendario, setCalendario] = useState(mockCalendario);
 
+  // Favoritos (ids das vagas)
+  const [favorites, setFavorites] = useState([]);
+
+  // Carregar favoritos salvos ao iniciar a página
+  useEffect(() => {
+    const saved = localStorage.getItem('vagasFavoritas');
+    if (saved) {
+      setFavorites(JSON.parse(saved));
+    }
+  }, []); // roda só uma vez, quando o componente monta
+
+  // Salvar favoritos sempre que eles mudarem
+  useEffect(() => {
+    localStorage.setItem('vagasFavoritas', JSON.stringify(favorites));
+  }, [favorites]);
+
+  const toggleFavorite = (vagaId) => {
+    setFavorites((prev) =>
+      prev.includes(vagaId)
+        ? prev.filter((id) => id !== vagaId) // se já está, remove
+        : [...prev, vagaId]                  // se não está, adiciona
+    );
+  };
+
+  const isFavorite = (vagaId) => favorites.includes(vagaId);
+
   return (
     <div className="aluno-page">
-      
       {/* Título da Página */}
       <h1 className="page-title">Portal do Aluno</h1>
 
@@ -33,9 +60,9 @@ function AlunoPage() {
         {/* Cabeçalho do Painel (com os links de navegação) */}
         <header className="panel-header">
           <nav className="panel-nav">
-            <Link to="/aluno/vagas">"Vagas Abertas"</Link>
-            <Link to="/aluno/candidaturas">"Minhas Candidaturas"</Link>
-            <Link to="/aluno/calendario">"Calendário"</Link>
+            <Link to="/aluno/vagas">Vagas Abertas</Link>
+            <Link to="/aluno/candidaturas">Minhas Candidaturas</Link>
+            <Link to="/aluno/calendario">Calendário</Link>
           </nav>
         </header>
 
@@ -60,9 +87,18 @@ function AlunoPage() {
                     <td>{vaga.vagas}</td>
                     <td>
                       {/* Botão de ação (como no protótipo) */}
-                      <Link to={`/vaga/${vaga.id}`} className="button-table-action">
+                      <Link to={'/detalhesvaga'} className="button-table-action">
                         Ver Detalhes e Candidatar
                       </Link>
+
+                      {/* Botão de Favoritar */}
+                      <button
+                        type="button"
+                        onClick={() => toggleFavorite(vaga.id)}
+                        className="button-favorito"
+                      >
+                        {isFavorite(vaga.id) ? '★ Favorita' : '☆ Favoritar'}
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -88,9 +124,13 @@ function AlunoPage() {
                     <td>{cand.disciplina}</td>
                     <td>
                       {/* Badge de status dinâmica */}
-                      <span className={`status-badge ${
-                        cand.status === 'Em análise' ? 'status-analise' : 'status-rejeitado'
-                      }`}>
+                      <span
+                        className={`status-badge ${
+                          cand.status === 'Em análise'
+                            ? 'status-analise'
+                            : 'status-rejeitado'
+                        }`}
+                      >
                         {cand.status}
                       </span>
                     </td>
