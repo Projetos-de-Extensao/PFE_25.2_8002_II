@@ -1,62 +1,72 @@
-import React, { useState, useEffect } from 'react'; // 1. Importe o useEffect
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ProfessorPage.css';
 
-const mockCandidatos = [
-  { id: 1, nome: "Ana B.", matricula: "202301", email: "ana.b@aluno.br" },
-  { id: 2, nome: "Carlos D.", matricula: "202305", email: "carlos.d@aluno.br" },
-];
+const mockStatuses = ["Aprovado", "Pendente", "Rejeitado"];
 
 function ProfessorPage() {
-  
-  // 2. Estados
-  const [requisicoes, setRequisicoes] = useState([]); // Começa vazio
-  const [candidatos, setCandidatos] = useState(mockCandidatos);
-  
-  const [isLoading, setIsLoading] = useState(true); // Começa carregando
+  const [requisicoes, setRequisicoes] = useState([]);
+  const [candidatos, setCandidatos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchRequisicoes = async () => {
+    const fetchDadosDoPainel = async () => {
       try {
+        const API_BASE_URL = "https://plataformacasa-a2a3d2abfd5e.herokuapp.com/api";
+        const CANDIDATOS_ENDPOINT = "/inscricoes/";
+        const REQUISICOES_ENDPOINT = "/disciplinas/";
 
-        const API_BASE_URL = "https://plataformacasa-a2a3d2abfd5e.herokuapp.com/redoc/#tag/alunos";
-        const ENDPOINT = "/api/requisicoes/"; 
-        const response = await fetch(API_BASE_URL + ENDPOINT);
+        const [resCandidatos, resRequisicoes] = await Promise.all([
+          fetch(API_BASE_URL + CANDIDATOS_ENDPOINT),
+          fetch(API_BASE_URL + REQUISICOES_ENDPOINT)
+        ]);
 
-        if (!response.ok) {
-          throw new Error(`Falha na rede: ${response.statusText}`);
-        }
-        const data = await response.json();
-        console.log("Dados recebidos da API:", data);
-        setRequisicoes(data.results || data); 
+        if (!resCandidatos.ok) throw new Error(`Falha ao buscar Candidatos: ${resCandidatos.statusText}`);
+        if (!resRequisicoes.ok) throw new Error(`Falha ao buscar Requisições: ${resRequisicoes.statusText}`);
+
+        const dataCandidatos = await resCandidatos.json();
+        const dataRequisicoes = await resRequisicoes.json();
+
+        const getArrayFromResponse = (data) => Array.isArray(data) ? data : data?.results || [];
+
+        const dadosCand = getArrayFromResponse(dataCandidatos);
+        setCandidatos(dadosCand);
+
+        const dadosReq = getArrayFromResponse(dataRequisicoes);
+        const requisicoesComMockStatus = dadosReq.map((req, index) => ({
+          ...req,
+          status: mockStatuses[index % mockStatuses.length]
+        }));
+
+        setRequisicoes(requisicoesComMockStatus);
 
       } catch (err) {
+        console.error("Erro no fetch de dados:", err);
         setError(err.message);
       } finally {
-        setIsLoading(false); // Para de carregar
+        setIsLoading(false);
       }
     };
 
-    fetchRequisicoes(); 
+    fetchDadosDoPainel();
+
   }, []);
 
   if (isLoading) {
-    return <div className="page-title">Carregando requisições...</div>;
+    return <div className="page-title">Carregando dados...</div>;
   }
   if (error) {
     return <div className="page-title">Erro ao carregar dados: {error}</div>;
   }
 
-  // 5. JSX normal (renderiza quando os dados estão prontos)
   return (
     <div className="professor-page">
-      
       <h1 className="page-title">Painel do Professor</h1>
 
       <div className="admin-panel">
         <header className="panel-header">
-           <nav className="panel-nav">
+          <nav className="panel-nav">
             <Link to="/professor/requisicoes">"Requisições"</Link>
             <Link to="/professor/candidatos">"Candidatos"</Link>
             <Link to="/professor/processo-seletivo">"Processo Seletivo"</Link>
@@ -64,7 +74,7 @@ function ProfessorPage() {
           </nav>
         </header>
 
-        {/* === SEÇÃO REQUISIÇÕES (Dados da API) === */}
+        {/* === SEÇÃO REQUISIÇÕES === */}
         <section className="panel-section">
           <h3>Requisições</h3>
           <div className="table-wrapper">
@@ -77,20 +87,15 @@ function ProfessorPage() {
                 </tr>
               </thead>
               <tbody>
-                {/* 6. VERIFICAÇÃO: Se não houver dados */}
                 {requisicoes.length === 0 ? (
                   <tr>
                     <td colSpan="3">Nenhuma requisição encontrada.</td>
                   </tr>
                 ) : (
-                  // 7. Mapeia os dados da API
                   requisicoes.map((req) => (
                     <tr key={req.id}>
-                      {
-                      }
-                      <td>{req.disciplina}</td> 
+                      <td>{req.disciplina || req.nome || req.title || 'N/A'}</td>
                       <td>
-                        {}
                         <span className={`status-badge status-${String(req.status).toLowerCase()}`}>
                           {req.status}
                         </span>
@@ -111,31 +116,44 @@ function ProfessorPage() {
           </div>
         </section>
 
-        {}
+        {/* === SEÇÃO CANDIDATOS (AGORA CORRIGIDA) === */}
         <section className="panel-section">
-          <h3>Candidatos para Cálculo I</h3>
+          <h3>Candidaturas por Vaga</h3>
           <div className="table-wrapper">
-             <table>
+            <table>
               <thead>
                 <tr>
-                  <th>Nome</th>
-                  <th>Matrícula</th>
-                  <th>Email</th>
+                  <th>Nome do Aluno</th>
+                  <th>Vaga/Monitoria</th>
+                  <th>Status</th> {/* Alterei para Status, pois é um campo existente */}
                   <th>Ações</th>
                 </tr>
               </thead>
               <tbody>
-                {candidatos.map((candidato) => (
-                  <tr key={candidato.id}>
-                    <td>{candidato.nome}</td>
-                    <td>{candidato.matricula}</td>
-                    <td>{candidato.email}</td>
-                    <td className="action-links">
-                      <button className="action-button-link">Ver Info</button> | 
-                      <button className="action-button-link">Notificar Seleção</button>
-                    </td>
+                {candidatos.length === 0 ? (
+                  <tr>
+                    <td colSpan="4">Nenhum candidato encontrado.</td>
                   </tr>
-                ))}
+                ) : (
+                  candidatos.map((candidato) => (
+                    <tr key={candidato.id}>
+                      {/* Corrigido para usar a chave da API: aluno_nome */}
+                      <td>{candidato.aluno_nome}</td>
+                      {/* Corrigido para usar a chave da API: vaga_nome */}
+                      <td>{candidato.vaga_nome || 'N/A'}</td>
+                      {/* Usando o campo status da própria API de Inscrições */}
+                      <td>
+                        <span className={`status-badge status-${String(candidato.status).toLowerCase()}`}>
+                            {candidato.status}
+                        </span>
+                      </td>
+                      <td className="action-links">
+                        <button className="action-button-link">Ver Info</button> |
+                        <button className="action-button-link">Notificar Seleção</button>
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>
