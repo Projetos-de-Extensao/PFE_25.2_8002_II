@@ -55,18 +55,15 @@ const router = createBrowserRouter([
       { path: "/professor", element: <ProfessorPage /> },
       { path: "/professor/processo-seletivo", element: <ProcessoSeletivo /> }, // Rota correta
       { path: "/professor/postagens", element: <ProfessorPostagens /> },
-      { path: "/professor/marcar-entrevista", element: <MarcarEntrevista /> },
+      { path: "/professor/marcar-entrevista/:idAluno", element: <MarcarEntrevista /> },
 
       // Rotas do Aluno
       { path: "/aluno", element: <AlunoPage /> },
       { path: "/aluno/candidaturas", element: <Candidatura /> },
-      // ... (provavelmente /aluno/candidaturas, /aluno/calendario ?)
-
-      // Rotas Gerais dentro do Layout
       { path: "/configuracoes", element: <Configuracoes /> },
-      { path: "/detalhes", element: <Detalhes /> }, 
-      { path: "/detalhesvaga", element: <DetalhesVaga /> },
-      { path: "/detalhesprofessor", element: <DetalhesProfessor /> },
+      { path: "/detalhes/:idTurma", element: <Detalhes /> }, 
+      { path: "/detalhesvaga/:idVaga", element: <DetalhesVaga /> },
+      { path: "/detalhesprofessor/:idAluno", element: <DetalhesProfessor /> },
       { path: "/novamonitoria", element: <InscricaoNovaMonitoria /> },
       { path: "/calendario", element: <CalendarioPage /> },
       { path: "/mensagens", element: <MensagensPage /> },
