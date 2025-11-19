@@ -3,16 +3,13 @@ import { Link } from 'react-router-dom';
 import './Admfeed.css';
 
 function Admfeed() {
-  // 1. Estado para armazenar a lista de vagas que virá da API
   const [vagas, setVagas] = useState([]);
 
-  // 2. useEffect para buscar os dados assim que a tela carregar
   useEffect(() => {
-    // A porta é 8000 conforme o comando que você rodou no json-server
     fetch('http://localhost:8000/vagas')
       .then(response => response.json())
       .then(data => {
-        console.log("Dados recebidos:", data); // Dica: Olhe o console do navegador (F12) para ver se chegou
+        console.log("Dados recebidos:", data); 
         setVagas(data);
       })
       .catch(error => console.error('Erro ao buscar vagas:', error));
@@ -34,8 +31,6 @@ function Admfeed() {
             <Link to="/administrador/gerenciarpedidos">Pedidos</Link>
           </nav>
         </header>
-
-        {/* Seção: Vagas (Vindo da API) */}
         <section className="panel-section">
           <h3>Oportunidades</h3>
           
@@ -51,9 +46,7 @@ function Admfeed() {
                 </tr>
               </thead>
               <tbody>
-                {/* 3. Aqui usamos o .map para criar as linhas dinamicamente.
-                   Para cada 'vaga' na lista 'vagas', ele cria um <tr>
-                */}
+                
                 {vagas.length > 0 ? (
                   vagas.map((vaga, index) => (
                     <tr key={index}>
@@ -61,7 +54,7 @@ function Admfeed() {
                       <td>{vaga.disciplina}</td>
                       <td>{vaga.valor_bolsa}</td>
                       
-                      {/* Lógica para mostrar o Status baseado no true/false do JSON */}
+            
                       <td>
                         <span className={`status-badge ${vaga.ativo ? 'status-aprovado' : 'status-pendente'}`}>
                           {vaga.ativo ? 'Ativo' : 'Inativo'}
@@ -86,7 +79,7 @@ function Admfeed() {
           </div>
         </section>
 
-        {/* Seção: Ações Rápidas */}
+        
         <section className="panel-section quick-actions">
           <h3>Ações Rápidas</h3>
           <div className="button-group">

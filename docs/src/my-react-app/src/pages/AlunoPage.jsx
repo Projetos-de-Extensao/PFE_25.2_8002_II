@@ -2,24 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './AlunoPage.css'; 
 
-// URL do json-server local (vagas e calendário)
 const MOCK_API_BASE_URL = 'http://localhost:8000';
-
-// URL da API externa de Disciplinas (Candidaturas).
-// ATENÇÃO: SUBSTITUA ESTE ENDEREÇO QUANDO O SERVIDOR FOR AO AR.
 const REAL_API_DISCIPLINAS_URL = 'https://plataformacasa-a2a3d2abfd5e.herokuapp.com/api/disciplinas/'; 
 
-// Função auxiliar para extrair o array de forma segura
-// Isso evita o erro 'map is not a function' se a API retornar um objeto ou nulo.
 const extractArray = (data, preferredKey) => {
     if (Array.isArray(data)) return data;
     if (data && Array.isArray(data[preferredKey])) return data[preferredKey];
-    
-    // Tenta extrair de chaves comuns (para lidar com APIs complexas)
     if (data && Array.isArray(data.results)) return data.results;
     if (data && Array.isArray(data.vagas)) return data.vagas;
     
-    // Retorna um array vazio para impedir que o .map() quebre
     return [];
 };
 
@@ -27,17 +18,12 @@ function AlunoPage() {
   const [vagas, setVagas] = useState([]);
   const [disciplinasCandidaturas, setDisciplinasCandidaturas] = useState([]); 
   const [calendario, setCalendario] = useState([]);
-  
-  // Estados de Carregamento e Erro
   const [loadingVagas, setLoadingVagas] = useState(true);
   const [loadingDisciplinas, setLoadingDisciplinas] = useState(true);
   const [loadingCalendario, setLoadingCalendario] = useState(true);
-
   const [erroVagas, setErroVagas] = useState(null);
   const [erroDisciplinas, setErroDisciplinas] = useState(null);
   const [erroCalendario, setErroCalendario] = useState(null);
-
-  // --- Lógica de Favoritos (simples com localStorage) ---
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
@@ -59,9 +45,6 @@ function AlunoPage() {
     );
   };
   const isFavorite = (disciplinaId) => favorites.includes(disciplinaId);
-  // -------------------------
-
-  // 1. FETCH para VAGAS (Json-Server /vagas)
   useEffect(() => {
     setLoadingVagas(true);
     fetch(`${MOCK_API_BASE_URL}/vagas`)
@@ -81,7 +64,7 @@ function AlunoPage() {
       .finally(() => setLoadingVagas(false));
   }, []); 
 
-  // 2. FETCH para CALENDÁRIO (Json-Server /calendario)
+  
   useEffect(() => {
     setLoadingCalendario(true);
     fetch(`${MOCK_API_BASE_URL}/calendario`)
@@ -101,19 +84,19 @@ function AlunoPage() {
       .finally(() => setLoadingCalendario(false));
   }, []); 
   
-  // 3. FETCH para DISCIPLINAS (API Real) - Usado para popular a seção Candidaturas
+ 
   useEffect(() => {
     setLoadingDisciplinas(true);
     fetch(REAL_API_DISCIPLINAS_URL)
       .then(response => {
         if (!response.ok) {
-          // Lança um erro para ser pego pelo catch e exibido
+      
           throw new Error(`API Real: Erro ${response.status} ao buscar disciplinas.`);
         }
         return response.json();
       })
       .then(data => {
-        // Assume que a API real retorna a lista de disciplinas/candidaturas
+      
         setDisciplinasCandidaturas(extractArray(data, 'disciplinas')); 
         setErroDisciplinas(null);
       })
@@ -123,7 +106,6 @@ function AlunoPage() {
       .finally(() => setLoadingDisciplinas(false));
   }, []); 
 
-  // Função auxiliar para renderizar o status de carregamento/erro dentro das tabelas
   const renderTableContent = (data, loading, error, columns) => {
     if (loading) {
         return <tr><td colSpan={columns} style={{textAlign: 'center', padding: '20px'}}>Carregando dados...</td></tr>;
@@ -131,7 +113,7 @@ function AlunoPage() {
     if (error) {
         return <tr><td colSpan={columns} style={{textAlign: 'center', padding: '20px', color: 'red'}}>Erro: {error}</td></tr>;
     }
-    // Garante que é um array antes de verificar o length
+    
     if (!Array.isArray(data) || data.length === 0) {
         return <tr><td colSpan={columns} style={{textAlign: 'center', padding: '20px'}}>Nenhum item encontrado.</td></tr>;
     }
@@ -152,7 +134,6 @@ function AlunoPage() {
           </nav>
         </header>
 
-        {/* Seção: Vagas Abertas (Json-Server /vagas) */}
         <section className="panel-section">
           <h3>Vagas de Monitoria Abertas</h3>
           <div className="table-wrapper">
@@ -194,7 +175,7 @@ function AlunoPage() {
           </div>
         </section>
 
-        {/* Seção: Minhas Candidaturas (API Real /disciplinas/) */}
+      
         <section className="panel-section">
           <h3>Minhas Candidaturas</h3>
           <div className="table-wrapper">
@@ -210,7 +191,7 @@ function AlunoPage() {
                 {renderTableContent(disciplinasCandidaturas, loadingDisciplinas, erroDisciplinas, 3) || 
                   disciplinasCandidaturas.map((item, index) => (
                     <tr key={index}>
-                      {/* Adapte 'item.nome' ou 'item.status' se a API real tiver outros nomes de campo */}
+                      
                       <td>{item.nome || item.disciplina || item.codigo}</td> 
                       <td>
                         <span
@@ -233,7 +214,7 @@ function AlunoPage() {
           </div>
         </section>
 
-        {/* Seção: Calendário (Json-Server /calendario) */}
+       
         <section className="panel-section">
           <h3>Calendário de Monitorias da Semana</h3>
           <div className="table-wrapper">

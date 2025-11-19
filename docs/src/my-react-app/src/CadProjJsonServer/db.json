@@ -13,6 +13,7 @@
             "tipo_vaga": "MON",
             "valor_bolsa": "R$ 400,00",
             "coordenadores": ["prof.silva@universidade.edu"],
+            "professor":["Prof. Marcos Santos"],
             "professores": ["prof.santos@universidade.edu", "prof.oliveira@universidade.edu"]
         },
         {
@@ -28,6 +29,7 @@
             "tipo_vaga": "PES",
             "valor_bolsa": "R$ 800,00",
             "coordenadores": ["prof.almeida@universidade.edu"],
+            "professor":["Prof. Carla Costa"],
             "professores": ["prof.costa@universidade.edu"]
         },
         {
@@ -43,6 +45,7 @@
             "tipo_vaga": "MON",
             "valor_bolsa": "R$ 450,00",
             "coordenadores": ["prof.ferreira@universidade.edu"],
+            "professor":["Prof. João Rodrigues"],
             "professores": ["prof.rodrigues@universidade.edu"]
         },
         {
@@ -58,6 +61,7 @@
             "tipo_vaga": "EST",
             "valor_bolsa": "R$ 1200,00",
             "coordenadores": ["prof.martins@universidade.edu"],
+            "professor":["Prof. Laura Pereira"],
             "professores": ["prof.pereira@universidade.edu", "prof.lima@universidade.edu"]
         },
         {
@@ -73,6 +77,7 @@
             "tipo_vaga": "TUT",
             "valor_bolsa": "R$ 500,00",
             "coordenadores": ["prof.gomes@universidade.edu"],
+            "professor":["Prof. Ricardo Souza"],
             "professores": ["prof.souza@universidade.edu"]
         },
         {
@@ -88,6 +93,7 @@
             "tipo_vaga": "MON",
             "valor_bolsa": "R$ 420,00",
             "coordenadores": ["prof.barbosa@universidade.edu"],
+            "professor":["Prof. Fernanda Araújo"],
             "professores": ["prof.araujo@universidade.edu"]
         },
         {
@@ -102,6 +108,7 @@
             "curso": 1,
             "tipo_vaga": "EXT",
             "valor_bolsa": "R$ 600,00",
+            "professor":["Prof. Carla Mendes"],
             "coordenadores": ["prof.carvalho@universidade.edu", "prof.mendes@universidade.edu"],
             "professores": ["prof.nunes@universidade.edu"]
         },
@@ -118,6 +125,7 @@
             "tipo_vaga": "LAB",
             "valor_bolsa": "R$ 550,00",
             "coordenadores": ["prof.ribeiro@universidade.edu"],
+            "professor":["Prof. Lucas Dias"],
             "professores": ["prof.dias@universidade.edu"]
         },
         {
@@ -133,6 +141,7 @@
             "tipo_vaga": "MON",
             "valor_bolsa": "R$ 480,00",
             "coordenadores": ["prof.castro@universidade.edu"],
+            "professor":["Prof. Mariana Rocha"],
             "professores": ["prof.rocha@universidade.edu", "prof.teixeira@universidade.edu"]
         },
         {
@@ -148,6 +157,7 @@
             "tipo_vaga": "PES",
             "valor_bolsa": "R$ 700,00",
             "coordenadores": ["prof.moreira@universidade.edu"],
+            "professor":["Prof. Felipe Azevedo"],
             "professores": ["prof.azevedo@universidade.edu", "prof.campos@universidade.edu"]
         }
     ],
@@ -192,5 +202,79 @@
             "prof_nome": "Prof. Beatriz Fernandes",
             "email": "beatriz.fernandes@universidade.edu"
         }
-    ]
+    ],
+    "postagem": [
+        {
+            "id": 1,
+            "titulo": "Novas Vagas de Monitoria Disponíveis",
+            "disciplina": "Programação I",
+            "data": "2024-05-10",
+            "tipo": "Oportunidade",
+            "autor": "Prof. Marcos Pereira",
+            "status": "Publicado"
+    
+        },
+        {
+            "id": 2,
+            "titulo": "Aula de revisão",
+            "disciplina": "Desenvolvimento Web",
+            "data": "2024-05-15",
+            "tipo": "Aviso",
+            "autor": "Prof. Laura Pereira",
+            "status": "Publicado"
+        },
+        {
+            "id": 3,
+            "titulo": "Estrevistas para monitoria",
+            "disciplina": "Inteligência Artificial",
+            "data": "2024-05-20",
+            "tipo": "Aviso",
+            "autor": "Prof. Carla Costa",
+            "status": "Aguardando"
+        },
+        {
+            "id": 4,
+            "titulo": "Resultados das seleções de bolsistas",
+            "disciplina": "Pesquisa em Arquitetura de Computadores",
+            "data": "2024-05-25",
+            "tipo": "Aviso",
+            "autor": "Prof. João Rodrigues",
+            "status": "Publicado"
+        },
+        {
+            "id": 5,
+            "titulo": "Monitoria para Cálculo II",
+            "disciplina": "Cálculo II",
+            "data": "2024-06-01",
+            "tipo": "Oportunidade",
+            "autor": "Prof. João Rodrigues",
+            "status": "Aguardando"
+        }
+    ],
+    "periodos": [
+    { "value": "1Periodo", "label": "1º período" },
+    { "value": "2Periodo", "label": "2º período" },
+    { "value": "3Periodo", "label": "3º período" },
+    { "value": "4Periodo", "label": "4º período" },
+    { "value": "5Periodo", "label": "5º período" },
+    { "value": "6Periodo", "label": "6º período" },
+    { "value": "7Periodo", "label": "7º período" },
+    { "value": "8Periodo", "label": "8º período" },
+    { "value": "9Periodo", "label": "9º período" },
+    { "value": "10Periodo", "label": "10º período" }
+  ],
+  
+  "cursos": [
+    { "value": "CienciaDadosIA", "label": "Ciência de Dados e Inteligência Artificial" },
+    { "value": "EngenhariaSoftware", "label": "Engenharia de Software" },
+    { "value": "EngenhariaComputacao", "label": "Engenharia da Computação" },
+    { "value": "EngenhariaProducao", "label": "Engenharia de Produção" }
+  ],
+  
+  "disciplinas": [
+    { "value": "ProgramacaoI", "label": "Programação I" },
+    { "value": "CalculoII", "label": "Cálculo II" },
+    { "value": "FisicaExperimental", "label": "Física Experimental" },
+    { "value": "DesenvolvimentoWeb", "label": "Desenvolvimento Web" }
+  ]
 }
