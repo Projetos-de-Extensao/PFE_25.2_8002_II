@@ -36,11 +36,3 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-plugins:
-  - exclude:
-      # Exclui pastas e arquivos que você não quer no site
-      glob:
-        - '**/node_modules/*'
-        - 'src/my-react-app/node_modules/*'
-        - '**/design-thinking/*.md' # Exclui os arquivos design-thinking se você não quiser incluí-los na navegação.
-        - '*.html' # Pode ser útil se você tiver HTML que não é página de documentação
