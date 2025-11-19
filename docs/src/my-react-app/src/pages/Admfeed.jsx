@@ -63,7 +63,7 @@ function Admfeed() {
                       
                       <td className="action-links">
                         <button className="action-button-link">Editar</button> | 
-                        <button className="action-button-link">Ver Detalhes</button>
+                        <Link to={`/Detalhes/${vaga.id}`}>Ver Detalhes</Link>
                       </td>
                     </tr>
                   ))

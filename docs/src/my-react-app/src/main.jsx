@@ -56,6 +56,7 @@ const router = createBrowserRouter([
       { path: "/professor/processo-seletivo", element: <ProcessoSeletivo /> }, // Rota correta
       { path: "/professor/postagens", element: <ProfessorPostagens /> },
       { path: "/professor/marcar-entrevista/:idAluno", element: <MarcarEntrevista /> },
+      { path: "/professor/detalhesprofessor/:idAluno", element: <DetalhesProfessor /> },
 
       // Rotas do Aluno
       { path: "/aluno", element: <AlunoPage /> },

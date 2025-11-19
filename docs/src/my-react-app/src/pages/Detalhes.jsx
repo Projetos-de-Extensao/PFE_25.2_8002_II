@@ -100,7 +100,7 @@ const Detalhes = () => {
 
                 {/* Link de Voltar */}
                 <div className="voltar-link">
-                    <Link to="/aluno/vagas" className="button-secondary">
+                    <Link to="/aluno" className="button-secondary">
                         Voltar para Vagas
                     </Link>
                 </div>
