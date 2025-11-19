@@ -3,19 +3,14 @@
 /* ------------------------------------------- */
 
 .configuracoes-card {
-  /* Usamos uma largura maior para acomodar o conteúdo de configurações */
-  max-width: 800px; 
-  /* Centraliza o card na área de conteúdo */
-  margin: 0 auto; 
-  
+  max-width: 800px;
+  margin: 0 auto;
   background-color: #ffffff;
-  /* Cantos arredondados, como no painel do admin */
-  border-radius: 12px; 
-  /* Sombra padrão do nosso design system */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
-  
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 2rem 2.5rem;
   text-align: left;
+  color: #000 !important; /* TEXTO PRETO */
 }
 
 /* ------------------------------------------- */
@@ -24,30 +19,31 @@
 
 .card-header h1 {
   font-size: 1.1rem;
-  color: #6c757d; /* Cinza suave (padrão do layout) */
+  color: #000 !important;
   margin-bottom: 0.25rem;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .card-header h2 {
   font-size: 1.8rem;
-  color: #212529; /* Cor de título padrão */
-  margin-bottom: 2rem; 
+  color: #000 !important;
+  margin-bottom: 2rem;
   font-weight: 600;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e9ecef; /* Linha de separação padrão */
+  border-bottom: 1px solid #e9ecef;
 }
 
 /* ------------------------------------------- */
-/* 3. Seções e Formulários                      */
+/* 3. Seções e Formulários                     */
 /* ------------------------------------------- */
 
 .config-section {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e9ecef;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+  color: #000 !important;
 }
-/* A última seção não precisa de borda embaixo */
+
 .config-section:last-of-type {
   border-bottom: none;
   padding-bottom: 0;
@@ -55,51 +51,39 @@
 }
 
 .config-section h3 {
-    font-size: 1.3rem;
-    color: #212529;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-}
-
-.config-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  font-size: 1.3rem;
+  color: #000 !important;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .input-group label {
-    font-size: 0.9rem;
-    color: #495057;
-    font-weight: 500;
+  font-size: 0.9rem;
+  color: #000 !important;
+  font-weight: 500;
 }
 
 .input-field {
   padding: 0.75rem 1rem;
   border: 1px solid #ced4da;
-  border-radius: 6px; /* Raio de borda padrão */
+  border-radius: 6px;
   font-size: 1rem;
+  background-color: #fff;
+  color: #000 !important;
   transition: border-color 0.2s, box-shadow 0.2s;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .input-field:focus {
-  border-color: #0d6efd; /* Azul primário padrão */
+  border-color: #0d6efd;
   outline: none;
-  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2); 
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
 }
 
 /* ------------------------------------------- */
-/* 4. Botões (com o novo estilo)              */
+/* 4. Botões — CORRIGIDOS                      */
 /* ------------------------------------------- */
 
-/* Base comum para todos os botões */
+/* Base dos botões */
 .btn {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -110,44 +94,42 @@
   transition: all 0.2s;
   width: fit-content;
   font-size: 0.9rem;
+  color: #fff !important;       /* Texto sempre branco */
+  display: inline-block;
 }
 
-/* Botão Verde (Sucesso) */
+/* Botão verde */
 .btn-success {
-  background-color: #198754;
-  color: #fff;
+  background-color: #198754 !important;
 }
 .btn-success:hover {
-  background-color: #157347;
+  background-color: #157347 !important;
 }
 
-/* Botão Azul (Primário) */
+/* Botão azul */
 .btn-primary {
-  background-color: #0d6efd;
-  color: #fff;
+  background-color: #0d6efd !important;
 }
 .btn-primary:hover {
-  background-color: #0b5ed7;
+  background-color: #0b5ed7 !important;
 }
 
-/* Botão Vermelho (Perigo) */
+/* Botão vermelho */
 .btn-danger {
-  background-color: #dc3545;
-  color: #fff;
+  background-color: #dc3545 !important;
   width: 100%;
-  margin-top: 0;
 }
 .btn-danger:hover {
-  background-color: #bb2d3b;
+  background-color: #bb2d3b !important;
 }
 
 /* ------------------------------------------- */
-/* 5. Responsividade (Celular)                 */
+/* 5. Responsividade                           */
 /* ------------------------------------------- */
 
 @media (max-width: 480px) {
   .configuracoes-card {
-    padding: 1.5rem; 
+    padding: 1.5rem;
   }
   .card-header h2 {
     font-size: 1.5rem;
@@ -156,7 +138,7 @@
     font-size: 1.1rem;
   }
   .btn {
-    width: 100%; /* Botões ocupam a largura toda no celular */
+    width: 100%;
     padding: 0.8rem;
   }
 }

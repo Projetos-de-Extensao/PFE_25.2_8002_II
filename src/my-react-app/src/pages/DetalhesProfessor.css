@@ -1,9 +1,14 @@
+/* ------------------------------------------- */
+/* 1. Títulos                                  */
+/* ------------------------------------------- */
+
 .page-title {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin-left: 3rem;
+  color: #0d47a1; /* azul do sistema */
 }
 
 .page-subtitle {
@@ -12,24 +17,33 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 3rem;
+  color: #000;
+
+  /* Linha removida */
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
+
+/* ------------------------------------------- */
+/* 2. Container de Detalhes                    */
+/* ------------------------------------------- */
+
 .detail-container {
-  margin-top: 1.5rem;
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
-  margin-right: 3rem;
-  padding: 1rem;
+  margin: 1.5rem 3rem;
+  padding: 1.5rem;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 10px;
+  background-color: #fafafa;
   flex-direction: column;
 }
+
 .detail-text {
   font-size: 1.2rem;
   line-height: 1;
   color: #333;
   font-weight: bold;
+  color: #333;
 }
 
 .detail-info {
@@ -37,27 +51,91 @@
   line-height: 1;
   color: #333;
 }
-/* Novo container para o botão "Voltar" */
-.botao-link {
+
+/* ------------------------------------------- */
+/* 3. Grupo de botões de ação                  */
+/* ------------------------------------------- */
+
+.action-button-group {
   display: flex;
-  justify-content: flex-end; /* Alinha o botão à direita */
-  margin-top: 1.5rem; /* Espaço acima do botão */
-  margin-right: 3rem; /* Espaço à direita do botão */
-  transform: translateY(-2px);
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  margin-top: 1.5rem;
 }
 
-.entrevista-link {
-  display: flex;
-  justify-content: flex-end; /* Alinha o botão à direita */
-  margin-top: 1.5rem; /* Espaço acima do botão */
-  margin-right: 3rem; /* Espaço à direita do botão */
-  transform: translateY(-2px);
+/* ---- RESET para garantir que <Link> vire BOTÃO ---- */
+.action-button-group a,
+.voltar-link a {
+  display: inline-block !important;
+  text-decoration: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  border: none !important;
 }
 
-.rejeitar-link {
+/* ------------------------------------------- */
+/* 4. Botões estilizados                       */
+/* ------------------------------------------- */
+
+/* Botão Verde — Marcar Entrevista */
+.button-primary-green {
+  padding: 0.7rem 1.5rem !important;
+  background-color: #16a34a !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  border: 1px solid #15803d !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: 0.2s ease;
+}
+
+.button-primary-green:hover {
+  background-color: #15803d !important;
+}
+
+/* Botão Vermelho — Rejeitar */
+.button-primary-red {
+  padding: 0.7rem 1.5rem !important;
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  border: 1px solid #b91c1c !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: 0.2s ease;
+}
+
+.button-primary-red:hover {
+  background-color: #b91c1c !important;
+}
+
+/* Botão Cinza/Azul — Voltar */
+.button-secondary-gray {
+  padding: 0.7rem 1.5rem !important;
+  background-color: #0d6efd !important; /* azul forte como você pediu */
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  border: 1px solid #0a58ca !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: 0.2s ease;
+}
+
+.button-secondary-gray:hover {
+  background-color: #0a58ca !important;
+}
+
+/* ------------------------------------------- */
+/* 5. Botão “Voltar” alinhado à direita        */
+/* ------------------------------------------- */
+
+.voltar-link {
   display: flex;
-  justify-content: flex-end; /* Alinha o botão à direita */
-  margin-top: 1.5rem; /* Espaço acima do botão */
-  margin-right: 3rem; /* Espaço à direita do botão */
-  transform: translateY(-2px);
+  justify-content: flex-end;
+  margin-right: 3rem;
+  margin-top: 2rem;
 }

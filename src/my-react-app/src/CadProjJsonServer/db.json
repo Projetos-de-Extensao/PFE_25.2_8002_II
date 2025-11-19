@@ -1,0 +1,280 @@
+{
+    "vagas": [
+        {
+            "id": 1,
+            "nome": "Monitor de Programação I",
+            "descricao": "Vaga para monitoria em disciplina de introdução à programação",
+            "requisitos": "Ter cursado Programação I com nota mínima 8.0",
+            "responsabilidades": "Auxiliar alunos em exercícios, tirar dúvidas e corrigir trabalhos",
+            "numero_vagas": 2,
+            "disciplina": 101,
+            "ativo": true,
+            "curso": 1,
+            "tipo_vaga": "MON",
+            "valor_bolsa": "R$ 400,00",
+            "coordenadores": ["prof.silva@universidade.edu"],
+            "professor":["Prof. Marcos Santos"],
+            "professores": ["prof.santos@universidade.edu", "prof.oliveira@universidade.edu"]
+        },
+        {
+            "id": 2,
+            "nome": "Assistente de Pesquisa em IA",
+            "descricao": "Bolsista para projeto de pesquisa em Inteligência Artificial",
+            "requisitos": "Conhecimento em Python e Machine Learning",
+            "responsabilidades": "Desenvolver modelos, coletar dados e documentar resultados",
+            "numero_vagas": 1,
+            "disciplina": 205,
+            "ativo": true,
+            "curso": 1,
+            "tipo_vaga": "PES",
+            "valor_bolsa": "R$ 800,00",
+            "coordenadores": ["prof.almeida@universidade.edu"],
+            "professor":["Prof. Carla Costa"],
+            "professores": ["prof.costa@universidade.edu"]
+        },
+        {
+            "nome": "Monitor de Cálculo II",
+            "id": 3,
+            "descricao": "Monitoria para disciplina de Cálculo Diferencial e Integral II",
+            "requisitos": "Aprovação em Cálculo II com média superior a 7.5",
+            "responsabilidades": "Conduzir plantões de dúvidas e preparar listas de exercícios",
+            "numero_vagas": 3,
+            "disciplina": 150,
+            "ativo": true,
+            "curso": 2,
+            "tipo_vaga": "MON",
+            "valor_bolsa": "R$ 450,00",
+            "coordenadores": ["prof.ferreira@universidade.edu"],
+            "professor":["Prof. João Rodrigues"],
+            "professores": ["prof.rodrigues@universidade.edu"]
+        },
+        {
+            "nome": "Estágio em Desenvolvimento Web",
+            "id": 4,
+            "descricao": "Oportunidade de estágio em desenvolvimento front-end",
+            "requisitos": "Conhecimento em HTML, CSS, JavaScript e React",
+            "responsabilidades": "Desenvolver interfaces web, manutenção de sistemas e participar de reuniões",
+            "numero_vagas": 5,
+            "disciplina": 180,
+            "ativo": true,
+            "curso": 1,
+            "tipo_vaga": "EST",
+            "valor_bolsa": "R$ 1200,00",
+            "coordenadores": ["prof.martins@universidade.edu"],
+            "professor":["Prof. Laura Pereira"],
+            "professores": ["prof.pereira@universidade.edu", "prof.lima@universidade.edu"]
+        },
+        {
+            "nome": "Tutor de Física Experimental",
+            "id": 5,
+            "descricao": "Tutoria em laboratório de física experimental",
+            "requisitos": "Ter cursado Física Experimental I e II",
+            "responsabilidades": "Auxiliar nas práticas laboratoriais e elaborar relatórios",
+            "numero_vagas": 2,
+            "disciplina": 220,
+            "ativo": true,
+            "curso": 3,
+            "tipo_vaga": "TUT",
+            "valor_bolsa": "R$ 500,00",
+            "coordenadores": ["prof.gomes@universidade.edu"],
+            "professor":["Prof. Ricardo Souza"],
+            "professores": ["prof.souza@universidade.edu"]
+        },
+        {
+            "nome": "Monitor de Banco de Dados",
+            "id": 6,
+            "descricao": "Vaga de monitoria para disciplina de Sistemas de Banco de Dados",
+            "requisitos": "Experiência com SQL e modelagem de dados",
+            "responsabilidades": "Apoiar alunos em projetos práticos e corrigir exercícios",
+            "numero_vagas": 2,
+            "disciplina": 190,
+            "ativo": true,
+            "curso": 1,
+            "tipo_vaga": "MON",
+            "valor_bolsa": "R$ 420,00",
+            "coordenadores": ["prof.barbosa@universidade.edu"],
+            "professor":["Prof. Fernanda Araújo"],
+            "professores": ["prof.araujo@universidade.edu"]
+        },
+        {
+            "nome": "Bolsista de Extensão - Robótica",
+            "id": 7,
+            "descricao": "Projeto de extensão para ensino de robótica em escolas públicas",
+            "requisitos": "Interesse em educação e conhecimento básico em Arduino",
+            "responsabilidades": "Ministrar oficinas, preparar material didático e acompanhar estudantes",
+            "numero_vagas": 4,
+            "disciplina": 0,
+            "ativo": true,
+            "curso": 1,
+            "tipo_vaga": "EXT",
+            "valor_bolsa": "R$ 600,00",
+            "professor":["Prof. Carla Mendes"],
+            "coordenadores": ["prof.carvalho@universidade.edu", "prof.mendes@universidade.edu"],
+            "professores": ["prof.nunes@universidade.edu"]
+        },
+        {
+            "nome": "Assistente de Laboratório - Química",
+            "id": 8,
+            "descricao": "Assistência em laboratório de química analítica",
+            "requisitos": "Cursando a partir do 3º período de Química ou Engenharia Química",
+            "responsabilidades": "Preparar soluções, organizar equipamentos e auxiliar experimentos",
+            "numero_vagas": 1,
+            "disciplina": 310,
+            "ativo": false,
+            "curso": 4,
+            "tipo_vaga": "LAB",
+            "valor_bolsa": "R$ 550,00",
+            "coordenadores": ["prof.ribeiro@universidade.edu"],
+            "professor":["Prof. Lucas Dias"],
+            "professores": ["prof.dias@universidade.edu"]
+        },
+        {
+            "nome": "Monitor de Estruturas de Dados",
+            "id": 9,
+            "descricao": "Monitoria para a disciplina de Estruturas de Dados e Algoritmos",
+            "requisitos": "Domínio de algoritmos, estruturas de dados e análise de complexidade",
+            "responsabilidades": "Realizar atendimentos, revisar código dos alunos e preparar exercícios",
+            "numero_vagas": 3,
+            "disciplina": 125,
+            "ativo": true,
+            "curso": 1,
+            "tipo_vaga": "MON",
+            "valor_bolsa": "R$ 480,00",
+            "coordenadores": ["prof.castro@universidade.edu"],
+            "professor":["Prof. Mariana Rocha"],
+            "professores": ["prof.rocha@universidade.edu", "prof.teixeira@universidade.edu"]
+        },
+        {
+            "nome": "Bolsista Iniciação Científica - Biotecnologia",
+            "id": 10,
+            "descricao": "Projeto de pesquisa em biotecnologia aplicada à agricultura",
+            "requisitos": "Cursando Biologia, Biotecnologia ou áreas correlatas",
+            "responsabilidades": "Realizar experimentos, análise de dados e produção de relatórios científicos",
+            "numero_vagas": 2,
+            "disciplina": 405,
+            "ativo": true,
+            "curso": 5,
+            "tipo_vaga": "PES",
+            "valor_bolsa": "R$ 700,00",
+            "coordenadores": ["prof.moreira@universidade.edu"],
+            "professor":["Prof. Felipe Azevedo"],
+            "professores": ["prof.azevedo@universidade.edu", "prof.campos@universidade.edu"]
+        }
+    ],
+    "calendario": [
+        {
+            "dia": "segunda-feira",
+            "horario": "14:00 - 16:00",
+            "disciplina": "Programação I",
+            "sala": "Lab 101"
+        },
+        {
+            "dia": "quarta-feira",
+            "horario": "10:00 - 12:00",
+            "disciplina": "Cálculo II",
+            "sala": "Sala 202"
+        },
+        {
+            "dia": "sexta-feira",
+            "horario": "09:00 - 11:00",
+            "disciplina": "Física Experimental",
+            "sala": "Lab 303"
+        }
+    ],
+    "professores": [
+        {
+            "id": 1,
+            "prof_nome": "Prof. Marcos Pereira",
+            "email": "marcos.pereira@universidade.edu"
+        },
+        {
+            "id": 2,
+            "prof_nome": "Prof. Ana Souza",
+            "email": "ana.souza@universidade.edu"
+        },
+        {
+            "id": 3,
+            "prof_nome": "Prof. Carlos Lima",
+            "email": "carlos.lima@universidade.edu"
+        },
+        {
+            "id": 4,
+            "prof_nome": "Prof. Beatriz Fernandes",
+            "email": "beatriz.fernandes@universidade.edu"
+        }
+    ],
+    "postagem": [
+        {
+            "id": 1,
+            "titulo": "Novas Vagas de Monitoria Disponíveis",
+            "disciplina": "Programação I",
+            "data": "2024-05-10",
+            "tipo": "Oportunidade",
+            "autor": "Prof. Marcos Pereira",
+            "status": "Publicado"
+    
+        },
+        {
+            "id": 2,
+            "titulo": "Aula de revisão",
+            "disciplina": "Desenvolvimento Web",
+            "data": "2024-05-15",
+            "tipo": "Aviso",
+            "autor": "Prof. Laura Pereira",
+            "status": "Publicado"
+        },
+        {
+            "id": 3,
+            "titulo": "Estrevistas para monitoria",
+            "disciplina": "Inteligência Artificial",
+            "data": "2024-05-20",
+            "tipo": "Aviso",
+            "autor": "Prof. Carla Costa",
+            "status": "Aguardando"
+        },
+        {
+            "id": 4,
+            "titulo": "Resultados das seleções de bolsistas",
+            "disciplina": "Pesquisa em Arquitetura de Computadores",
+            "data": "2024-05-25",
+            "tipo": "Aviso",
+            "autor": "Prof. João Rodrigues",
+            "status": "Publicado"
+        },
+        {
+            "id": 5,
+            "titulo": "Monitoria para Cálculo II",
+            "disciplina": "Cálculo II",
+            "data": "2024-06-01",
+            "tipo": "Oportunidade",
+            "autor": "Prof. João Rodrigues",
+            "status": "Aguardando"
+        }
+    ],
+    "periodos": [
+    { "value": "1Periodo", "label": "1º período" },
+    { "value": "2Periodo", "label": "2º período" },
+    { "value": "3Periodo", "label": "3º período" },
+    { "value": "4Periodo", "label": "4º período" },
+    { "value": "5Periodo", "label": "5º período" },
+    { "value": "6Periodo", "label": "6º período" },
+    { "value": "7Periodo", "label": "7º período" },
+    { "value": "8Periodo", "label": "8º período" },
+    { "value": "9Periodo", "label": "9º período" },
+    { "value": "10Periodo", "label": "10º período" }
+  ],
+  
+  "cursos": [
+    { "value": "CienciaDadosIA", "label": "Ciência de Dados e Inteligência Artificial" },
+    { "value": "EngenhariaSoftware", "label": "Engenharia de Software" },
+    { "value": "EngenhariaComputacao", "label": "Engenharia da Computação" },
+    { "value": "EngenhariaProducao", "label": "Engenharia de Produção" }
+  ],
+  
+  "disciplinas": [
+    { "value": "ProgramacaoI", "label": "Programação I" },
+    { "value": "CalculoII", "label": "Cálculo II" },
+    { "value": "FisicaExperimental", "label": "Física Experimental" },
+    { "value": "DesenvolvimentoWeb", "label": "Desenvolvimento Web" }
+  ]
+}

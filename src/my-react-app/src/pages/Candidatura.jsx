@@ -1,40 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Candidatura.css';
 
-const MOCK_DISCIPLINAS = [
-    { value: 'Calculo I', label: 'Cálculo I' },
-    { value: 'Calculo II', label: 'Cálculo II' },
-    { value: 'Algoritmos', label: 'Algoritmos e Estruturas de Dados' },
-    { value: 'EngenhariaSoftware', label: 'Engenharia de Software' },
-    { value: 'MatemáticaDiscreta', label: 'Matemática discreta' },
-    { value: 'ProgramacaoEstruturada', label: 'Programação Estruturada' },
-];
+// URL base para buscar as opções dos selects (Json-Server)
+const MOCK_API_BASE_URL = 'http://localhost:8000';
+// URL para enviar a candidatura (API Real)
+const REAL_API_CANDIDATURAS_URL = 'https://plataformacasa-a2a3d2abfd5e.herokuapp.com/api/candidaturas/'; 
 
-const MOCK_CURSOS = [
-    { value: 'EngenhariaComputacao', label: 'Engenharia da Computação' },
-    { value: 'CienciadeDados', label: 'Ciência de dados e inteligência artificial' },
-    { value: 'EngenhariaSoftware', label: 'Engenharia de Software' },
-    { value: 'EngenhariaProducao', label: 'Engenheria de produção' },
-    { value: 'EngenhariaCivil', label: 'Engenharia Civil' },
-];
+// Função para extrair arrays de respostas da API
+const extractArray = (data) => {
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.results)) return data.results;
+    // Tenta chaves plurais comuns
+    if (data && Array.isArray(data.disciplinas)) return data.disciplinas;
+    if (data && Array.isArray(data.cursos)) return data.cursos;
+    if (data && Array.isArray(data.periodos)) return data.periodos;
+    return []; 
+};
 
-const MOCK_PERIODOS = [
-    { value: '1Periodo', label: '1º Período' },
-    { value: '2Periodo', label: '2º Período' },
-    { value: '3Periodo', label: '3º Período' },
-    { value: '4Periodo', label: '4º Período' },
-    { value: '5Periodo', label: '5º Período' },
-    { value: '6Periodo', label: '6º Período' },
-    { value: '7Periodo', label: '7º Período' },
-    { value: '8Periodo', label: '8º Período' },
-    { value: '9Periodo', label: '9º Período' },
-    { value: '10Periodo', label: '10º Período' },
-]
-// 1. O COMPONENTE FUNCIONAL
 function Candidatura() {
+    const navigate = useNavigate();
     
-    // ATUALIZAÇÃO DO USESTATE: Adicionamos a nova chave 'cursoCandidato'
+    // Estados para armazenar as listas vindas da API (substituindo os MOCKS constantes)
+    const [disciplinasOptions, setDisciplinasOptions] = useState([]);
+    const [cursosOptions, setCursosOptions] = useState([]);
+    const [periodosOptions, setPeriodosOptions] = useState([]);
+
+    // Estado do formulário
     const [dadosCandidato, setDadosCandidato] = useState({
         nomeCompleto: '',
         matricula: '',
@@ -45,6 +37,34 @@ function Candidatura() {
         justificativa: ''
     });
 
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    // 1. useEffect: Carrega as opções dos Selects ao abrir a página
+    useEffect(() => {
+        const loadOptions = async () => {
+            setLoading(true);
+            try {
+                // Busca as 3 listas em paralelo no Json-Server
+                const [resDisciplinas, resCursos, resPeriodos] = await Promise.all([
+                    fetch(`${MOCK_API_BASE_URL}/disciplinas`).then(r => r.json()),
+                    fetch(`${MOCK_API_BASE_URL}/cursos`).then(r => r.json()),
+                    fetch(`${MOCK_API_BASE_URL}/periodos`).then(r => r.json())
+                ]);
+
+                setDisciplinasOptions(extractArray(resDisciplinas));
+                setCursosOptions(extractArray(resCursos));
+                setPeriodosOptions(extractArray(resPeriodos));
+            } catch (err) {
+                console.error("Erro ao carregar opções:", err);
+                setError("Não foi possível carregar as listas de opções. Verifique se o Json-Server está rodando.");
+            } finally {
+                setLoading(false);
+            }
+        };
+        loadOptions();
+    }, []);
+
     const handleChange = (event) => {
         setDadosCandidato({
             ...dadosCandidato,
@@ -52,29 +72,60 @@ function Candidatura() {
         });
     };
 
-    const handleSubmit = (event) => {
+    // 2. Envio do Formulário
+    const handleSubmit = async (event) => {
         event.preventDefault();
 
-        // Simulação do envio (usando o mock)
-        console.log("Dados da Candidatura (MOCK):", dadosCandidato);
-        
-        alert(`Candidatura de ${dadosCandidato.nomeCompleto} para monitoria de ${dadosCandidato.disciplinaMonitoria} enviada com sucesso! (Simulação)`);
-        
-        // Limpa o formulário
-        setDadosCandidato({
-            nomeCompleto: '',
-            matricula: '',
-            email: '',
-            periodoCandidato: '',
-            cursoCandidato: '',
-            disciplinaMonitoria: '',
-            justificativa: ''
-        });
+        // Adapta os dados para o formato da API Real
+        const payload = {
+            aluno_nome: dadosCandidato.nomeCompleto,
+            matricula: dadosCandidato.matricula,
+            email: dadosCandidato.email,
+            periodo_atual: dadosCandidato.periodoCandidato,
+            curso: dadosCandidato.cursoCandidato,
+            disciplina_id: dadosCandidato.disciplinaMonitoria, // Manda o value do select (ex: "Calculo I" ou ID)
+            carta_motivacao: dadosCandidato.justificativa
+        };
+
+        try {
+            const response = await fetch(REAL_API_CANDIDATURAS_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+                throw new Error(`Erro ${response.status} ao enviar.`);
+            }
+
+            alert(`Sucesso! Candidatura de ${dadosCandidato.nomeCompleto} enviada.`);
+            
+            // Limpa o formulário
+            setDadosCandidato({
+                nomeCompleto: '', matricula: '', email: '',
+                periodoCandidato: '', cursoCandidato: '', 
+                disciplinaMonitoria: '', justificativa: ''
+            });
+            
+            // Redireciona para Minhas Candidaturas
+            navigate('/aluno/candidaturas');
+
+        } catch (err) {
+            console.error("Erro no envio:", err);
+            alert("Erro ao enviar candidatura. Tente novamente.");
+        }
     };
+
+    if (loading && disciplinasOptions.length === 0) {
+        return <div className="container-candidatura" style={{textAlign:'center'}}>Carregando formulário...</div>;
+    }
 
     return (
         <div className="container-candidatura">
             <h1>Formulário de Candidatura a Monitoria</h1>
+            
+            {error && <p style={{color: 'red', textAlign: 'center'}}>{error}</p>}
+
             <form onSubmit={handleSubmit} className="formulario">
                 
                 {/* CAMPO NOME COMPLETO */}
@@ -83,9 +134,9 @@ function Candidatura() {
                     <input
                         type="text"
                         id="nomeCompleto"
-                        name="nomeCompleto" // ESSENCIAL: Liga este input à chave no estado
-                        value={dadosCandidato.nomeCompleto} // O valor exibido é o que está no estado
-                        onChange={handleChange} // O que acontece quando o valor muda
+                        name="nomeCompleto"
+                        value={dadosCandidato.nomeCompleto}
+                        onChange={handleChange}
                         required
                     />
                 </div>
@@ -117,7 +168,7 @@ function Candidatura() {
                 </div>
 
                 {/* CAMPO: SELECIONAR PERÍODO DO CANDIDATO */}
-                  <div className="form-grupo">
+                <div className="form-grupo">
                     <label htmlFor="periodoCandidato">Seu Período</label>
                     <select
                         id="periodoCandidato"
@@ -126,19 +177,17 @@ function Candidatura() {
                         onChange={handleChange}
                         required
                     >
-                        {/* Primeira opção em branco, desabilitada e selecionada inicialmente */}
                         <option value="" disabled>Selecione seu período</option>
-                        
-                        {/* ✅ CORREÇÃO: Iteração movida para DENTRO do select */}
-                        {MOCK_PERIODOS.map((periodo) => (
-                            <option key={periodo.value} value={periodo.value}>
+                        {/* Usa o estado periodosOptions vindo da API */}
+                        {periodosOptions.map((periodo) => (
+                            <option key={periodo.value || periodo.id} value={periodo.value}>
                                 {periodo.label}
                             </option>
                         ))}
                     </select>
                 </div>
 
-                {/*CAMPO: SELECIONAR CURSO DO CANDIDATO */}
+                {/* CAMPO: SELECIONAR CURSO DO CANDIDATO */}
                 <div className="form-grupo">
                     <label htmlFor="cursoCandidato">Seu Curso</label>
                     <select
@@ -148,19 +197,17 @@ function Candidatura() {
                         onChange={handleChange}
                         required
                     >
-                        {/* Primeira opção em branco, desabilitada e selecionada inicialmente */}
                         <option value="" disabled>Selecione seu curso</option> 
-                        
-                        {/* Iterando sobre o MOCK_CURSOS para criar as opções */}
-                        {MOCK_CURSOS.map((curso) => (
-                            <option key={curso.value} value={curso.value}>
+                        {/* Usa o estado cursosOptions vindo da API */}
+                        {cursosOptions.map((curso) => (
+                            <option key={curso.value || curso.id} value={curso.value}>
                                 {curso.label}
                             </option>
                         ))}
                     </select>
                 </div>
                 
-                {/* CAMPO: DISCIPLINA DESEJADA (AGORA COM OPÇÕES) */}
+                {/* CAMPO: DISCIPLINA DESEJADA (RESTIDUÍDO) */}
                 <div className="form-grupo">
                     <label htmlFor="disciplinaMonitoria">Disciplina Desejada para Monitoria</label>
                     <select
@@ -170,12 +217,10 @@ function Candidatura() {
                         onChange={handleChange}
                         required
                     >
-                        {/* Primeira opção em branco, desabilitada e selecionada inicialmente */}
                         <option value="" disabled>Selecione uma disciplina</option>
-                        
-                        {/* Iterando sobre o MOCK_DISCIPLINAS para criar as opções */}
-                        {MOCK_DISCIPLINAS.map((disciplina) => (
-                            <option key={disciplina.value} value={disciplina.value}>
+                        {/* Usa o estado disciplinasOptions vindo da API */}
+                        {disciplinasOptions.map((disciplina) => (
+                            <option key={disciplina.value || disciplina.id} value={disciplina.value}>
                                 {disciplina.label}
                             </option>
                         ))}
@@ -193,9 +238,6 @@ function Candidatura() {
                         required
                     />
                 </div>
-
-                {/* CAMPO JUSTIFICATIVA (permanece igual) */}
-                {/* ... (código omitido para brevidade) ... */}
 
                 <button type="submit" className="botao-enviar">Enviar Candidatura</button>
             </form>
