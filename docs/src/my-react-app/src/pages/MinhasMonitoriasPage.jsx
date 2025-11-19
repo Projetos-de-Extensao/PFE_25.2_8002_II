@@ -227,10 +227,10 @@ function MinhasMonitoriasPage() {
                                 </div>
                                 <footer className="monitoria-actions">
                                     {/* Links/Botões de ação */}
-                                    <Link to={`/mensagens/${monitoria.id}`} className="button-table-action button-chat">
+                                    <Link to={`/mensagens`} className="button-table-action button-chat">
                                         Chat
                                     </Link>
-                                    <Link to={`/monitoria/${monitoria.id}/detalhes`} className="button-table-action button-details">
+                                    <Link to={`/detalhes/${monitoria.id}`} className="button-table-action button-details">
                                         Ver Detalhes
                                     </Link>
                                     {tipoMonitoria === 'responsavel' && (

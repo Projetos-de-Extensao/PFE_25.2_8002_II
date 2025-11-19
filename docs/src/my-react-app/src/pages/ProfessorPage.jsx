@@ -129,7 +129,7 @@ function ProfessorPage() {
         
         {/* === NOVA SEÇÃO DE VAGAS === */}
         <section className="panel-section">
-          <h3>Vagas Disponíveis (via localhost:8000/vagas)</h3>
+          <h3>Vagas Disponíveis</h3>
           <div className="table-wrapper">
             <table>
               <thead>
@@ -151,7 +151,7 @@ function ProfessorPage() {
                         {/* Use o nome da propriedade que representa o título da vaga na sua API */}
                       <td>{vaga.titulo || vaga.nome || 'N/A'}</td> 
                       <td className="action-links">
-                        <Link to={`/vagas/${vaga.id}`} className="action-button-link">Ver Detalhes</Link>
+                        <Link to={`/detalhesvaga/${vaga.id}`} className="action-button-link">Ver Detalhes</Link>
                       </td>
                     </tr>
                   ))

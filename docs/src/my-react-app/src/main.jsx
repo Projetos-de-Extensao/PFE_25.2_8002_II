@@ -39,6 +39,7 @@ const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/esquecisenha", element: <Esquecisenha /> },
   { path: "/login", element: <Login /> },
+ // Rota correta adicionada aqui
 
   // --- MUNDO 2: PÁGINAS "DENTRO" DO LAYOUT ---
   {
@@ -57,6 +58,7 @@ const router = createBrowserRouter([
       { path: "/professor/postagens", element: <ProfessorPostagens /> },
       { path: "/professor/marcar-entrevista/:idAluno", element: <MarcarEntrevista /> },
       { path: "/professor/detalhesprofessor/:idAluno", element: <DetalhesProfessor /> },
+       {path: "/professor/processo-seletivo", element: <ProcessoSeletivo />},
 
       // Rotas do Aluno
       { path: "/aluno", element: <AlunoPage /> },
