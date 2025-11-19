@@ -95,7 +95,7 @@ const Detalhes = () => {
                 
                 {/* Botão de Ação */}
                 <div className="action-area">
-                    <button className="button-action">Candidatar-se a esta Turma</button>
+                    <button className="button-action">Comparecer a esta Turma</button>
                 </div>
 
                 {/* Link de Voltar */}

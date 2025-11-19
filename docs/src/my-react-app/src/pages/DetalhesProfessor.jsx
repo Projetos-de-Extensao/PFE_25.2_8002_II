@@ -107,7 +107,7 @@ const DetalhesProfessor = () => {
                 
                 {/* Botão Voltar */}
                 <div className="voltar-link">
-                    <Link to="/HomePage" className="button-secondary-gray">
+                    <Link to="/professor" className="button-secondary-gray">
                         Voltar (Listagem de Candidatos)
                     </Link>
                 </div>
