@@ -30,7 +30,7 @@ function Configuracoes() {
       <section className="config-section">
         <h3>Segurança</h3>
         {/* Note a nova classe 'btn' e 'btn-primary' */}
-        <button className="btn btn-primary">Alterar Senha</button>
+        <button type="submit" className="btn btn-success">Alterar Senha</button>
       </section>
 
       <section className="config-section">

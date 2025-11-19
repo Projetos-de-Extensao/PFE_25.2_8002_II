@@ -124,7 +124,7 @@
 /* Botão Azul (Primário) */
 .btn-primary {
   background-color: #0d6efd;
-  color: #fff;
+  color: black;
 }
 .btn-primary:hover {
   background-color: #0b5ed7;
