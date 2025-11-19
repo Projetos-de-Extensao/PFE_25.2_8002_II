@@ -227,76 +227,57 @@ Um item só é considerado "Pronto" quando:
 - HTML
 # Sprint IV 
 
-> 29/02/25 à 13/10/2025
+> 29/10/25 à 19/11/2025
 
 ## Objetivo da Sprint
 
-XXXX XXXX XXXX
+Conectar a API, Ligar todas as páginas do site.
 
-### Itens escolhidos do backlog
-
-- 
-- 
 
 
 ### Lista de Tarefas da Interação
 
 |Tarefa|Responsabilidade|
-|---|----|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
+|Criar a API| Giovanna Perrone|
+|Conectar a API| Giovanna Perrone e Julia Valente|
+|Conecatar as Páginas|Maria Eduarda Perpetuo|
+|Reestruturar o CSS| Julia Valente|
+|Adicionou o botão favorito| Matheus Alvarenga|
+|Sprint| Maria Eduarda Perpetuo|
 
 ### Critério de Qualidade
 
 Um item só é considerado "Pronto" quando:
 
-- 
-- 
+- O site estiver plenamente o conectando com a API
+- Todas as Abas estiverem conectas
 
 ### Sprint Review
 
+- Em relação á semana passada, temos que dividir melhor as tarefas e rever a API.
 - 
-- 
+
+### Pontos Positivos
+
+- Familiariedade com as ferramentas propostas.
+- Boa comunicação entre maior parte da equipe.
+- Boa organização entre maior parte da equipe.
+
+### Pontos Negativos
+
+- Contratempo com a API
+- Falta de ornização de membro(s) da equipe.
+
+### O que podemos mudar? (Para o próximo)
+
+- Melhor divisão de tarefas na equipe.
 
 ### Ferramentas Utilizadas
 
 - Reunião: [Google Meet](https://meet.google.com/)
-
-# Sprint V 
-
-> 29/02/25 à 13/10/2025
-
-## Objetivo da Sprint
-
-XXXX XXXX XXXX
-
-### Itens escolhidos do backlog
-
-- 
-- 
+- HTML
+- Java Script
 
 
-### Lista de Tarefas da Interação
 
-|Tarefa|Responsabilidade|
-|---|----|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
-| XXXX XXXX XXXX| XXXX|
 
-### Critério de Qualidade
-
-Um item só é considerado "Pronto" quando:
-
--
--
-
-### Sprint Review
-
--
--
-
-### Ferramentas Utilizadas
-
-- Reunião: [Google Meet](https://meet.google.com/)
