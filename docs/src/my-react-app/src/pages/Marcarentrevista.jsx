@@ -212,6 +212,7 @@ const MarcarEntrevista = () => {
               >
                 Voltar
               </button>
+              <Link to={`/professor/detalhesprofessor/${aluno.id}`} className="btn btn-dashboard">Voltar</Link>
             </div>
           </form>
         </div>
