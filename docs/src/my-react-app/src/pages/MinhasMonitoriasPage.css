@@ -1,95 +1,186 @@
-/* 1. Importa os estilos base do painel (Admfeed/HomePage) */
-@import url('./Admfeed.css'); /* Ou o nome correto do seu CSS base */
+/* ------------------------------------------- */
+/* Estilos Gerais */
+/* ------------------------------------------- */
+.minhas-monitorias-page {
+    padding: 30px;
+    background-color: #f4f7f9;
+    min-height: 100vh;
+}
 
-/* 2. Estilo do Título (padrão) */
 .page-title {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 1rem;
+    color: #0d47a1; 
+    margin-bottom: 30px;
+    border-bottom: 3px solid #1e88e5;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
 }
 
-/* 3. Ajustes na Grade de Cards */
-.monitorias-grid {
-  /* Usando a classe card-grid já existente */
-  /* Ajusta para garantir que os cards tenham espaço */
-  display: grid; /* Mudar para grid para mais controle */
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Colunas responsivas */
-  gap: 1.5rem; /* Espaço entre cards */
+/* ------------------------------------------- */
+/* Card Grid (Estilo da Grade) */
+/* ------------------------------------------- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Colunas responsivas */
+    gap: 1.5rem; /* Espaço entre cards */
 }
 
-/* 4. Ajustes nos Cards de Monitoria (reutiliza .card-disciplina) */
-/* Vamos sobrescrever e adicionar estilos para o .monitoria-card */
+/* ------------------------------------------- */
+/* Estilos dos Cards (Monitoria Card) */
+/* ------------------------------------------- */
 .monitoria-card {
-  /* Herdando estilos base de .card-disciplina (background, shadow, etc.) */
-  /* Mas garantindo que ele se comporte como um bloco flex column */
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #e9ecef; /* Borda mais definida */
-  padding: 1.5rem; /* Aumenta o padding interno */
-  border-radius: 12px; /* Mantém os cantos arredondados */
-  background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e9ecef; /* Borda mais definida */
+    padding: 1.5rem; 
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .monitoria-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .monitoria-card header {
-   margin-bottom: 1rem; /* Espaço após o header do card */
-   padding-bottom: 1rem; /* Adiciona espaço abaixo do título */
-   border-bottom: 1px solid #f1f1f1; /* Linha sutil abaixo do título */
-   display: flex; /* Garante alinhamento se houver ícone */
-   justify-content: space-between;
-   align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .monitoria-card header h3 {
-  font-size: 1.3rem;
-  margin: 0; /* Remove margem padrão do h3 */
+    color: #0d47a1;
+    font-size: 1.3rem;
+    margin: 0;
 }
+
+/* ------------------------------------------- */
+/* Informações da Disciplina */
+/* ------------------------------------------- */
 
 .monitoria-card .disciplina-info {
-  margin-bottom: 1.5rem; /* Espaço antes das ações */
-  /* Estilos herdados de Admfeed.css devem funcionar bem aqui */
+    margin-bottom: 1.5rem;
 }
 
-/* 5. Estilo para o rodapé do card (ações) */
+.info-row {
+    display: block; 
+    color: #455a64;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #37474f; 
+    margin-right: 5px; 
+}
+
+.info-row.separator {
+    display: block;
+    border-top: 1px dashed #e9ecef;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+/* ------------------------------------------- */
+/* Rodapé e Ações */
+/* ------------------------------------------- */
 .monitoria-actions {
-  margin-top: auto; /* Empurra os botões para baixo */
-  padding-top: 1rem;
-  border-top: 1px solid #e9ecef;
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap; /* Para botões quebrarem a linha se necessário */
-  align-items: center; /* Alinha os botões verticalmente */
+    margin-top: auto; 
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap; 
+    align-items: center;
 }
 
-/* Reutiliza o estilo de botão da página de Aluno */
 .monitoria-actions .button-table-action {
-  /* Estilos já definidos (importado via Admfeed.css) */
+    flex-grow: 1;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
-/* Estilo específico para o botão Gerenciar */
-.monitoria-actions .button-primary {
-   margin-left: auto; /* Empurra o botão Gerenciar para a direita */
+
+/* Botão Gerenciar (Antes era verde, agora é Azul Principal) */
+.monitoria-actions .button-primary-small {
+    margin-left: auto;
+    background-color: #1e88e5; /* Azul Padrão (Substitui o verde) */
+    color: white;
+}
+.monitoria-actions .button-primary-small:hover {
+    background-color: #0d47a1;
+}
+
+/* Botão Chat (Azul Claro) */
+.monitoria-actions .button-chat {
+    background-color: #90caf9; /* Azul bem claro (Blue 200) */
+    color: #0d47a1; /* Texto Azul Escuro */
+}
+.monitoria-actions .button-chat:hover {
+    background-color: #64b5f6;
+}
+
+/* Botão Ver Detalhes (Azul Médio) */
+.monitoria-actions .button-details {
+    background-color: #64b5f6; /* Azul Claro/Médio */
+    color: white;
+}
+
+.monitoria-actions .button-details:hover {
+    background-color: #42a5f5;
 }
 
 
-/* 6. Estilo para quando não há monitorias */
+/* Estilos de Tags (Status) */
+.status-tag {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.status-inscrito {
+    background-color: #e3f2fd; 
+    color: #1e88e5;
+}
+/* O tag Responsável (Monitor) era verde, agora é um Azul Escuro/Cinzento */
+.status-responsavel {
+    background-color: #bbdefb; /* Azul muito claro */
+    color: #0d47a1;
+}
+
+/* Estilo para o estado vazio */
 .empty-state {
-  grid-column: 1 / -1; /* Ocupa a linha inteira */
-  text-align: center;
-  padding: 3rem;
-  background-color: #ffffff; /* Fundo branco */
-  border-radius: 12px; /* Cantos arredondados */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra consistente */
+    grid-column: 1 / -1; 
+    text-align: center;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 .empty-state p {
-  font-size: 1.1rem;
-  color: #6c757d;
-  margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
 }
-
+.button-primary-large {
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s;
+}

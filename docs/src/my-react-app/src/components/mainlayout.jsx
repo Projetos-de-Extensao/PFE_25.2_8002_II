@@ -17,7 +17,7 @@ const user = {
 const getHeaderText = (userType) => {
   switch (userType.toLowerCase()) {
     case 'administrador':
-      return "Painel do Administrador";
+      return "";
     case 'professor':
       return "Monitorias";
     case 'aluno':
